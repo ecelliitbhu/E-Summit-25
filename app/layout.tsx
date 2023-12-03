@@ -3,9 +3,12 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/lib/fonts";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "E-Summit'23",
