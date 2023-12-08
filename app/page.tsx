@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <main className="grid items-center pb-8 pt-6 md:py-10">
       <Button>Click me</Button>
-    </main> 
-  )
+      <Footer></Footer>
+    </main>
+  );
 }
