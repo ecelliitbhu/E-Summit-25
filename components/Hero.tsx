@@ -25,9 +25,9 @@ const Hero: FunctionComponent<Props> = (props) => {
           </div>
           <div className="mb-5">
             <p className=" text-gray-500 text-md pb-2 font-semibold hover:text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600 mb-2 cursor-pointer">
-              In this tutorial we will be creating a generative “orb” animation
+              In this tutorial we will be creating a generative orb animation
               using pixi.js, picking some lovely random colors and pulling it
-              all together in a nice frosty UI. We're gonna talk accessibility,
+              all together in a nice frosty UI. We are gonna talk accessibility,
               too.
             </p>
           </div>
