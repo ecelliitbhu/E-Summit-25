@@ -3,11 +3,20 @@ export interface GuestPropsData{
 }
 export const guest_card_data : Array<GuestPropsData> = [{
     name:"AI Pacino",
-    imgURL:"https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg"
+    imgURL:"https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg",
+    instaURL:"https://lucide.dev/icons/x?search=x",
+    xURL:"",
+    linkedinURL:""
 },{
     name:"Ben Stiller",
-    imgURL:"https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg"
+    imgURL:"https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg",
+    instaURL:"",
+    xURL:"",
+    linkedinURL:""
 },{
     name:"Patrick Stewart",
-    imgURL:"https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg"
+    imgURL:"https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg",
+    instaURL:"",
+    xURL:"",
+    linkedinURL:""
 }]

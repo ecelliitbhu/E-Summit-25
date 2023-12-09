@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import {  Instagram, Linkedin,  Twitter,X } from 'lucide-react'
+import { Instagram,X,Linkedin } from '../components'
 import styles from "../guestcard/guest_card.module.css"
 import {useRouter} from "next/navigation"
 import { GuestPropsData } from './guest_card_data'
