@@ -57,3 +57,41 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Style the navbar */
+.floating-navbar {
+  overflow: hidden;
+  background: url(https://s3-alpha-sig.figma.com/img/27aa/7f50/8f3153ba02db342062382a63bf906279?Expires=1702857600&Signature=ls4dL9BgWACGJ6cdzCv-zuZNzMvfHuIQD9WAIUXq2XM2BHC9pIw2mN94Wpfbt19R208NYEV8h9dWNhq7nNjuut4HoOBrptOjtP6cfqOa-jtZg~4LpB8~1ir~5wNV5HTa44-vTBefqSqKKocBjNHTo7dUUQgI1guOUHSOHs482P95w1VCjCqK6wctSpBkiB4~-1Ko2NKO0Yk4Po5QXb7o5JcjQxA0WLOZak-LYSWHiT3SeiWnjSy6HvNDVHb5mwdcaW~Rix9lnrDURgD4VyUTqHsEIFj2kOo2oZP5hnoyHBgiYEPyEZoFR-sDM9fguo0nmmNPFVLNr5PlQSXJycFMXQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  position: fixed; /* Make the navbar sticky */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+ }
+ 
+ /* Navbar links */
+ .floating-navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+ }
+ 
+ /* Page content */
+ .content {
+  padding: 16px;
+ }
+ 
+ /* Add some top padding to the page content to prevent sudden quick movement 
+ (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+ .floating-navbar + .content {
+  padding-top: 60px;
+ }
+
+ .bg-background {
+  background-color: rgba(31,32,35,.8);
+ } 
+
+ #line, #line2 {
+  background-color: grey;
+ }
