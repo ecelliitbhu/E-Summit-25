@@ -35,7 +35,7 @@ type Props = OwnProps;
 const Navbar: FunctionComponent<Props> = (props) => {
   return (
     <header
-      className={"w-[100%] sticky z-10 max-w-[76.5rem] m-auto pb-20"}
+      className={"w-[100%] sticky z-10 max-w-[76.5rem] m-auto "}
     >
       <nav className="w-full rounded-full z-10 bg-background  opacity-95  md:absolute fixed mt-1">
         <div className="m-auto px-2 md:px-12 lg:px-7">
