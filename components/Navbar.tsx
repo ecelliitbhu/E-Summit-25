@@ -1,5 +1,5 @@
 "use client";
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "@/public/e-summit.svg";
 import { Button } from "@/components/ui/button";
@@ -13,19 +13,19 @@ const nav = [
     link: "/#about",
   },
   {
-    name: "Events",
+    name: "EVENTS",
     link: "/#events",
   },
   {
-    name: "Workshops and Sessions",
+    name: "WORKSHOPS",
     link: "/workshops",
   },
   {
-    name: "Sponsors",
+    name: "SPONSORS",
     link: "/sponsor",
   },
   {
-    name: "Contact Us",
+    name: "CONTACT US",
     link: "/contact",
   },
 ];
@@ -33,11 +33,29 @@ const nav = [
 type Props = OwnProps;
 
 const Navbar: FunctionComponent<Props> = (props) => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+
+   
+  }, []);
   return (
     <header
-      className={"w-[100%] sticky z-10 max-w-[76.5rem] m-auto "}
-    >
-      <nav className="w-full rounded-full z-10 bg-background  opacity-95  md:absolute fixed mt-1">
+    className={`w-full sticky top-0 z-10`}>
+      <nav className={`w-full  ${scrolling ? 'bg-black' : 'bg-transparent'} z-10 opacity-95  md:absolute py-2`}>
         <div className="m-auto px-2 md:px-12 lg:px-7">
           <div className="flex flex-wrap items-center justify-evenly max-lg:justify-stretch gap-6 md:gap-0 relative max-lg:py-2">
             <input
@@ -54,7 +72,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               >
                 <Image
                   src={logo}
-                  style={{width: '30px', height: '30px'}}
+                  style={{width: '25px', height: '25px'}}
                   alt="E-Summit'24 logo"
                   className=" scale-150 md:ml-2 sm:w-32"
                 />
@@ -111,7 +129,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                             }
                             variant={"link"}
                           >
-                            <span>{navigator.name}</span>
+                            <span className="font-semibold">{navigator.name}</span>
                           </Button>
                         </Link>
                       </li>
@@ -122,7 +140,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               <Button
                 type="button"
                 className={
-                  "rounded-full bg-[#248aff] text-white focus-visible:outline-none"
+                  "rounded-lg bg-gradient-to-r from-[#0A2E8F] via-[#0F498D] to-[#1A8589] text-white focus-visible:outline-none"
                 }
               >
                 Register
