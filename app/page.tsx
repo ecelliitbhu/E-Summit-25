@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <main className="grid items-center  ">
         <Hero/>
-      <MarqueeComponent></MarqueeComponent>
-      <About></About>
-      <Faqs></Faqs>
-      <Footer></Footer>
+        <MarqueeComponent/>
+        <About/>
+        <Faqs/>
+        <Footer/>
     </main>
   );
 }

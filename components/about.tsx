@@ -36,19 +36,19 @@ const About: FunctionComponent<Props> = (props) => {
         <div className="p-5 mt-10">
           <ul>
             <p className="text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600 mb-2 font-bold text-5xl pb-4">
-              ABOUT-ESUMMIT'24
+              ABOUT-ESUMMIT&apos;24
             </p>
             <li className="text-gray-500 text-md pb-2 font-semibold">
               <p className="max-w-2xl mb-2 text-lg">
                 E-Summit is an electrifying celebration of innovation and entrepreneurship,
                 brought to you by the Entrepreneurship Cell(E-Cell) at the Indian Institute of Technology(IIT)BHU.
                 This annual festival is a convergence of visionary thinkers, budding entrepreneurs,and established 
-                industry leaders, all united by a common passion. - "The drive to create,innoavte and transform the future."
+                industry leaders, all united by a common passion. - &quot;The drive to create,innoavte and transform the future.&quot;
                 E-Summit is where dreams are nurtured,ideas are cultivated, and future entrepreneurs are born.
 
               </p>
               <p className="max-w-2xl mb-2 text-lg">
-                Join us in this exhilarating journey of entrepreneurship, and together Let's write the future! 
+                Join us in this exhilarating journey of entrepreneurship, and together Let&apos;s write the future!
               </p>
             </li>
           </ul>

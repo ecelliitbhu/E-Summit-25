@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import cards from './data/cards.json';
-
+import Image from "next/image"
 
 const The_card: FunctionComponent = (props) => {
   return (
@@ -14,7 +14,7 @@ const The_card: FunctionComponent = (props) => {
             <p className='mt-3 mb-3 mx-0 max-w-[36ch]'>{card.description}</p>
             <a href="" className='border border-solid border-3 dark border-card-foreground dark text-card-foreground self-start no-underline px-8 py-4 rounded-24 transition-all duration-400 hover:bg-card-foreground hover:text-card odd:self-start'>Join now</a>
             <div className={`visual h-full absolute w-60 left-6 -top-6 overflow-hidden rounded-3xl ${index % 2 === 0 ? 'right-6 left-auto' : ''} max-md:w-40 max-md:h-40 max-md:right-4 max-md:left-auto`}>
-              <img src={card.imageUrl} alt="" className='h-full max-md:w-full max-md:h-auto' />
+              <Image src={card.imageUrl} alt="" className='h-full max-md:w-full max-md:h-auto' />
             </div>
           </div>
         </section>
