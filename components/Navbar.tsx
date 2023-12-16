@@ -55,16 +55,16 @@ const Navbar: FunctionComponent<Props> = (props) => {
   return (
     <header
     className={`w-full sticky top-0 z-10`}>
-      <nav className={`w-full  ${scrolling ? 'bg-black' : 'bg-transparent'} z-10 opacity-95  md:absolute py-2`}>
+      <nav className={`w-full  ${scrolling ? 'bg-black' : 'bg-transparent'} z-10 opacity-95  md:absolute py-2 py-5`}>
         <div className="m-auto px-2 md:px-12 lg:px-7">
-          <div className="flex flex-wrap items-center justify-evenly max-lg:justify-stretch gap-6 md:gap-0 relative max-lg:py-2">
+          <div className="flex flex-wrap items-center justify-around max-lg:justify-stretch gap-6 md:gap-0 relative max-lg:py-2">
             <input
               type="checkbox"
               name="toggle_nav"
               id="toggle_nav"
               className="hidden peer"
             />
-            <div className="w-full px-6 flex justify-evenly items-center lg:w-max md:px-0">
+            <div className="w-full px-6 flex justify-evenly items-center lg:w-max md:px-0 gap-28">
               <Link
                 href="/"
                 aria-label="logo"
@@ -72,7 +72,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               >
                 <Image
                   src={logo}
-                  style={{width: '25px', height: '25px'}}
+                  style={{width: '40px', height: '40px'}}
                   alt="E-Summit'24 logo"
                   className=" scale-150 md:ml-2 sm:w-32"
                 />
@@ -110,12 +110,12 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     lg:p-0
                     lg:bg-transparent lg:w-auto"
             >
-              <div className="text-black dark:text-white lg:pr-4 lg:w-auto w-full lg:pt-0">
+              <div className="text-black dark:text-white lg:pr-4 lg:w-auto w-full lg:pt-0 gap:0.7rem">
                 <ul
                   className="
                             tracking-wide
                             font-light
-                            text-sm flex-col flex
+                            text-2xl flex-col flex
                             lg:flex-row
                             gap-6 lg:gap-0"
                 >
