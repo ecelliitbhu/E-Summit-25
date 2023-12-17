@@ -1,13 +1,24 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import Faqs from "@/components/faq/Faq";
+import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
+import About from "@/components/about";
 import Footer from "@/components/Footer";
 import WSYA from "@/components/WSYA";
-
+import Hero from "@/components/Hero";
+import Gallery from "@/components/gallery/gallery";
+import The_card from "@/components/The_card";
 export default function Home() {
   return (
-    <main className="grid items-center pb-8 pt-6 md:py-10">
-      <Button>Click me</Button>
-      <WSYA></WSYA>
-      <Footer></Footer>
+    <main className="grid items-center  ">
+      <Hero />
+      <MarqueeComponent />
+      <About />
+      <WSYA/>
+      <Gallery />
+      <Faqs />
+      <The_card />
+      <Footer />
+
     </main>
   );
 }
