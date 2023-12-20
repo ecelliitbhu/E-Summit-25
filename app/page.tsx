@@ -11,12 +11,13 @@ export default function Home() {
   return (
     <main className="grid items-center  ">
       <Hero />
-      <MarqueeComponent />
-      <About />
+      {/*<About />*/}
       <WSYA/>
-      <Gallery />
-      <Faqs />
+      {/*<Gallery />*/}
       <The_card />
+        <MarqueeComponent />
+
+        <Faqs />
       <Footer />
 
     </main>
