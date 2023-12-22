@@ -7,6 +7,7 @@ import WSYA from "@/components/WSYA";
 import Hero from "@/components/Hero";
 import Gallery from "@/components/gallery/gallery";
 import EventsCard from "@/components/EventsCard";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <WSYA />
         {/*<Gallery />*/}
         <MarqueeComponent />
+        <CTA />
         <Faqs />
         <Footer />
       </main>
