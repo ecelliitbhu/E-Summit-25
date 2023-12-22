@@ -1,11 +1,8 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/PxLK3lLdnb3
- */
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Ticket from "@/components/Ticket";
 
 export default function Component() {
   return (
@@ -22,6 +19,7 @@ export default function Component() {
           </p>
         </div>
         <div className={"flex justify-center items-center"}>
+          {/*<Ticket />*/}
           <Card>
             <CardHeader>
               <h3 className="text-xl font-semibold text-center">Event Pass</h3>
