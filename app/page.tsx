@@ -16,10 +16,8 @@ export default function Home() {
       {/*<Gallery />*/}
       <The_card />
         <MarqueeComponent />
-
         <Faqs />
       <Footer />
-
     </main>
   );
 }
