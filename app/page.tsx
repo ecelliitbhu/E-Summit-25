@@ -6,18 +6,20 @@ import Footer from "@/components/Footer";
 import WSYA from "@/components/WSYA";
 import Hero from "@/components/Hero";
 import Gallery from "@/components/gallery/gallery";
-import The_card from "@/components/The_card";
+import EventsCard from "@/components/EventsCard";
+
 export default function Home() {
   return (
-    <main className="grid items-center  ">
-      <Hero />
-      {/*<About />*/}
-      <WSYA/>
-      {/*<Gallery />*/}
-      <The_card />
+    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+      <main className="grid items-center">
+        <Hero />
+        {/*<About />*/}
+        <WSYA />
+        {/*<Gallery />*/}
         <MarqueeComponent />
         <Faqs />
-      <Footer />
-    </main>
+        <Footer />
+      </main>
+    </section>
   );
 }

@@ -5,7 +5,9 @@ import Image from "next/image";
 import image1 from "./images/image1.png";
 import { Parallax } from 'react-scroll-parallax';
 import { motion } from "framer-motion"
-const The_card: FunctionComponent = (props) => {
+import {Button} from "@/components/ui/button";
+import Link from "next/link";
+const EventsCard: FunctionComponent = (props) => {
   return (
     <article className=" m-auto block overflow-x-hidden w-calc[60vw + 248px] max-w-[1068px] min-w-[888px] text-xl font-sans font-normal max-[1100px]:px-12 max-[1100px]:pb-6 max-[1100px]:pt-24 max-lg:w-full max-lg:max-w-full max-lg:min-w-full max-md:pb-0 max-md:pt-12 max-md:px-6">
       {cards.map((card, index) => (
@@ -25,12 +27,17 @@ const The_card: FunctionComponent = (props) => {
               {card.title}
             </h3>
             <p className="mt-3 mb-3 mx-0 max-w-[36ch]">{card.description}</p>
-            <a
-              href=""
-              className="border border-solid border-3 dark border-card-foreground dark text-card-foreground self-start no-underline px-8 py-4 rounded-24 transition-all duration-400 hover:bg-card-foreground hover:text-card odd:self-start"
-            >
+            <Link href="/">
+            <Button>
               Join now
-            </a>
+            </Button>
+              </Link>
+            {/*<a*/}
+            {/*  href=""*/}
+            {/*  className="border border-solid border-3 dark border-card-foreground dark text-card-foreground self-start no-underline px-8 py-4 rounded-24 transition-all duration-400 hover:bg-card-foreground hover:text-card odd:self-start"*/}
+            {/*>*/}
+
+            {/*</a>*/}
             <div
               className={`visual h-full absolute w-60 left-6 -top-6 overflow-hidden rounded-3xl ${
                 index % 2 === 0 ? "right-2 left-auto" : ""
@@ -49,4 +56,4 @@ const The_card: FunctionComponent = (props) => {
   );
 };
 
-export default The_card;
+export default EventsCard;

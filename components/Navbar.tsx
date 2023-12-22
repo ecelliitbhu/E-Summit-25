@@ -14,15 +14,15 @@ const nav = [
   },
   {
     name: "EVENTS",
-    link: "/#events",
+    link: "/events",
   },
   {
-    name: "WORKSHOPS",
-    link: "/workshops",
+    name: "GUEST-TALKS",
+    link: "/guest-talks",
   },
   {
-    name: "SPONSORS",
-    link: "/sponsor",
+    name: "PARTNERS",
+    link: "/partners",
   },
   {
     name: "CONTACT US",
@@ -50,74 +50,70 @@ const Navbar: FunctionComponent<Props> = (props) => {
     };
   }, []);
   return (
-      <header className="w-[100%] sticky z-10 top-8 max-w-[76.5rem] m-auto lg:p-0 ">
-        <nav className="w-full rounded-full z-10 bg-background  opacity-95  md:absolute fixed mt-1">
-          <div className={"relative block px-8"}>
-            <div
-                className={
-                  "flex items-center justify-between w-[100%] h-[100%] p-3 gap-1 capitalize"
-                }
+    <header className="w-[100%] sticky z-10 top-8 max-w-[76.5rem] m-auto lg:p-0 ">
+      <nav className="w-full rounded-full z-10 bg-background  opacity-95  md:absolute fixed mt-1">
+        <div className={"relative block px-8"}>
+          <div
+            className={
+              "flex items-center justify-between w-[100%] h-[100%] p-3 gap-1 capitalize"
+            }
+          >
+            <Link
+              href="/"
+              aria-label="logo"
+              className="block w-8 -m-4 items-center"
             >
-              <Link
-                  href="/"
-                  aria-label="logo"
-                  className="block w-8 -m-4 items-center"
+              <Image
+                src={logo}
+                style={{ width: "20px", height: "20px" }}
+                alt="E-Summit'24 logo"
+                className="scale-150 md:ml-2 sm:w-32"
+              />
+            </Link>
+            <div className={"flex-shrink-1 block"}>
+              <div
+                className={
+                  "flex items-center justify-between w-[100%] h-[100%] gap-1 capitalize"
+                }
               >
-                <Image
-                    src={logo}
-                    style={{ width: "20px", height: "20px" }}
-                    alt="E-Summit'24 logo"
-                    className="scale-150 md:ml-2 sm:w-32"
-                />
-              </Link>
-              <div className={"flex-shrink-1 block"}>
-                <div
+                <div className={"hidden lg:block"}>
+                  <ul
                     className={
-                      "flex items-center justify-between w-[100%] h-[100%] gap-1 capitalize"
+                      "tracking-wide font-light text-2xl flex-col flex lg:flex-row flex-wrap justify-end items-center gap-6 lg:gap-0"
                     }
-                >
-                  <div className={"hidden lg:block"}>
-                    <ul
-                        className={
-                          "tracking-wide font-light text-2xl flex-col flex lg:flex-row flex-wrap justify-end items-center gap-6 lg:gap-0"
-                        }
-                    >
-                      {nav.map((navigator, index) => {
-                        return (
-                            <li key={index}>
-                              <Link href={navigator.link} className="no-underline">
-                                <Button
-                                    className={
-                                      "text-secondary font-light"
-                                    }
-                                    variant={"link"}
-                                >
-                              <span className="">
-                                {navigator.name}
-                              </span>
-                                </Button>
-                              </Link>
-                            </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                  >
+                    {nav.map((navigator, index) => {
+                      return (
+                        <li key={index}>
+                          <Link href={navigator.link} className="no-underline">
+                            <Button
+                              className={"text-secondary font-light"}
+                              variant={"link"}
+                            >
+                              <span className="">{navigator.name}</span>
+                            </Button>
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
               </div>
-              <div className={"hidden lg:block"}>
-                <Button
-                    type="button"
-                    className={
-                      "rounded-lg bg-gradient-to-r from-[#0A2E8F] via-[#0F498D] to-[#1A8589] text-white focus-visible:outline-none"
-                    }
-                >
-                  Register
-                </Button>
-              </div>
+            </div>
+            <div className={"hidden lg:block"}>
+              <Button
+                type="button"
+                className={
+                  "rounded-lg bg-gradient-to-r from-[#0A2E8F] via-[#0F498D] to-[#1A8589] text-white focus-visible:outline-none"
+                }
+              >
+                Buy Passes
+              </Button>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
   );
 };
 

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import React from "react";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
 // const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
@@ -30,7 +30,6 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 //     ],
 // };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -41,16 +40,14 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <div className="flex min-h-screen flex-col">
-            <Navbar/>
-            <ParallaxProvider>
-          <main className="flex-1 herobackground">
-              {children}
-          </main>
-                </ParallaxProvider>
+          <Navbar />
+          <ParallaxProvider>
+            <main className="flex-1 herobackground">{children}</main>
+          </ParallaxProvider>
         </div>
         <Toaster />
       </body>
