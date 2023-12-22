@@ -13,7 +13,8 @@ export default function Component() {
             Get Your Passes for the Most Exciting Event of the Year!
           </h2>
           <p className="w-full text-center text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            Don't miss out on this unique opportunity to connect with industry
+            Don&apos;t miss out on this unique opportunity to connect with
+            industry
             <br />
             leaders and like-minded individuals.
           </p>
