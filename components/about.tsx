@@ -57,20 +57,20 @@ const About: FunctionComponent<Props> = (props) => {
         
       </div>
       
-      <div
-        className="flex flex-col justify-center align-middle items-center text-center  pt-0 pb-5 m-0"
-        style={{
-          backgroundImage:
-            "url('https://s3-alpha-sig.figma.com/img/27aa/7f50/8f3153ba02db342062382a63bf906279?Expires=1702857600&Signature=ls4dL9BgWACGJ6cdzCv-zuZNzMvfHuIQD9WAIUXq2XM2BHC9pIw2mN94Wpfbt19R208NYEV8h9dWNhq7nNjuut4HoOBrptOjtP6cfqOa-jtZg~4LpB8~1ir~5wNV5HTa44-vTBefqSqKKocBjNHTo7dUUQgI1guOUHSOHs482P95w1VCjCqK6wctSpBkiB4~-1Ko2NKO0Yk4Po5QXb7o5JcjQxA0WLOZak-LYSWHiT3SeiWnjSy6HvNDVHb5mwdcaW~Rix9lnrDURgD4VyUTqHsEIFj2kOo2oZP5hnoyHBgiYEPyEZoFR-sDM9fguo0nmmNPFVLNr5PlQSXJycFMXQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')",
-        }}>
-          <div className="flex justify-center items-center flex-wrap">
-            <div><Image src={image1} alt="Image 1" width={300} height={300} className="m-2" /></div>
-            <div><Image src={image2} alt="Image 2" width={300} height={300} className="m-2" /></div>
-            <div><Image src={image3} alt="Image 3" width={300} height={300} className="m-2" /></div>
-            <div><Image src={image4} alt="Image 4" width={300} height={300} className="m-2" /></div>
-          </div>
-        
-      </div>
+      {/*<div*/}
+      {/*  className="flex flex-col justify-center align-middle items-center text-center  pt-0 pb-5 m-0"*/}
+      {/*  style={{*/}
+      {/*    backgroundImage:*/}
+      {/*      "url('https://s3-alpha-sig.figma.com/img/27aa/7f50/8f3153ba02db342062382a63bf906279?Expires=1702857600&Signature=ls4dL9BgWACGJ6cdzCv-zuZNzMvfHuIQD9WAIUXq2XM2BHC9pIw2mN94Wpfbt19R208NYEV8h9dWNhq7nNjuut4HoOBrptOjtP6cfqOa-jtZg~4LpB8~1ir~5wNV5HTa44-vTBefqSqKKocBjNHTo7dUUQgI1guOUHSOHs482P95w1VCjCqK6wctSpBkiB4~-1Ko2NKO0Yk4Po5QXb7o5JcjQxA0WLOZak-LYSWHiT3SeiWnjSy6HvNDVHb5mwdcaW~Rix9lnrDURgD4VyUTqHsEIFj2kOo2oZP5hnoyHBgiYEPyEZoFR-sDM9fguo0nmmNPFVLNr5PlQSXJycFMXQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')",*/}
+      {/*  }}>*/}
+      {/*    <div className="flex justify-center items-center flex-wrap">*/}
+      {/*      <div><Image src={image1} alt="Image 1" width={300} height={300} className="m-2" /></div>*/}
+      {/*      <div><Image src={image2} alt="Image 2" width={300} height={300} className="m-2" /></div>*/}
+      {/*      <div><Image src={image3} alt="Image 3" width={300} height={300} className="m-2" /></div>*/}
+      {/*      <div><Image src={image4} alt="Image 4" width={300} height={300} className="m-2" /></div>*/}
+      {/*    </div>*/}
+      {/*  */}
+      {/*</div>*/}
     </>
   );
 };
