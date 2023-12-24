@@ -21,12 +21,11 @@ export default function Home() {
         <WSYA />
         {/*<Gallery />*/}
         <MarqueeComponent />
-        <CTA />
         <The_card />
+        <CTA />
         <Faqs />
         <Footer />
       </main>
     </section>
-
   );
 }
