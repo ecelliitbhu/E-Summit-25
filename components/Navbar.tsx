@@ -14,15 +14,15 @@ const nav = [
   },
   {
     name: "EVENTS",
-    link: "/#events",
+    link: "/events",
   },
   {
-    name: "WORKSHOPS",
-    link: "/workshops",
+    name: "GUEST-TALKS",
+    link: "/guest-talks",
   },
   {
-    name: "SPONSORS",
-    link: "/sponsor",
+    name: "PARTNERS",
+    link: "/partners",
   },
   {
     name: "CONTACT US",
@@ -87,14 +87,10 @@ const Navbar: FunctionComponent<Props> = (props) => {
                         <li key={index}>
                           <Link href={navigator.link} className="no-underline">
                             <Button
-                              className={
-                                "text-secondary font-light no-underline "
-                              }
+                              className={"text-secondary font-light"}
                               variant={"link"}
                             >
-                              <span className="font-semibold">
-                                {navigator.name}
-                              </span>
+                              <span className="">{navigator.name}</span>
                             </Button>
                           </Link>
                         </li>
@@ -105,14 +101,16 @@ const Navbar: FunctionComponent<Props> = (props) => {
               </div>
             </div>
             <div className={"hidden lg:block"}>
-              <Button
-                type="button"
-                className={
-                  "rounded-lg bg-gradient-to-r from-[#0A2E8F] via-[#0F498D] to-[#1A8589] text-white focus-visible:outline-none"
-                }
-              >
-                Register
-              </Button>
+              <Link href={"/payment"} className="no-underline">
+                <Button
+                  type="button"
+                  className={
+                    "rounded-lg bg-gradient-to-r from-[#0A2E8F] via-[#0F498D] to-[#1A8589] text-white focus-visible:outline-none"
+                  }
+                >
+                  Buy Passes
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
