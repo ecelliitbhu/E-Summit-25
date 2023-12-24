@@ -14,7 +14,7 @@ const nav = [
   },
   {
     name: "EVENTS",
-    link: "/#events",
+    link: "/events",
   },
   {
     name: "WORKSHOPS",
@@ -43,19 +43,19 @@ const Navbar: FunctionComponent<Props> = (props) => {
         setScrolling(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-
-
-   
   }, []);
   return (
-    <header
-    className={`w-full sticky top-0 z-10`}>
-      <nav className={`w-full  ${scrolling ? 'bg-black' : 'bg-transparent'} z-10 opacity-95  md:absolute py-2 py-5`}>
+    <header className={`w-full sticky top-0 z-10`}>
+      <nav
+        className={`w-full  ${
+          scrolling ? "bg-black" : "bg-transparent"
+        } z-10 opacity-95  md:absolute py-2 py-5`}
+      >
         <div className="m-auto px-2 md:px-12 lg:px-7">
           <div className="flex flex-wrap items-center justify-around max-lg:justify-stretch gap-6 md:gap-0 relative max-lg:py-2">
             <input
@@ -72,7 +72,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               >
                 <Image
                   src={logo}
-                  style={{width: '40px', height: '40px'}}
+                  style={{ width: "40px", height: "40px" }}
                   alt="E-Summit'24 logo"
                   className=" scale-150 md:ml-2 sm:w-32"
                 />
@@ -129,7 +129,9 @@ const Navbar: FunctionComponent<Props> = (props) => {
                             }
                             variant={"link"}
                           >
-                            <span className="font-semibold">{navigator.name}</span>
+                            <span className="font-semibold">
+                              {navigator.name}
+                            </span>
                           </Button>
                         </Link>
                       </li>

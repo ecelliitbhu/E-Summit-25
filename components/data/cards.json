@@ -1,26 +1,100 @@
 [
     {
-        "title": "Elevate Your Brand with Exceptional Design",
-        "description": "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
-        "imageUrl": "https://images.unsplash.com/photo-1548142813-c348350df52b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzgzMDU1NDY&ixlib=rb-4.0.3&q=80",
-        "isOdd": false
+      "title": "Bid Bonanza",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/bidbonanzaicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/bid-bonanza-e-summit24-iit-bhu-iit-bhu-varanasi-831349"
+    },
+  
+    {
+      "title": "Case X",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/casexicon.png",
+      "isOdd": false,
+      "eventPage": "https://unstop.com/competitions/casex-iit-bhu-varanasi-818882"
+    },
+  
+    {
+      "title": "Design rush",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/designrushicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/design-rush-e-summit24-iit-bhu-iit-bhu-varanasi-830833"
+    },
+  
+    {
+      "title": "Entrevia",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/entreviaicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/entrivia-iit-bhu-varanasi-833798"
+    },
+  
+    {
+      "title": "Inquizzitive",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/inquizzitiveicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/quiz/inquizzitive-e-summit24-iit-bhu-iit-bhu-varanasi-839071"
+    },
+  
+    {
+      "title": "Million Dollar Pitch",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/milliondollarpitchicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/the-million-dollar-pitch-e-summit24-iit-bhu-iit-bhu-varanasi-831050"
+    },
+  
+    {
+      "title": "Stratify",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/stratifyicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/stratify-the-branding-challenge-e-summit24-iit-bhu-iit-bhu-varanasi-837149"
+    },
+  
+    {
+      "title": "Tessaract",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/tesseracticon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/bid-bonanza-e-summit24-iit-bhu-iit-bhu-varanasi-831349"
+    },
+  
+    {
+      "title": "Venture Verse",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/Ventureverseicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/venture-verse-e-summit24-iit-bhu-iit-bhu-varanasi-831932"
     },
     {
-        "title": "Responsive Design for Every Screen Size",
-        "description": "We specialize in creating responsive designs that look great on desktop, tablet, and mobile devices, ensuring your site is accessible to all your visitors.",
-        "imageUrl": "https://images.unsplash.com/photo-1564460576398-ef55d99548b2?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzgzMDU1NDY&ixlib=rb-4.0.3&q=80",
-        "isOdd": true
-    },
-    {
-        "title": "Design that Speaks to Your Audience",
-        "description": "We work closely with you to understand your brand and your customers, so we can create a website that speaks directly to your target audience.",
-        "imageUrl": "https://images.unsplash.com/photo-1631085274261-0ace0296eaa0?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzgzMTExMDg&ixlib=rb-4.0.3&q=80",
-        "isOdd": false
-    },
-    {
-        "title": "Design that Drives Results for Your Business",
-        "description": "We specialize in creating websites that not only look great but also drive traffic and conversions. Let us help you create a website that delivers real business value.",
-        "imageUrl": "https://images.unsplash.com/photo-1611703372231-02ffff8abee6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzgzMTEyNTU&ixlib=rb-4.0.3&q=80",
-        "isOdd": true
+      "title": "Xpanse",
+      "description":
+        "Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.",
+      "imageUrl": "/images/xpanseicon.png",
+      "isOdd": false,
+      "eventPage":
+        "https://unstop.com/competitions/xpanse-the-b-plan-competition-e-summit24-iit-bhu-iit-bhu-varanasi-831125"
     }
-]
+  ]
+  
