@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import WSYA from "@/components/WSYA";
 import Hero from "@/components/Hero";
 import Gallery from "@/components/gallery/gallery";
+
+import The_card from "@/components/EventsCard";
+
 import EventsCard from "@/components/EventsCard";
 import CTA from "@/components/CTA";
 
@@ -19,9 +22,11 @@ export default function Home() {
         {/*<Gallery />*/}
         <MarqueeComponent />
         <CTA />
+        <The_card />
         <Faqs />
         <Footer />
       </main>
     </section>
+
   );
 }

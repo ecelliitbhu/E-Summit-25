@@ -1,4 +1,6 @@
-import React, { FunctionComponent } from 'react';
+
+import React, { FunctionComponent } from "react";
+
 import EventsCard from "@/components/EventsCard";
 
 interface OwnProps {}
@@ -7,6 +9,7 @@ type Props = OwnProps;
 
 const page: FunctionComponent<Props> = (props) => {
 
+
   return (
       <section>
         <div className="flex flex-col items-center justify-center w-full h-screen bg-background">
@@ -14,6 +17,7 @@ const page: FunctionComponent<Props> = (props) => {
             <EventsCard />
         </div>
       </section>
+
   );
 };
 
