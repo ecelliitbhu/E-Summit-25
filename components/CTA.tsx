@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Ticket from "@/components/Ticket";
-
 export default function Component() {
   return (
     <section className="w-full flex justify-center py-12 md:py-24 lg:py-32">
@@ -19,10 +18,13 @@ export default function Component() {
             leaders and like-minded individuals.
           </p>
         </div>
-        <div className={"flex justify-center items-center"}>
+        <div className={"flex justify-center items-top lg:h-96"}>
           {/*<Ticket />*/}
-          <Card>
-            <CardHeader>
+          <div className="lg:relative lg:right-80">
+          <Ticket/>
+          </div>
+         
+            {/* <CardHeader>
               <h3 className="text-xl font-semibold text-center">Event Pass</h3>
             </CardHeader>
             <CardContent>
@@ -37,8 +39,9 @@ export default function Component() {
                   Gain access to all sessions, workshops, and networking events.
                 </p>
               </div>
-            </CardContent>
-          </Card>
+            </CardContent> */}
+            
+         
         </div>
         <div className="flex justify-center flex-col gap-2 min-[400px]:flex-row">
           <Link href={"/payment"}>
