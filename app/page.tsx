@@ -3,7 +3,7 @@ import Faqs from "@/components/faq/Faq";
 import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
 import About from "@/components/about";
 import Footer from "@/components/Footer";
-import WSYA from "@/components/WSYA";
+import WSYA from "@/components/WSYA/WSYA";
 import Hero from "@/components/Hero";
 import Gallery from "@/components/gallery/gallery";
 
@@ -21,7 +21,7 @@ export default function Home() {
         <WSYA />
         {/*<Gallery />*/}
         <MarqueeComponent />
-        <The_card />
+        {/*<The_card />*/}
         <CTA />
         <Faqs />
         <Footer />

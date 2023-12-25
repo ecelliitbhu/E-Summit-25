@@ -5,9 +5,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
+
 interface OwnProps {}
+
 type Props = OwnProps;
-import Logo from "./logos/Logo.svg";
+import Logo from "@/public/logos/Logo.svg";
 
 const Footer: FunctionComponent<Props> = (props) => {
   return (
