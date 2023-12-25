@@ -46,7 +46,7 @@ const WSYA = () => {
   ];
 
   return (
-    <div className="text-center min-h-screen py-6 text-primary-foreground">
+    <div className="text-center  py-6 text-primary-foreground pb-16">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-2">Why should You Attend ?</h1>
         <p className="text-secondary max-w-xl mx-auto mb-5">

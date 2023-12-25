@@ -15,6 +15,7 @@ const Footer: FunctionComponent<Props> = (props) => {
   return (
     <>
       <div
+        id="contact"
         className="bg-black text-white h-auto w-full flex md:flex-row flex-col justify-around items-start p-2 rounded-b-3xl"
         style={{
           backgroundImage:

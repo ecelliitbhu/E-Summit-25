@@ -16,15 +16,15 @@ const Hero: FunctionComponent<Props> = (props) => {
   return (
     <>
       <div className="min-h-screen flex justify-center items-center">
-        <Parallax scale={[1, 0]}>
+        <div>
           <Image
             src={Logo}
-            width={900}
+            width={400}
             height={400}
             alt="logo"
             className="mr--5"
           />
-        </Parallax>
+        </div>
         {/*<div*/}
         {/*  className= "text-white h-screen w-full flex md:flex-row flex-col justify-around  pr-20 pl-20 pb-16 items-center "*/}
 
@@ -77,7 +77,7 @@ const Hero: FunctionComponent<Props> = (props) => {
         {/*</div>*/}
       </div>
       <div className="min-h-screen flex justify-center items-center">
-        <Parallax scale={[1.5, 0]}>
+        <div>
           <div className="p-5 mt-10">
             <ul>
               <p className="text-transparent flex justify-center bg-clip-text bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600 mb-2 font-bold text-6xl pb-4">
@@ -102,7 +102,7 @@ const Hero: FunctionComponent<Props> = (props) => {
               </li>
             </ul>
           </div>
-        </Parallax>
+        </div>
       </div>
     </>
   );

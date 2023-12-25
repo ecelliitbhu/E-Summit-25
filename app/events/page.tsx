@@ -9,7 +9,7 @@ type Props = OwnProps;
 const page: FunctionComponent<Props> = (props) => {
   return (
     <section>
-      <div className="flex flex-col items-center pt-24 justify-center w-full h-screen bg-background">
+      <div className="flex flex-col items-center pt-24 justify-center w-full min-h-screen">
         <EventsCard />
       </div>
     </section>

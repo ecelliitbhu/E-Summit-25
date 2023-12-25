@@ -124,3 +124,8 @@
 svg {
     fill: currentColor;
 }
+.cardbg{
+    background: rgba(82,142,184,0.2);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+}
