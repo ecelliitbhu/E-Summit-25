@@ -13,7 +13,7 @@ const About = () => {
           <h1 className={"m-0 text-secondary"}>
             E-Summit is an electrifying celebration of innovation and
             entrepreneurship, brought to you by the Entrepreneurship
-            Cell(E-Cell) at the Indian Institute of Technology(IIT) BHU.cl
+            Cell(E-Cell) at the Indian Institute of Technology(IIT) BHU.
           </h1>
           <p className={"m-0 text-secondary"}>
             This annual festival is a convergence of visionary thinkers, budding
