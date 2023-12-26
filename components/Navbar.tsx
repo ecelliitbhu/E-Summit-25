@@ -34,6 +34,7 @@ type Props = OwnProps;
 
 const Navbar: FunctionComponent<Props> = (props) => {
   const [scrolling, setScrolling] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to toggle dropdown
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,35 +71,49 @@ const Navbar: FunctionComponent<Props> = (props) => {
                 className="scale-150 md:ml-2 sm:w-32"
               />
             </Link>
-            <div className={"flex-shrink-1 block"}>
-              <div
+            <div className={"hidden lg:block"}>
+              <ul
                 className={
-                  "flex items-center justify-between w-[100%] h-[100%] gap-1 capitalize"
+                  "tracking-wide font-light text-2xl flex-col flex lg:flex-row flex-wrap justify-end items-center gap-6 lg:gap-0"
                 }
               >
-                <div className={"hidden lg:block"}>
-                  <ul
-                    className={
-                      "tracking-wide font-light text-2xl flex-col flex lg:flex-row flex-wrap justify-end items-center gap-6 lg:gap-0"
-                    }
-                  >
-                    {nav.map((navigator, index) => {
-                      return (
-                        <li key={index}>
-                          <Link href={navigator.link} className="no-underline">
-                            <Button
-                              className={"text-secondary font-light"}
-                              variant={"link"}
-                            >
-                              <span className="">{navigator.name}</span>
-                            </Button>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+                {nav.map((navigator, index) => {
+                  return (
+                    <li key={index}>
+                      <Link href={navigator.link} className="no-underline">
+                        <Button
+                          className={"text-secondary font-light"}
+                          variant={"link"}
+                        >
+                          <span className="">{navigator.name}</span>
+                        </Button>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className={"relative lg:hidden"}>
+            <Button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="bg-transparent">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 text-white bg-transparent">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" className="bg-transparent" />
+              </svg>
+            </Button>
+              {isDropdownOpen && (
+                <ul className="dropdown-menu absolute w-full left-0 bg-background pr-24">
+                  {nav.map((navigator, index) => {
+                    return (
+                      <li key={index}>
+                        <Link href={navigator.link} className="no-underline">
+                          <Button className={"text-secondary font-light"} variant={"link"}>
+                            <span className="text-white">{navigator.name}</span>
+                          </Button>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
             </div>
             <div className={"hidden lg:block"}>
               <Link href={"/payment"} className="no-underline">
