@@ -132,3 +132,8 @@ svg {
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
 }
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}

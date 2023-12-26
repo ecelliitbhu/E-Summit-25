@@ -38,12 +38,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("min-h-screen  font-sans antialiased", fontSans.variable)}
+        className={cn(
+          "min-h-screen bg-black font-sans antialiased",
+          fontSans.variable,
+        )}
       >
         <div className="flex min-h-screen flex-col">
           <Navbar />
           {/*<ParallaxProvider>*/}
-          <main className="flex-1 herobackground ">{children}</main>
+          <main className="flex-1  ">{children}</main>
           {/*</ParallaxProvider>*/}
         </div>
         <Toaster />
