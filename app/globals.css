@@ -4,6 +4,8 @@
 
 @layer base {
     :root {
+        --primary-color: mediumslateblue;
+
         --background: 0 0% 0%;
         --foreground: 240 10% 3.9%;
         --card: 0 0% 100%;
@@ -124,8 +126,9 @@
 svg {
     fill: currentColor;
 }
-.cardbg{
-    background: rgba(82,142,184,0.2);
+
+.cardbg {
+    background: rgba(82, 142, 184, 0.2);
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
 }

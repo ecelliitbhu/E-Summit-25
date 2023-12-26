@@ -1,7 +1,7 @@
 "use client";
 import Faqs from "@/components/faq/Faq";
 import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
-import About from "@/components/about";
+import About from "@/components/About/about";
 import Footer from "@/components/Footer";
 import WSYA from "@/components/WSYA/WSYA";
 import Hero from "@/components/Hero";
@@ -17,7 +17,7 @@ export default function Home() {
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <main className="grid items-center">
         <Hero />
-        {/*<About />*/}
+        <About />
         <WSYA />
         {/*<Gallery />*/}
         <MarqueeComponent />
