@@ -1,10 +1,11 @@
 "use client";
-import Faqs from "@/components/faq/Faq";
+// import Faqs from "@/components/faq/Faq";
 import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
 import About from "@/components/About/about";
 import Footer from "@/components/Footer";
 import WSYA from "@/components/WSYA/WSYA";
 import Hero from "@/components/Hero";
+import FAQ from "@/components/FAQ";
 import Gallery from "@/components/gallery/gallery";
 
 import The_card from "@/components/EventsCard";
@@ -23,7 +24,8 @@ export default function Home() {
         <MarqueeComponent />
         {/*<The_card />*/}
         <CTA />
-        <Faqs />
+        {/*<Faqs />*/}
+        <FAQ />
         <Footer />
       </main>
     </section>
