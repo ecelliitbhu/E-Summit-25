@@ -55,7 +55,7 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
       ref={ref}
       className="text-center mb-4 lg:mb-0 flex-col justify-center items-center"
     >
-      <motion.h2 className="text-5xl flex justify-center font-bold text-primary-foreground">
+      <motion.h2 className="text-5xl font-bold text-primary-foreground">
         {rounded}
       </motion.h2>
       <p className="text-primary capitalize">{label.toUpperCase()}</p>
@@ -68,7 +68,7 @@ const Stats: FunctionComponent = () => {
       <h1 className="text-4xl text-primary-foreground font-bold text-center mb-6">
         Key Event Statistics
       </h1>
-      <div className="flex md:flex-row flex-wrap justify-around items-center w-full">
+      <div className="flex-col sm:flex md:flex-row flex-wrap justify-around items-center w-full">
         {statsData.map((stat, index) => (
           <StatItem key={index} value={stat.value} label={stat.label} />
         ))}
