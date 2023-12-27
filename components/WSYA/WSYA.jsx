@@ -57,7 +57,7 @@ const WSYA = () => {
     <div className="text-center  py-6 text-primary-foreground pb-16">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-2">Why should You Attend ?</h1>
-        <p className="text-secondary max-w-xl mx-auto mb-5">
+        <p className="max-w-xl mx-auto mb-5">
           E-Summit has a range of events, competitions, panel discussions,
           <br /> networking, and pitching opportunities for every vertical of
           our entrepreneurial society.

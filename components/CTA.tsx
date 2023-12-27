@@ -7,7 +7,7 @@ export default function Component() {
     <section className="w-full flex justify-center py-12 md:py-24 lg:py-32">
       <div className="container grid items-center gap-4 px-4 md:px-6">
         <div className="space-y-3 text-center">
-          <h2 className="text-3xl text-secondary font-bold tracking-tighter md:text-4xl/tight text-center">
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">
             Get Your Passes for the Most Exciting Event of the Year!
           </h2>
           <p className="w-full text-sm text-center md:text-xl/relaxed text-primary-foreground lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">

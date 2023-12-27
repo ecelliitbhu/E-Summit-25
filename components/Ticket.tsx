@@ -24,7 +24,7 @@ const Ticket = () => {
         }
 
         .body {
-          background: var(--body-color);
+          background: black;
           background: -moz-radial-gradient(
             circle,
             rgba(240, 186, 150, 1) 69%,
@@ -53,6 +53,9 @@ const Ticket = () => {
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           position: absolute;
           background: white;
+          border-radius: 1rem;
+          border-width: 0.1rem;
+          border-color: white;
           /*   top: 200px */
         }
 
@@ -77,7 +80,8 @@ const Ticket = () => {
         }
 
         .ticket {
-          background-color: var(--ticket-color);
+          background-color: black;
+          border-radius: 1rem;
           position: relative;
         }
 
@@ -105,7 +109,7 @@ const Ticket = () => {
         .ticket-background h1 {
           font-size: 130px;
           text-transform: uppercase;
-          color: var(--background-text-color);
+          color: black;
           -webkit-transform: scaleY(1.3);
           transform: scaleY(1.3);
         }
@@ -204,7 +208,7 @@ const Ticket = () => {
           line-height: 40px;
           -webkit-transform: scaleY(1.6);
           transform: scaleY(1.6);
-          color: var(--background-text-color);
+          //color: white;
         }
 
         .ticket-background {
@@ -264,7 +268,7 @@ const Ticket = () => {
           }
 
           .ticket {
-            background-color: var(--ticket-color);
+            background-color: black;
             position: relative;
           }
 
@@ -292,7 +296,7 @@ const Ticket = () => {
           .ticket-background h1 {
             font-size: 50px;
             text-transform: uppercase;
-            color: var(--background-text-color);
+            color: var(--background);
             -webkit-transform: scaleY(1.3);
             transform: scaleY(1.3);
           }
@@ -418,10 +422,9 @@ const Ticket = () => {
               <div className="ticket-text">
                 <div className="left">
                   <div className="decoration-divider"></div>
-                  <h2>E-SUMMIT</h2>
+                  <h2 className={"text-black"}>E-SUMMIT</h2>
                   <h2>IIT</h2>
                   <h2>BHU</h2>
-
                   <div className="decoration-divider"></div>
                 </div>
                 <div className="right">

@@ -30,8 +30,8 @@ const data = [
 export default function FAQ() {
   return (
     <section className="flex justify-center items-center  gap-6 pb-8 pt-6 md:py-10">
-      <Card className={"bg-foreground p-4 md:w-[780px]"}>
-        <CardHeader className={"text-secondary"}>
+      <Card className={"p-4 md:w-[780px]"}>
+        <CardHeader className={""}>
           <CardTitle className={"text-center"}>
             Frequently Asked Questions
           </CardTitle>
@@ -41,10 +41,10 @@ export default function FAQ() {
             {data.map((faq, index) => {
               return (
                 <AccordionItem value={"item-" + index} key={index}>
-                  <AccordionTrigger className={"text-secondary text-start"}>
+                  <AccordionTrigger className={"text-start"}>
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className={"text-secondary"}>
+                  <AccordionContent className={""}>
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
