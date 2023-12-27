@@ -5,6 +5,7 @@ import styles from "./WSYA.module.css";
 import Cup from "/public/WSYA/communication.svg";
 import Tec from "/public/WSYA/taking-notes.svg";
 import Mic from "public/WSYA/podcast-show.svg";
+import StartupShowCase from "public/WSYA/startupShowcase.svg";
 
 const MotionDiv = ({ src, width, height, alt, text }) => (
   <motion.div
@@ -26,22 +27,29 @@ const WSYA = () => {
       src: Cup,
       width: 150,
       height: 36,
-      alt: "",
+      alt: "Events & Competitions",
       text: "Events & Competitions",
     },
     {
       src: Tec,
       width: 250,
       height: 36,
-      alt: "",
+      alt: "Workshops & Masterclasses",
       text: "Workshops & Masterclasses",
     },
     {
       src: Mic,
-      width: 120,
+      width: 250,
       height: 36,
-      alt: "",
+      alt: "Talkshows & Keynote Lecture",
       text: "Talkshows & Keynote Lecture",
+    },
+    {
+      src: StartupShowCase,
+      width: 150,
+      height: 36,
+      alt: "Startup Showcase",
+      text: "Startup Showcase",
     },
   ];
 

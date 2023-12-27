@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import WSYA from "@/components/WSYA/WSYA";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
+import Stats from "@/components/Stats";
 import Gallery from "@/components/gallery/gallery";
 
 import The_card from "@/components/EventsCard";
@@ -22,10 +23,12 @@ export default function Home() {
         <About />
         <WSYA />
         {/*<Gallery />*/}
+        <Stats />
         <MarqueeComponent />
         {/*<The_card />*/}
 
         {/*<Faqs />*/}
+
         <FAQ />
         <Footer />
       </main>
