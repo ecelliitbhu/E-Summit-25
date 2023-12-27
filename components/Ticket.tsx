@@ -40,7 +40,7 @@ const Ticket = () => {
             rgba(240, 186, 150, 1) 69%,
             rgba(245, 175, 128, 1) 100%
           );
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0ba96",endColorstr="#f5af80",GradientType=1);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0ba96", endColorstr="#f5af80", GradientType=1);
           overflow: hidden;
           display: flex;
           justify-content: center;
@@ -105,14 +105,12 @@ const Ticket = () => {
         .ticket-background h1 {
           font-size: 130px;
           text-transform: uppercase;
-          font-family: "Oswald", sans-serif;
           color: var(--background-text-color);
           -webkit-transform: scaleY(1.3);
           transform: scaleY(1.3);
         }
 
         .ticket-text h2 {
-          font-family: "Share Tech Mono", monospace;
           text-transform: uppercase;
           font-size: 34px;
           font-weight: 200;
@@ -155,7 +153,6 @@ const Ticket = () => {
 
         .small-left h2 {
           font-size: 15px;
-          font-family: "Share Tech Mono", monospace;
           text-transform: uppercase;
           text-align: center;
         }
@@ -202,7 +199,6 @@ const Ticket = () => {
 
         .small-right h1 {
           text-transform: uppercase;
-          font-family: "Oswald", sans-serif;
           font-weight: 100;
           font-size: 20px;
           line-height: 40px;
@@ -210,13 +206,16 @@ const Ticket = () => {
           transform: scaleY(1.6);
           color: var(--background-text-color);
         }
+
         .ticket-background {
           color: grey;
         }
+
         .small-right {
           color: grey;
           padding-right: 20px;
         }
+
         @keyframes move-ticket {
           0% {
             transform: rotate(0deg);
@@ -234,12 +233,14 @@ const Ticket = () => {
           .ticket-background h1 {
             font-size: 30px;
           }
+
           .ticket-container {
             //border: 1px solid red;
             width: 300px;
             height: 100px;
             position: relative;
           }
+
           .outercontainer {
             display: flex;
             flex-direction: column;
@@ -291,14 +292,12 @@ const Ticket = () => {
           .ticket-background h1 {
             font-size: 50px;
             text-transform: uppercase;
-            font-family: "Oswald", sans-serif;
             color: var(--background-text-color);
             -webkit-transform: scaleY(1.3);
             transform: scaleY(1.3);
           }
 
           .ticket-text h2 {
-            font-family: "Share Tech Mono", monospace;
             text-transform: uppercase;
             font-size: 10px;
             font-weight: 200;
@@ -345,7 +344,6 @@ const Ticket = () => {
 
           .small-left h2 {
             font-size: 10px;
-            font-family: "Share Tech Mono", monospace;
             text-transform: uppercase;
             text-align: center;
           }
@@ -398,6 +396,7 @@ const Ticket = () => {
             line-height: 0px;
           }
         }
+
         @media screen and (max-width: 367px) {
           .ticket-background h1 {
             font-size: 30px;
@@ -410,99 +409,12 @@ const Ticket = () => {
             position: relative;
           }
         }
-        /* Rest of the CSS code... */
       `}</style>
-      {/* <div className="ticket-container behind">
-        <div className="ticket bigger">
-          <div className="ticket-content">
-            <div className="ticket-background">
-              <h1>Ticket</h1>
-            </div>
-            <div className="ticket-text">
-              <div className="left">
-                <div className="decoration-divider"></div>
-                <h2>SEATTLE</h2>
-                <h2>WA</h2>
-                <h2>AUGUST</h2>
-                <h2>CHALLENGE</h2>
-                <div className="decoration-divider"></div>
-              </div>
-              <div className="right">
-                <div className="decoration-divider"></div>
-                <h2>DATE</h2>
-                <h2>09-13</h2>
-                <h2>AUGUST</h2>
-                <h2>2021</h2>
-                <div className="decoration-divider"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="ticket-divider"></div>
-        <div className="ticket smaller">
-          <div className="ticket-content">
-            <div className="small-right">
-              <h1>admit</h1>
-              <h1>one</h1>
-            </div>
-            <div className="small-left">
-              <h2>CodePen</h2>
-              <h2>&</h2>
-              <h2>Algolia</h2>
-              <div className="barcode"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="ticket-container">
-        <div className="ticket bigger">
-          <div className="ticket-content">
-            <div className="ticket-background">
-              <h1>Ticket</h1>
-            </div>
-            <div className="ticket-text">
-              <div className="left">
-                <div className="decoration-divider"></div>
-                <h2>SEATTLE</h2>
-                <h2>WA</h2>
-                <h2>AUGUST</h2>
-                <h2>CHALLENGE</h2>
-                <div className="decoration-divider"></div>
-              </div>
-              <div className="right">
-                <div className="decoration-divider"></div>
-                <h2>DATE</h2>
-                <h2>09-13</h2>
-                <h2>AUGUST</h2>
-                <h2>2021</h2>
-                <div className="decoration-divider"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="ticket-divider"></div>
-        <div className="ticket smaller">
-          <div className="ticket-content">
-            <div className="small-right">
-              <h1>admit</h1>
-              <h1>one</h1>
-            </div>
-            <div className="small-left">
-              <h2>CodePen</h2>
-              <h2>&</h2>
-              <h2>Algolia</h2>
-              <div className="barcode"></div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="outercontainer">
         <div className="ticket-container behind">
           <div className="ticket bigger">
             <div className="ticket-content">
-              <div className="ticket-background">
-                <h1>Ticket</h1>
-              </div>
+              <div className="ticket-background">{/*<h1>Ticket</h1>*/}</div>
               <div className="ticket-text">
                 <div className="left">
                   <div className="decoration-divider"></div>
@@ -527,7 +439,7 @@ const Ticket = () => {
           <div className="ticket smaller">
             <div className="ticket-content">
               <div className="small-right">
-                <h1>Nexus</h1>
+                <h1 className={"font-bold"}>Nexus</h1>
                 <h1>of</h1>
                 <h1>Novelties</h1>
               </div>
@@ -544,12 +456,10 @@ const Ticket = () => {
         <div className="ticket-container">
           <div className="ticket bigger">
             <div className="ticket-content">
-              <div className="ticket-background">
-                <h1>Ticket</h1>
-              </div>
+              <div className="ticket-background">{/*<h1></h1>*/}</div>
               <div className="ticket-text">
                 <div className="left">
-                  <div className="decoration-divider"></div>
+                  <div className="decoration-divider font-bold"></div>
                   <h2>ESUMMIT</h2>
                   <h2>IIT</h2>
                   <h2>BHU</h2>
