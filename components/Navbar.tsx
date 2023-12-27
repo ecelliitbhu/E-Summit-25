@@ -27,7 +27,7 @@ const nav = [
     link: "/events",
   },
   {
-    name: "GUEST-TALKS",
+    name: "SPEAKERS",
     link: "/guest-talks",
   },
   {
