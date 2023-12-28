@@ -28,9 +28,7 @@ export default function Home() {
         {/*<The_card />*/}
 
         {/*<Faqs />*/}
-
         <FAQ />
-        <Footer />
       </main>
     </section>
   );

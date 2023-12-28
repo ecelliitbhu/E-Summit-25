@@ -1,9 +1,5 @@
 "use client";
 import React, { FunctionComponent } from "react";
-import cards from "./data/cards.json";
-import Image from "next/image";
-import { Parallax } from "react-scroll-parallax";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 import {
@@ -14,6 +10,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -25,12 +22,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
 const FormSchema = z.object({
   name: z.string().min(5, {
     message: "Username must be at least 5 characters.",
   }),
   email: z.string().email(),
-  phone: z.string().min(10,{ message: "Invalid Phone number"}),
+  phone: z.string().min(10, { message: "Invalid Phone number" }),
   message: z.string().min(10).max(500),
   role: z.enum(["Founder", "Investor", "Student", "Sponsor", "Speaker"]),
 });
@@ -39,14 +37,14 @@ const Contact: FunctionComponent = (props) => {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      username: "",
+      name: "",
     },
   });
 
   function onSubmit(values: z.infer<typeof FormSchema>) {
-    
-    console.log(values)
+    console.log(values);
   }
+
   return (
     <div className="sm:mx-24">
       <div>
@@ -65,7 +63,11 @@ const Contact: FunctionComponent = (props) => {
           <p className="flex justify-center text-primary font-bold text-2xl">
             Email
           </p>
-          <Link href="mailto:ecell@iitbhu.ac.in"> <p className="flex justify-center hover:text-blue-500">ecell@iitbhu.ac.in</p></Link>
+          <Link href="mailto:ecell@iitbhu.ac.in">
+            <p className="flex justify-center hover:text-blue-500">
+              ecell@iitbhu.ac.in
+            </p>
+          </Link>
         </div>
         <div>
           <p className="flex justify-center text-primary font-bold text-2xl">
@@ -133,7 +135,7 @@ const Contact: FunctionComponent = (props) => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="Enter your message" {...field} />
+                    <Textarea placeholder="Enter your message" {...field} />
                   </FormControl>
 
                   <FormMessage />
@@ -162,16 +164,16 @@ const Contact: FunctionComponent = (props) => {
             <Button className="w-full" type="submit">
               Submit
             </Button>
-            
           </form>
         </Form>
       </div>
       {/* Address */}
       <div className="text-center mx-24 my-7">
-              <p className="text-primary font-bold text-2xl">
-                Address
-              </p>
-              <p className="text-sm ">Indian Institute of Technology (Banaras Hindu University), Varanasi, India, PIN:221005</p>
+        <p className="text-primary font-bold text-2xl">Address</p>
+        <p className="text-sm ">
+          Indian Institute of Technology (Banaras Hindu University), Varanasi,
+          India, PIN:221005
+        </p>
       </div>
     </div>
   );

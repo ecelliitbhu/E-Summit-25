@@ -25,6 +25,24 @@ const data = [
     answer:
       "E-Summits often cover a wide range of topics related to entrepreneurship, technology, and business. Common themes include startup strategies, digital innovation, leadership development, investment trends, and emerging technologies. The specific agenda may vary, so it's advisable to check the event schedule or program to ensure the sessions align with your interests and goals.",
   },
+  {
+    idx: 4,
+    question: "Will there be any networking event in the Summit?",
+    answer:
+      "Yes, the E-Summit 24 will host a special networking event that will engage all the investors on board with esteemed professionals, startups and participants.",
+  },
+  {
+    idx: 5,
+    question: "How can a startup participate in the Summit?",
+    answer:
+      "Startups can become a part of the E-Summit 2024 through the Startup Expo - where they can set up their stalls for live demos of their product, and also through multiple events including the flagship event - The Million Dollar Pitch, where you get the chance to pitch your startup to a expert panel of investors from India's leading VCs",
+  },
+  {
+    idx: 6,
+    question: "Will accommodation be provided for interested attendees?",
+    answer:
+      "Yes, the team has dedicatedly made arrangements for the stay of all attendees and proper hospitality will be provided, including food. You can purchase the pass from above.",
+  },
 ];
 
 export default function FAQ() {

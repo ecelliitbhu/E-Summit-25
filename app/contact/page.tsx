@@ -1,6 +1,4 @@
 import React, { FunctionComponent } from "react";
-
-import EventsCard from "@/components/EventsCard";
 import Contact from "@/components/Contact";
 
 interface OwnProps {}
@@ -11,7 +9,7 @@ const page: FunctionComponent<Props> = (props) => {
   return (
     <section>
       <div className="pt-24 justify-center w-full min-h-screen">
-        <Contact/>
+        <Contact />
       </div>
     </section>
   );
