@@ -64,8 +64,8 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
 };
 const Stats: FunctionComponent = () => {
   return (
-    <section className="flex flex-col items-center px-20 py-10">
-      <h1 className="text-4xl text-primary-foreground font-bold text-center mb-6">
+    <section className="flex flex-col items-center px-20 py-10 overflow-hidden">
+      <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
         Key Event Statistics
       </h1>
       <div className="flex-col sm:flex md:flex-row flex-wrap justify-around items-center w-full">

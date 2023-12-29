@@ -1,10 +1,21 @@
 // Import React and styles
 import React from "react";
 import styles from "./About.module.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className={styles.section}>
+    <motion.section
+      initial={{ x: -200, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 2,
+        ease: "easeInOut",
+      }}
+      className={` ${styles.section} `}
+      id={"about"}
+    >
       <div className={styles.card}>
         <div className={styles.cardContent}>
           <h3 className={"m-0 text-primary font-bold"}>
@@ -27,7 +38,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

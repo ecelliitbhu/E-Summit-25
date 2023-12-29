@@ -9,9 +9,9 @@ import StartupShowCase from "public/WSYA/startupShowcase.svg";
 
 const MotionDiv = ({ src, width, height, alt, text }) => (
   <motion.div
-    initial={{ scale: 0 }}
-    whileInView={{ scale: 1 }}
-    transition={{ duration: 1 }}
+    initial={{ scale: 0.6, opacity: 0 }}
+    whileInView={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 2 }}
     className="mt-8 flex flex-col items-center justify-center"
   >
     <div className="filter invert">

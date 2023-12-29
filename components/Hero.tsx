@@ -5,6 +5,7 @@ import Logo from "@/public/logos/esummit.png";
 
 import { Parallax } from "react-scroll-parallax";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 interface OwnProps {}
 
@@ -15,15 +16,124 @@ type Props = OwnProps;
 const Hero: FunctionComponent<Props> = (props) => {
   return (
     <>
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="min-h-screen flex justify-center items-center ">
         <div>
-          <Image
-            src={Logo}
-            width={400}
-            height={400}
-            alt="logo"
-            className="mr--5"
-          />
+          <motion.div
+            initial={{
+              opacity: 0,
+              scale: 0.8,
+            }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+            }}
+          >
+            <Image
+              src={Logo}
+              width={400}
+              height={400}
+              alt="logo"
+              className="flex justify-center"
+            />
+          </motion.div>
+          <h1 className="text-2xl font-semibold  flex justify-center   mt-2">
+            <motion.span
+              initial={{ x: -60, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              0
+            </motion.span>
+            <motion.span
+              initial={{ x: -80, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.4 }}
+            >
+              2
+            </motion.span>
+            <motion.span
+              initial={{ x: 0, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              -
+            </motion.span>
+            <motion.span
+              initial={{ x: -100, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.2 }}
+            >
+              0
+            </motion.span>
+            <motion.span
+              initial={{ x: -100, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.1 }}
+            >
+              5
+            </motion.span>
+            &nbsp;
+            <motion.span
+              initial={{ x: 100, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.4 }}
+            >
+              F
+            </motion.span>
+            <motion.span
+              initial={{ x: 100, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.4 }}
+            >
+              E
+            </motion.span>
+            <motion.span
+              initial={{ x: 100, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              B
+            </motion.span>
+            <motion.span
+              initial={{ x: 100, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              R
+            </motion.span>
+            <motion.span
+              initial={{ x: 100, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.7 }}
+            >
+              U
+            </motion.span>
+            <motion.span
+              initial={{ x: 60, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              A
+            </motion.span>
+            <motion.span
+              initial={{ x: 60, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 0.9 }}
+            >
+              R
+            </motion.span>
+            <motion.span
+              initial={{ x: 60, scale: 0 }}
+              animate={{ x: 0, scale: 1 }}
+              transition={{ duration: 1 }}
+            >
+              Y
+            </motion.span>
+          </h1>
         </div>
         {/*<div*/}
         {/*  className= "text-white h-screen w-full flex md:flex-row flex-col justify-around  pr-20 pl-20 pb-16 items-center "*/}

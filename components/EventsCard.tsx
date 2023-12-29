@@ -74,7 +74,7 @@ const EventsCard: FunctionComponent = (props) => {
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.5 } }}
+            whileHover={{ scale: 1.05 }}
             // viewport={{ once: true }}
             transition={{ duration: 1 }}
             className={"sm:w-72 p-4 py-6 m-6 rounded-xl cardbg"}
@@ -92,9 +92,7 @@ const EventsCard: FunctionComponent = (props) => {
             <h1 className={"text-white text-2xl"}>{data.title}</h1>
             <h2 className={"text-white text-sm"}>{data.description}</h2>
             <Link href={data.eventPage}>
-              <Button variant={"ghost"} className={"text-secondary my-2"}>
-                Register
-              </Button>
+              <Button className={"bg-transparent my-2"}>Register</Button>
             </Link>
           </motion.div>
         ))}

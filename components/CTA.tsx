@@ -1,10 +1,20 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Ticket from "@/components/Ticket";
+import { motion } from "framer-motion";
 
 export default function Component() {
   return (
-    <section className="w-full flex justify-center py-12 md:py-24 lg:py-32">
+    <motion.section
+      initial={{ y: 200, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 2,
+        ease: "easeInOut",
+      }}
+      className="w-full flex justify-center  pb-12 md:pb-24 lg:pb-32"
+    >
       <div className="container grid items-center gap-4 px-4 md:px-6">
         <div className="space-y-3 text-center">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">
@@ -31,6 +41,6 @@ export default function Component() {
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
