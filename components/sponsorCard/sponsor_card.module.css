@@ -12,6 +12,10 @@
   padding-bottom: 2.6rem;
 }
 
+.cardh{
+  height: 100px;
+  width:100px
+}
 @media (prefers-color-scheme: dark) {
   .root {
     /* --color-text: papayawhip;
