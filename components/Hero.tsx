@@ -56,7 +56,7 @@ const Hero: FunctionComponent<Props> = (props) => {
               2
             </motion.span>
             <motion.span
-              initial={{ x: 0, scale: 0 }}
+              initial={{ x: -100, scale: 0 }}
               animate={{ x: 0, scale: 1 }}
               transition={{ duration: 0.3 }}
             >
