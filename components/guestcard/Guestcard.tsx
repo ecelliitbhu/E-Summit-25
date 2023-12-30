@@ -4,17 +4,30 @@ import { Instagram, X, Linkedin } from "../components";
 import styles from "../guestcard/guest_card.module.css";
 import { useRouter } from "next/navigation";
 import { current_speakers_data, past_speakers_data } from "./guest_card_data";
+import { motion } from "framer-motion";
 
 const Guestcard: FunctionComponent = (props) => {
   const router = useRouter();
   return (
-    <div className="m-auto overflow-auto">
+    <div className="m-auto overflow-hidden">
       <p className=" mb-2 font-bold text-4xl sm:text-5xl pb-4 flex flex-wrap justify-center  test-white">
         Current Speakers
       </p>
       <div className={styles.container}>
         {current_speakers_data.map((GuestData, index) => (
-          <div
+          <motion.div
+            initial={{
+              y: 100,
+              opacity: 0,
+            }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1,
+            }}
+            viewport={{ once: true }}
             className={`${styles.card} ${styles.card0}`}
             style={{
               backgroundImage: `url(${GuestData.imgURL})`,
@@ -44,7 +57,7 @@ const Guestcard: FunctionComponent = (props) => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
@@ -53,7 +66,19 @@ const Guestcard: FunctionComponent = (props) => {
       </p>
       <div className={styles.container}>
         {past_speakers_data.map((GuestData, index) => (
-          <div
+          <motion.div
+            initial={{
+              y: 200,
+              opacity: 0,
+            }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1,
+            }}
+            viewport={{ once: true }}
             className={`${styles.card} ${styles.card0}`}
             style={{ backgroundImage: `url(${GuestData.imgURL})` }}
             key={index}
@@ -81,7 +106,7 @@ const Guestcard: FunctionComponent = (props) => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

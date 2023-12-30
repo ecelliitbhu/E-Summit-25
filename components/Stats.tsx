@@ -55,7 +55,7 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
       ref={ref}
       className="text-center mb-4 lg:mb-0 flex-col justify-center items-center"
     >
-      <motion.h2 className="text-5xl font-bold text-primary-foreground">
+      <motion.h2 className=" text-3xl sm:text-5xl font-bold text-primary-foreground">
         {rounded}
       </motion.h2>
       <p className="text-primary capitalize">{label.toUpperCase()}</p>
@@ -64,7 +64,7 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
 };
 const Stats: FunctionComponent = () => {
   return (
-    <section className="flex flex-col items-center px-20 py-10 overflow-hidden">
+    <section className=" px-20 py-10 overflow-hidden">
       <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
         Key Event Statistics
       </h1>

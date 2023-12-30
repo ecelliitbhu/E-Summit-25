@@ -123,9 +123,9 @@
     z-index: -1;
 }
 
-svg {
-    fill: currentColor;
-}
+/*svg {*/
+/*    fill: currentColor;*/
+/*}*/
 
 .cardbg {
     background: rgba(82, 142, 184, 0.2);
