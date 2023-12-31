@@ -3,7 +3,10 @@ import React, { FunctionComponent } from "react";
 import { Instagram, X, Linkedin } from "../components";
 import styles from "../guestcard/guest_card.module.css";
 import { useRouter } from "next/navigation";
-import { current_speakers_data, past_speakers_data } from "./guest_card_data";
+import {
+  current_speakers_data,
+  past_speakers_data,
+} from "../../app/speakers/speaker_data";
 import { motion } from "framer-motion";
 
 const Guestcard: FunctionComponent = (props) => {

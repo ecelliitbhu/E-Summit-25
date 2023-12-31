@@ -28,7 +28,7 @@ const nav = [
   },
   {
     name: "SPEAKERS",
-    link: "/guest-talks",
+    link: "/speakers",
   },
   {
     name: "PARTNERS",
@@ -76,7 +76,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
             >
               <Image
                 src={logo}
-                style={{ width: "60px", height: "20px" }}
+                style={{ width: "50px", height: "20px" }}
                 alt="E-Summit'24 logo"
                 className="scale-150 md:ml-2 sm:w-32"
               />
