@@ -92,7 +92,7 @@ const EventsCard: FunctionComponent = (props) => {
             <h1 className={"text-white text-2xl"}>{data.title}</h1>
             <h2 className={"text-white text-sm"}>{data.description}</h2>
             <Link href={data.eventPage}>
-              <Button className={"bg-transparent my-2"}>Register</Button>
+              <Button className={"bg-transparent mt-2"}>Register</Button>
             </Link>
           </motion.div>
         ))}

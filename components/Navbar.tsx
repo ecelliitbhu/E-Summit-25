@@ -1,7 +1,7 @@
 "use client";
 import React, { FunctionComponent, useState, useEffect } from "react";
 import Image from "next/image";
-import logo from "@/public/e-summit.svg";
+import logo from "@/public/logos/logoecell.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Menu } from "lucide-react";
@@ -72,11 +72,11 @@ const Navbar: FunctionComponent<Props> = (props) => {
             <Link
               href="/"
               aria-label="logo"
-              className="block w-8 -m-4 items-center"
+              className="block w-10 -m-4 items-center"
             >
               <Image
                 src={logo}
-                style={{ width: "20px", height: "20px" }}
+                style={{ width: "60px", height: "20px" }}
                 alt="E-Summit'24 logo"
                 className="scale-150 md:ml-2 sm:w-32"
               />
@@ -137,7 +137,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
             </div>
             <div className={"hidden lg:block"}>
               <Link href={"/payment"} className="no-underline">
-                <Button variant={"default"}>Purchase Pass</Button>
+                <Button variant={"default"}>Register</Button>
               </Link>
             </div>
           </div>

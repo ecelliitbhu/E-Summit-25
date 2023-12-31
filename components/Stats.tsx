@@ -55,9 +55,12 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
       ref={ref}
       className="text-center mb-4 lg:mb-0 flex-col justify-center items-center"
     >
-      <motion.h2 className=" text-3xl sm:text-5xl font-bold text-primary-foreground">
-        {rounded}
-      </motion.h2>
+      <div className="flex justify-center items-center">
+        <motion.h2 className=" text-3xl sm:text-5xl font-bold text-primary-foreground">
+          {rounded}
+        </motion.h2>
+        <span className="text-4xl font-semibold">+</span>
+      </div>
       <p className="text-primary capitalize">{label.toUpperCase()}</p>
     </div>
   );

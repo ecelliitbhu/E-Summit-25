@@ -5,9 +5,14 @@ import { FaYoutube } from "react-icons/fa6";
 export default function Footer() {
   const linksData = [
     { href: "https://www.ecelliitbhu.com/", text: "E-Cell IIT-BHU" },
-    { href: "", text: "Startup Junction" },
-    { href: "", text: "Novice Fiesta'23" },
-    { href: "", text: "Startup Concurso" },
+    {
+      href: "https://www.startupweekendvaranasi.com/",
+      text: "Startup Weekend Varanasi",
+    },
+    {
+      href: "https://startupsummit23.ecelliitbhu.com/",
+      text: "Digital Startup Summit",
+    },
   ];
 
   return (
