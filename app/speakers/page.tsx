@@ -26,7 +26,7 @@ const page: FunctionComponent<Props> = (props) => {
         </div>
         <div className={"flex justify-center"}>
           <Tabs
-            defaultValue="presentSpeaker"
+            defaultValue="pastSpeaker"
             className="sm:w-[400px] md:w-[1200px] text-center"
           >
             <TabsList>
@@ -35,16 +35,9 @@ const page: FunctionComponent<Props> = (props) => {
             </TabsList>
             <TabsContent value="presentSpeaker" className={""}>
               <div className={"md:flex justify-center items-center p-10"}>
-                {current_speakers_data.map((speaker, index) => (
-                  <SpeakerCard
-                    name={speaker.name}
-                    instaURL={speaker.instaURL}
-                    linkedinURL={speaker.linkedinURL}
-                    // twitterURL={speaker.twitterURL}
-                    imgURL={speaker.imgURL}
-                    key={index}
-                  />
-                ))}
+                <h1 className="flex justify-center text-4xl my-4 font-semibold">
+                  Coming Soon!
+                </h1>
               </div>
             </TabsContent>
             <TabsContent value="pastSpeaker">

@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     "IIT BHU Varanasi",
     "E-Summit IIT BHU Varanasi",
     "E-Summit'24 IIT BHU",
+    "esummit 24",
+    "esummit",
   ],
 };
 
