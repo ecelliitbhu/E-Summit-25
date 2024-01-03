@@ -20,13 +20,15 @@ const EventsSection: React.FC<EventsSectionProps> = ({
   <div>
     <h1
       className={
-        "text-3xl md:text-6xl flex justify-center font-semibold sm:py-6"
+        "text-3xl md:text-6xl flex flex-wrap justify-center font-semibold sm:py-6"
       }
     >
       {sectionTitle}
     </h1>
-    <div className={"flex justify-center"}>
-      <div className={"md:flex justify-center items-center p-10 gap-6"}>
+    <div className={"flex flex-wrap justify-center"}>
+      <div
+        className={"md:flex flex-wrap justify-center items-center p-10 gap-6"}
+      >
         {events.map((event, index) => (
           <EventsCard
             title={event.title}
