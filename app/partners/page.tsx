@@ -1,5 +1,13 @@
 import React, { FunctionComponent } from "react";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  referrer: "origin-when-cross-origin",
+  title: {
+    default: "Partners | E-Summit'24 IIT BHU",
+    template: "%s | Partners | E-Summit'24 IIT BHU",
+  },
+};
 interface OwnProps {}
 
 type Props = OwnProps;

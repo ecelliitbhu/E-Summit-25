@@ -6,7 +6,15 @@ import {
   stategyEvents,
 } from "@/app/events/eventsData";
 import EventsSection from "@/app/events/EventsSection";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  referrer: "origin-when-cross-origin",
+  title: {
+    default: "Events | E-Summit'24 IIT BHU",
+    template: "%s | Events | E-Summit'24 IIT BHU",
+  },
+};
 interface OwnProps {}
 
 type Props = OwnProps;

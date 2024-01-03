@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import type { Metadata } from "next";
 import Contact from "@/components/Contact";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -7,6 +8,13 @@ import {
 } from "@/app/speakers/speaker_data";
 import SpeakerCard from "@/components/SpeakerCard";
 
+export const metadata: Metadata = {
+  referrer: "origin-when-cross-origin",
+  title: {
+    default: "Speakers | E-Summit'24 IIT BHU",
+    template: "%s | Speakers | E-Summit'24 IIT BHU",
+  },
+};
 interface OwnProps {}
 
 type Props = OwnProps;
