@@ -74,7 +74,7 @@ const Hero: FunctionComponent<Props> = (props) => {
               animate={{ x: 0, scale: 1 }}
               transition={{ duration: 0.1 }}
             >
-              5
+              4
             </motion.span>
             &nbsp;
             <motion.span
