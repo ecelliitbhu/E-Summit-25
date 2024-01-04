@@ -2,10 +2,7 @@ import React, { FunctionComponent } from "react";
 import type { Metadata } from "next";
 import Contact from "@/components/Contact";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  past_speakers_data,
-  current_speakers_data,
-} from "@/app/speakers/speaker_data";
+import { past_speakers_data } from "@/app/speakers/speaker_data";
 import SpeakerCard from "@/components/SpeakerCard";
 
 export const metadata: Metadata = {
@@ -16,7 +13,14 @@ export const metadata: Metadata = {
   },
 };
 interface OwnProps {}
-
+interface speaker {
+  name: string;
+  des: string;
+  instaURL: string;
+  linkedinURL: string;
+  twitterURL?: string;
+  imgURL: string;
+}
 type Props = OwnProps;
 
 const page: FunctionComponent<Props> = (props) => {
@@ -49,10 +53,13 @@ const page: FunctionComponent<Props> = (props) => {
               </div>
             </TabsContent>
             <TabsContent value="pastSpeaker">
-              <div className={"md:flex justify-center items-center p-10"}>
-                {past_speakers_data.map((speaker, index) => (
+              <div
+                className={"md:flex flex-wrap  justify-center items-start p-10"}
+              >
+                {past_speakers_data.map((speaker: any, index) => (
                   <SpeakerCard
                     name={speaker.name}
+                    des={speaker.des}
                     instaURL={speaker.instaURL}
                     linkedinURL={speaker.linkedinURL}
                     // twitterURL={speaker.twitterURL}

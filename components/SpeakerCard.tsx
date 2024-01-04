@@ -5,6 +5,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 interface OwnProps {
   name: string;
+  des: string;
   instaURL: string;
   linkedinURL: string;
   twitterURL?: string;
@@ -15,11 +16,11 @@ type Props = OwnProps;
 
 const SpeakerCard: FunctionComponent<Props> = (props: OwnProps) => {
   return (
-    <div className="relative flex flex-col hover:bg-accent bg-card shadow-md bg-clip-border rounded-xl md:w-96 m-4 md:m-2">
+    <div className="relative flex flex-col  hover:bg-accent  bg-card shadow-md bg-clip-border rounded-xl w-64 m-4 md:m-2">
       <div className="relative mx-4 mt-4 overflow-hidden  shadow-lg bg-clip-border rounded-xl">
         <Image
-          width={300}
-          height={500}
+          width={500}
+          height={800}
           // fill={true}
           src={props.imgURL}
           alt={props.name}
@@ -31,7 +32,7 @@ const SpeakerCard: FunctionComponent<Props> = (props: OwnProps) => {
           {props.name}
         </h4>
         <p className="antialiased text-sm leading-relaxed bg-clip-text">
-          CEO / Co-Founder
+          {props.des}
         </p>
       </div>
       <div className="flex justify-center p-6 pt-2 gap-7">
