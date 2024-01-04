@@ -5,8 +5,7 @@ export const startupEvents = [
       "Startup Expo is a unique opportunity for startups to showcase their products and services to a diverse audience. It is a platform for budding entrepreneurs to connect with potential investors, customers, and partners. Join us as we celebrate the spirit of entrepreneurship and innovation at this year's Startup Expo.",
     imageUrl: "/images/xpanseicon.png",
     isOdd: false,
-    eventPage:
-      "https://unstop.com/competitions/startup-expo-e-summit24-iit-bhu-iit-bhu-varanasi-831125",
+    eventPage: "/events/startup-expo",
   },
   {
     title: "Xpanse",

@@ -13,6 +13,10 @@ export default function Footer() {
       href: "https://startupsummit23.ecelliitbhu.com/",
       text: "Digital Startup Summit",
     },
+    {
+      href: "https://campusinterns.ecelliitbhu.com/",
+      text: "Campus Ambassador",
+    },
   ];
 
   return (

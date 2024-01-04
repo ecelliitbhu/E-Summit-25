@@ -27,7 +27,9 @@ const EventsSection: React.FC<EventsSectionProps> = ({
     </h1>
     <div className={"flex flex-wrap justify-center"}>
       <div
-        className={"md:flex flex-wrap justify-center items-center p-10 gap-6"}
+        className={
+          "md:flex flex-wrap justify-center items-center p-10 pt-1 gap-6"
+        }
       >
         {events.map((event, index) => (
           <EventsCard
