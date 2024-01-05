@@ -47,7 +47,7 @@ const data = [
 
 export default function FAQ() {
   return (
-    <section className="flex justify-center items-center  gap-6 pb-8 pt-6 md:py-10">
+    <section className="flex justify-center items-center  gap-6 pb-8 pt-6 md:py-10 relative">
       <Card className={"p-4 md:w-[780px]"}>
         <CardHeader className={""}>
           <CardTitle className={"text-center"}>

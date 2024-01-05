@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-
+import "@/app/globals.css";
+import { Tilt } from "react-tilt";
 interface Stat {
   value: string;
   label: string;
@@ -51,27 +52,29 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
   }, []);
 
   return (
-    <div
-      ref={ref}
-      className="text-center mb-4 lg:mb-0 flex-col justify-center items-center"
-    >
-      <div className="flex justify-center items-center">
-        <motion.h2 className=" text-3xl sm:text-5xl font-bold text-primary-foreground">
-          {rounded}
-        </motion.h2>
-        <span className="text-4xl font-semibold">+</span>
+    <Tilt>
+      <div
+        ref={ref}
+        className="text-center m-4 lg:mb-0 flex-col justify-center items-center  p-4  stat"
+      >
+        <div className="flex justify-center items-center">
+          <motion.h2 className=" text-3xl sm:text-5xl font-bold text-primary-foreground">
+            {rounded}
+          </motion.h2>
+          <span className="text-4xl font-semibold">+</span>
+        </div>
+        <p className="text-primary capitalize">{label.toUpperCase()}</p>
       </div>
-      <p className="text-primary capitalize">{label.toUpperCase()}</p>
-    </div>
+    </Tilt>
   );
 };
 const Stats: FunctionComponent = () => {
   return (
-    <section className=" px-20 py-10 overflow-hidden">
+    <section className=" px-0 md:px-20 py-10 overflow-hidden relative pb-16">
       <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
         Key Event Statistics
       </h1>
-      <div className="flex-col sm:flex md:flex-row flex-wrap justify-around items-center w-full">
+      <div className="flex-col sm:flex md:flex-row flex-wrap justify-center items-center w-full">
         {statsData.map((stat, index) => (
           <StatItem key={index} value={stat.value} label={stat.label} />
         ))}

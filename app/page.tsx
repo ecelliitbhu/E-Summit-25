@@ -19,11 +19,11 @@ export default function Home() {
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <main className="grid items-center">
         <Hero />
+        <Stats />
         <CTA />
         <About />
         <WSYA />
         {/*<Gallery />*/}
-        <Stats />
         <MarqueeComponent />
         {/*<The_card />*/}
 

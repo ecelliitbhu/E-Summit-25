@@ -2,7 +2,7 @@
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
 import Logo from "@/public/logos/esummit.png";
-
+import Particle from "@/components/particle";
 import { Parallax } from "react-scroll-parallax";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
@@ -16,8 +16,9 @@ type Props = OwnProps;
 const Hero: FunctionComponent<Props> = (props) => {
   return (
     <>
-      <div className="min-h-screen flex justify-center items-center ">
-        <div>
+      <div className="min-h-screen flex justify-center items-center relative ">
+        <Particle />
+        <div className="absolute">
           <motion.div
             initial={{
               opacity: 0,
