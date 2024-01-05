@@ -17,7 +17,25 @@ import pedal from "../../public/carousel/PedalStart-removebg-preview.png"
 import sooni from "../../public/carousel/Soonicorn-removebg-preview.png";
 import west from "../../public/carousel/westbridge-removebg-preview.png"
 import xscale from "../../public/carousel/Xscale-removebg-preview.png"
-import yours from "../../public/carousel/Yournest-removebg-preview.png"
+import yours from "../../public/carousel/Yournest.png"
+import gs from "../../public/carousel/growth.png"
+import aws from "../../public/carousel/aws-removebg-preview.png"
+import amul from "../../public/carousel/amul-removebg-preview.png"
+import digital from "../../public/carousel/digitalocean.png"
+import zee from "../../public/carousel/zee-removebg-preview.png"
+import unstop from "../../public/carousel/unstop-removebg-preview.png"
+import jag from "../../public/carousel/jaguar.png"
+import micro from "../../public/carousel/microsoft-removebg-preview.png"
+import redbus from "../../public/carousel/redbus-removebg-preview.png"
+import un from "../../public/carousel/unacademy.png"
+import zoho from "../../public/carousel/zoho.png"
+import fresh from "../../public/carousel/freshworks.png"
+import icici from "../../public/carousel/icici-removebg-preview.png"
+import bob from "../../public/carousel/bob.png"
+import se from "../../public/carousel/safe.png"
+import gfg from "../../public/carousel/gfg.png"
+import go from "../../public/carousel/grabon.png"
+
 import { X } from "lucide-react";
 
 const MarqueeComponent: React.FC = () => {
@@ -29,13 +47,13 @@ const MarqueeComponent: React.FC = () => {
 
         <div className={styles.marquee}>
           <div className={styles.marquee__group}>
-         <img src={inflection.src} height={200} width={200}/>
+          <img src={inflection.src} height={200} width={200}/>
          <img src={hundred.src} height={200} width={200}/>
          <img src={antler.src} height={200} width={200}/>
          <img src={axilor.src} height={200} width={200}/>
          <img src={faad.src} height={200} width={200}/>
          <img src={forty.src} height={200} width={200}/>
-         <img src={fibonacci.src} height={200} width={200} />
+         <img src={fibonacci.src} height={200} width={200}/>
          <img src={fluid.src} height={200} width={200}/>
          <img src={kae.src} className={styles.cardh}/>
          <img src={launch.src} height={200} width={200}/>
@@ -45,6 +63,23 @@ const MarqueeComponent: React.FC = () => {
          <img src={west.src} height={200} width={200}/>
          <img src={xscale.src} height={200} width={200}/>
          <img src={yours.src} height={200} width={200}/>
+         <img src={gs.src} height={200} width={200}/>
+         <img src={aws.src} height={200} width={200}/>
+         <img src={amul.src} className={styles.cardh}/>
+         <img src={digital.src} className={styles.cardh}/>
+         <img src={zee.src} className={styles.cardh}/>
+         <img src={unstop.src} height={200} width={200}/>
+         <img src={jag.src} height={200} width={200}/>
+         <img src={micro.src} height={200} width={200}/>
+         <img src={redbus.src} className={styles.cardh}/>
+         <img src={un.src} height={200} width={200}/>
+         <img src={zoho.src} height={200} width={200}/>
+         <img src={fresh.src} height={200} width={200}/>
+         <img src={icici.src} className={styles.cardh}/>
+         <img src={bob.src} className={styles.cardh}/>
+         <img src={se.src} height={200} width={200}/>
+         <img src={gfg.src} className={styles.cardh}/>
+         <img src={go.src} height={200} width={200}/>
           </div>
 
           <div aria-hidden="true" className={styles.marquee__group}>
@@ -64,6 +99,23 @@ const MarqueeComponent: React.FC = () => {
          <img src={west.src} height={200} width={200}/>
          <img src={xscale.src} height={200} width={200}/>
          <img src={yours.src} height={200} width={200}/>
+         <img src={gs.src} height={200} width={200}/>
+         <img src={aws.src} height={200} width={200}/>
+         <img src={amul.src} className={styles.cardh}/>
+         <img src={digital.src} className={styles.cardh}/>
+         <img src={zee.src} className={styles.cardh}/>
+         <img src={unstop.src} height={200} width={200}/>
+         <img src={jag.src} height={200} width={200}/>
+         <img src={micro.src} height={200} width={200}/>
+         <img src={redbus.src} className={styles.cardh}/>
+         <img src={un.src} height={200} width={200}/>
+         <img src={zoho.src} height={200} width={200}/>
+         <img src={fresh.src} height={200} width={200}/>
+         <img src={icici.src} className={styles.cardh}/>
+         <img src={bob.src} className={styles.cardh}/>
+         <img src={se.src} height={200} width={200}/>
+         <img src={gfg.src} className={styles.cardh}/>
+         <img src={go.src} height={200} width={200}/>
           </div>
         </div>
 
@@ -85,6 +137,23 @@ const MarqueeComponent: React.FC = () => {
          <img src={west.src} height={200} width={200}/>
          <img src={xscale.src} height={200} width={200}/>
          <img src={yours.src} height={200} width={200}/>
+         <img src={gs.src} height={200} width={200}/>
+         <img src={aws.src} height={200} width={200}/>
+         <img src={amul.src} className={styles.cardh}/>
+         <img src={digital.src} className={styles.cardh}/>
+         <img src={zee.src} className={styles.cardh}/>
+         <img src={unstop.src} height={200} width={200}/>
+         <img src={jag.src} height={200} width={200}/>
+         <img src={micro.src} height={200} width={200}/>
+         <img src={redbus.src} className={styles.cardh}/>
+         <img src={un.src} height={200} width={200}/>
+         <img src={zoho.src} height={200} width={200}/>
+         <img src={fresh.src} height={200} width={200}/>
+         <img src={icici.src} className={styles.cardh}/>
+         <img src={bob.src} className={styles.cardh}/>
+         <img src={se.src} height={200} width={200}/>
+         <img src={gfg.src} className={styles.cardh}/>
+         <img src={go.src} height={200} width={200}/>
           </div>
 
           <div aria-hidden="true" className={styles.marquee__group__reverse}>
@@ -104,6 +173,23 @@ const MarqueeComponent: React.FC = () => {
          <img src={west.src} height={200} width={200}/>
          <img src={xscale.src} height={200} width={200}/>
          <img src={yours.src} height={200} width={200}/>
+         <img src={gs.src} height={200} width={200}/>
+         <img src={aws.src} height={200} width={200}/>
+         <img src={amul.src} className={styles.cardh}/>
+         <img src={digital.src} className={styles.cardh}/>
+         <img src={zee.src} className={styles.cardh}/>
+         <img src={unstop.src} height={200} width={200}/>
+         <img src={jag.src} height={200} width={200}/>
+         <img src={micro.src} height={200} width={200}/>
+         <img src={redbus.src} className={styles.cardh}/>
+         <img src={un.src} height={200} width={200}/>
+         <img src={zoho.src} height={200} width={200}/>
+         <img src={fresh.src} height={200} width={200}/>
+         <img src={icici.src} className={styles.cardh}/>
+         <img src={bob.src} className={styles.cardh}/>
+         <img src={se.src} height={200} width={200}/>
+         <img src={gfg.src} className={styles.cardh}/>
+         <img src={go.src} height={200} width={200}/> 
           </div>
         </div>
       </div>
