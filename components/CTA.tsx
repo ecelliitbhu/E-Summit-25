@@ -17,10 +17,10 @@ export default function Component() {
     >
       <div className="container grid items-center gap-4 px-4 md:px-6">
         <div className="space-y-3 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">
+          <h2 className=" text-2xl sm:text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">
             Get Your Passes for the Most Exciting Event of the Year!
           </h2>
-          <p className="w-full text-sm text-center md:text-xl/relaxed text-primary-foreground lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          <p className="w-full text-xs sm:text-sm text-center md:text-xl/relaxed text-primary-foreground lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Don&apos;t miss out on this unique opportunity to connect with
             industry
             <br />
@@ -32,7 +32,7 @@ export default function Component() {
             <Ticket />
           </div>
         </div>
-        <div className="flex justify-center flex-col gap-2 min-[400px]:flex-row">
+        <div className="flex justify-center flex-col  min-[400px]:flex-row">
           <Link
             href={"/payment"}
             className={"flex justify-center items-center"}

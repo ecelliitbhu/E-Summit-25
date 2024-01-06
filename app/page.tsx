@@ -17,18 +17,14 @@ import CTA from "@/components/CTA";
 export default function Home() {
   return (
     <section className="pb-8 pt-6 md:py-10">
-      <main className="grid items-center px-6">
+      <main className="grid items-center px-2 sm:px-6">
         <Hero />
         <Stats />
         <CTA />
         <About />
         <WSYA />
-        {/*<Gallery />*/}
         <MarqueeComponent />
-        {/*<The_card />*/}
-
-        {/*<Faqs />*/}
-        {/*<FAQ />*/}
+        <FAQ />
       </main>
     </section>
   );

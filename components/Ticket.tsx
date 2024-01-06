@@ -241,7 +241,7 @@ const Ticket = () => {
           .ticket-container {
             //border: 1px solid red;
             width: 300px;
-            height: 100px;
+            height: 108px;
             position: relative;
           }
 
@@ -261,7 +261,7 @@ const Ticket = () => {
           .ticket-text {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 75%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -274,7 +274,7 @@ const Ticket = () => {
 
           .ticket.bigger {
             width: 300px;
-            height: 100px;
+            height: 104px;
           }
 
           .ticket.smaller {
@@ -409,7 +409,19 @@ const Ticket = () => {
           .ticket-container {
             //border: 1px solid red;
             width: 200px;
-            height: 100px;
+            height: 104px;
+            position: relative;
+          }
+        }
+        @media screen and (max-width: 288px) {
+          .ticket-background h1 {
+            font-size: 30px;
+          }
+
+          .ticket-container {
+            overflow: clip;
+            width: 160px;
+            height: 104px;
             position: relative;
           }
         }

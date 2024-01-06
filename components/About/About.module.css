@@ -124,3 +124,8 @@
         font-size: 0.5rem;
     }
 }
+@media (max-width: 288px) {
+    .cardContent {
+        padding: 0rem;
+    }
+}
