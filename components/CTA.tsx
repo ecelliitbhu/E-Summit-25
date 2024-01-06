@@ -10,10 +10,10 @@ export default function Component() {
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{
-        duration: 2,
+        duration: 1.5,
         ease: "easeInOut",
       }}
-      className="w-full flex justify-center relative  pb-12 md:pb-24 lg:pb-32"
+      className=" flex justify-center relative  pb-12 md:pb-24 lg:pb-32"
     >
       <div className="container grid items-center gap-4 px-4 md:px-6">
         <div className="space-y-3 text-center">

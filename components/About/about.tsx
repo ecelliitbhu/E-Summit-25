@@ -10,7 +10,7 @@ const About = () => {
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{
-        duration: 2,
+        duration: 1.5,
         ease: "easeInOut",
       }}
       className={` ${styles.section} `}

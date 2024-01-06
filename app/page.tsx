@@ -16,8 +16,8 @@ import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <main className="grid items-center">
+    <section className="pb-8 pt-6 md:py-10">
+      <main className="grid items-center px-6">
         <Hero />
         <Stats />
         <CTA />
@@ -28,7 +28,7 @@ export default function Home() {
         {/*<The_card />*/}
 
         {/*<Faqs />*/}
-        <FAQ />
+        {/*<FAQ />*/}
       </main>
     </section>
   );
