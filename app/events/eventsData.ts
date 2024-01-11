@@ -3,7 +3,7 @@ export const startupEvents = [
     title: "Startup Expo",
     description:
       "Startup Expo is a unique opportunity for startups to showcase their products and services to a diverse audience. It is a platform for budding entrepreneurs to connect with potential investors, customers, and partners. Join us as we celebrate the spirit of entrepreneurship and innovation at this year's Startup Expo.",
-    imageUrl: "/images/xpanseicon.png",
+    imageUrl: "/images/startupexpo.png",
     isOdd: false,
     eventPage: "/events/startup-expo",
   },
@@ -71,7 +71,7 @@ export const funEvents = [
     imageUrl: "/images/tesseracticon.png",
     isOdd: false,
     eventPage:
-      "https://unstop.com/competitions/bid-bonanza-e-summit24-iit-bhu-iit-bhu-varanasi-831349",
+      "https://unstop.com/competitions/tesseract-a-murder-mystery-hunt-e-summit24-iit-bhu-varanasi-831263",
   },
   {
     title: "Entrevia",
