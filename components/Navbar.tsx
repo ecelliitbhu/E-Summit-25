@@ -38,6 +38,10 @@ const nav = [
     name: "CONTACT US",
     link: "/contact",
   },
+  {
+    name: "MERCH",
+    link: "/merch",
+  },
 ];
 
 type Props = OwnProps;
