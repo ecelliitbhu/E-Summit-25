@@ -5,6 +5,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://esummit.ecelliitbhu.com/",
       lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
     },
   ];
 }

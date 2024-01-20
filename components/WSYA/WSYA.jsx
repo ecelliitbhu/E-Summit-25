@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./WSYA.module.css";
-import Cup from "/public/WSYA/communication.svg";
-import Tec from "/public/WSYA/taking-notes.svg";
-import Mic from "public/WSYA/podcast-show.svg";
-import StartupShowCase from "public/WSYA/startupShowcase.svg";
+import Cup from "@/public/WSYA/communication.svg";
+import Tec from "@/public/WSYA/taking-notes.svg";
+import Mic from "@/public/WSYA/podcast-show.svg";
+import StartupShowCase from "@/public/WSYA/startupShowcase.svg";
 
 const MotionDiv = ({ src, width, height, alt, text }) => (
   <motion.div
