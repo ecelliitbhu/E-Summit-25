@@ -1,5 +1,5 @@
 "use client";
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 import {
@@ -40,12 +40,34 @@ const Contact: FunctionComponent = (props) => {
     resolver: zodResolver(FormSchema),
     defaultValues: {
       name: "",
+      email: "",
+      phone: "",
+      message: "",
+      role: "",
     },
   });
+ 
 
-  function onSubmit(values: z.infer<typeof FormSchema>) {
-    console.log(values);
+  const  onSubmit= async  (values: z.infer<typeof FormSchema>)=> {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...values,
+          recipientEmail: 'ecell@iitbhu.ac.in', 
+        }),
+      });
+  
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
+    console.log(values)
   }
+
+
 
   return (
     <div className="sm:mx-24">
