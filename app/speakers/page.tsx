@@ -38,7 +38,7 @@ const page: FunctionComponent<Props> = (props) => {
         </div>
         <div className={"flex justify-center"}>
           <Tabs
-            defaultValue="pastSpeaker"
+            defaultValue="presentSpeaker"
             className="sm:w-[400px] md:w-[1200px] text-center"
           >
             <TabsList>
