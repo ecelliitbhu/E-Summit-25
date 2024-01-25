@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Contact from "@/components/Contact";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { past_speakers_data } from "@/app/speakers/speaker_data";
+import { present_speakers_data } from "@/app/speakers/speaker_data";
 import SpeakerCard from "@/components/SpeakerCard";
 
 export const metadata: Metadata = {
@@ -45,11 +46,19 @@ const page: FunctionComponent<Props> = (props) => {
               <TabsTrigger value="presentSpeaker">Present Speaker</TabsTrigger>
               <TabsTrigger value="pastSpeaker">Past Speaker</TabsTrigger>
             </TabsList>
-            <TabsContent value="presentSpeaker" className={""}>
-              <div className={"md:flex justify-center items-center p-10"}>
-                <h1 className="flex justify-center text-4xl my-4 font-semibold">
-                  Coming Soon!
-                </h1>
+            <TabsContent value="presentSpeaker">
+              <div className={"md:flex flex-wrap justify-center items-center p-10"}>
+                {present_speakers_data.map((speaker: any, index) => (
+                    <SpeakerCard
+                      name={speaker.name}
+                      des={speaker.des}
+                      instaURL={speaker.instaURL}
+                      linkedinURL={speaker.linkedinURL}
+                      // twitterURL={speaker.twitterURL}
+                      imgURL={speaker.imgURL}
+                      key={index}
+                    />
+                  ))}
               </div>
             </TabsContent>
             <TabsContent value="pastSpeaker">
