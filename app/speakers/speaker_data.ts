@@ -240,6 +240,14 @@ export const present_speakers_data = [
     linkedinURL: "https://www.linkedin.com/in/maheshwarisiddharth/",
   },
   {
+    name: "Vijender Singh Chouhan",
+    des: "Drishti IAS Interviewer",
+    imgURL: "/presentspeaker/vijendar.jpg",
+    xURL: "",
+    instaURL: "",
+    linkedinURL: "https://www.linkedin.com/in/vijendermasijeevi/",
+  },
+  {
     name: "Rajeev Samant",
     des: "CEO and Founder at Sula Vineyards",
     imgURL: "/presentspeaker/rajeev samant sula vineyards.jpeg",
@@ -374,12 +382,5 @@ export const present_speakers_data = [
     instaURL: "",
     linkedinURL: "https://www.linkedin.com/in/mohitsewak/?originalSubdomain=in",
   },
-  {
-    name: "Vijender Singh Chouhan",
-    des: "Drishti IAS Interviewer",
-    imgURL: "/presentspeaker/vijendar.jpeg",
-    xURL: "",
-    instaURL: "",
-    linkedinURL: "https://www.linkedin.com/in/vijendermasijeevi/",
-  },
+  
 ];
