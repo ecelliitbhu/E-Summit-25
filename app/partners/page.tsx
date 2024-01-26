@@ -1,26 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Metadata } from "next";
 import PartnerCard from "@/components/PartnerCard";
-import {
-  titleSponsor,
-  coSponsor
-  associateSponsor,
-  ecosystemPartner,
-  startupShowcasePartner,
-  productLearningPartner,
-  startupServicesPartner,
-  investmentPartners,
-  mediaPartner,
-  travelPartner,
-  poweredBy,
-  eventPartner,
-  martechPartner,
-  incubationPartner,
-  saasPartner,
-  educationPartner,
-  munchingPartner,
-  logisticsPartner,
-} from "./partner_data";
+import { titleSponsor, coSponsor, associateSponsor, ecosystemPartner, startupShowcasePartner, productLearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner } from "./partner_data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
