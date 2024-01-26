@@ -1,9 +1,5 @@
 export const partners_data = [
   {
-    name: "axis_bank",
-    imgURL: "/partners/gallery_img1.jpg",
-  },
-  {
     name: "unstop",
     imgURL: "/partners/unnamed.jpg",
   },
@@ -43,6 +39,53 @@ export const partners_data = [
     name: "oneHash",
     imgURL: "/partners/one_hash.png",
   },
+
+  {
+    name: "freshworks",
+    imgURL: "/partners/fresh_works.png",
+  },
+
+  {
+    name: "impact_ful_pitch",
+    imgURL: "/partners/impact_ful_pitch.jpg",
+  },
+];
+export const titleSponsor = [
+  {
+    name: "Axis Bank",
+    imgURL: "/partners/gallery_img1.jpg",
+  },
+];
+export const ecosystemPartner = [
+  {
+    name: "Meity Startup Hub",
+    // imgURL:"/partners/meity_logo.png"
+  },
+  {
+    name: "Startup India",
+    // imgURL:"/partners/startup_india_logo.png"
+  },
+  {
+    name: "markkoknow",
+    imgURL: "/partners/markoknow.png",
+  },
+];
+
+export const startupShowcasePartner = [
+  {
+    name: "StartinUP",
+    // imgURL:"/partners/startinup_logo.png"
+  },
+];
+export const productLearningPartner = [
+  {
+    name: "The Product Folks",
+    // imgURL:"/partners/product_folks_logo.png"
+  },
+  {},
+];
+
+export const startupServicesPartner = [
   {
     name: "zoho",
     imgURL: "/partners/zoho.png",
@@ -56,17 +99,15 @@ export const partners_data = [
     imgURL: "/partners/qapita.jpg",
   },
   {
-    name: "freshworks",
-    imgURL: "/partners/fresh_works.png",
-  },
-  {
     name: "clever_tap",
     imgURL: "/partners/clevertap.jpg",
   },
   {
-    name: "microsoft",
+    name: "microsoft for startups",
     imgURL: "/partners/microsoft.jpeg",
   },
+];
+export const investmentPartners = [
   {
     name: "ian",
     imgURL: "/partners/IAN.jpg",
@@ -80,12 +121,12 @@ export const partners_data = [
     imgURL: "/partners/java_capital.jpg",
   },
   {
-    name: "impact_ful_pitch",
-    imgURL: "/partners/impact_ful_pitch.jpg",
+    name: "IvyCamp Ventures ",
+    // imgURL:
   },
   {
-    name: "markkoknow",
-    imgURL: "/partners/markoknow.png",
+    name: "Legaverse",
+    // imgURL:
   },
   {
     name: "pedalstart",
@@ -94,5 +135,21 @@ export const partners_data = [
   {
     name: "amalgam_capital",
     imgURL: "/partners/amalgam.jpg",
+  },
+  {
+    name: "2am VC",
+    // imgURL: "/partners/2amvc.jpg",
+  },
+  {
+    name: "Speciale Invest",
+    // imgURL: "/partners/speciale.jpg",
+  },
+  {
+    name: "WestBridge Capital",
+    // imgURL:"/partners/westbridge.jpg"
+  },
+  {
+    name: "Aroa Capital",
+    // imgURL:"/partners/arora_capital.png"
   },
 ];
