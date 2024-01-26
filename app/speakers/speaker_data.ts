@@ -296,7 +296,7 @@ export const present_speakers_data = [
   },
   {
     name: "Kaushik Mohanty",
-    des: "Director of Engineering",
+    des: "Director of Engineering t Cisco",
     imgURL: "/presentspeaker/kaushik mohanty.jpeg",
     xURL: "",
     instaURL: "",

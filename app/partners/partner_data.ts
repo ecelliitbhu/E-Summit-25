@@ -56,13 +56,18 @@ export const titleSponsor = [
     imgURL: "/partners/Axis_Bank-Logo.wine.png",
   },
 ];
-export const associateSponsor = [
+export const coSponsor = [
   {
     name: "Saviant Consulting",
     imgURL: "/partners/saviant-consulting-logo.jpeg",
   },
 ];
-
+export const associateSponsor = [
+  {
+    name: "Kognitivus",
+    imgURL: "/partners/kognitivus.jpg",
+  },
+];
 export const ecosystemPartner = [
   {
     name: "Meity Startup Hub",
@@ -107,6 +112,10 @@ export const startupServicesPartner = [
   {
     name: "clever_tap",
     imgURL: "/partners/Startup Services and Investment Partners/clevertap.png",
+  },
+  {
+    name: "Microsoft for Startups",
+    imgURL: "/partners/microsoft.jpeg",
   },
   {
     name: "Oracle for Scaleups",
