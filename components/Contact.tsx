@@ -43,31 +43,26 @@ const Contact: FunctionComponent = (props) => {
       email: "",
       phone: "",
       message: "",
-      role: "",
     },
   });
- 
 
-  const  onSubmit= async  (values: z.infer<typeof FormSchema>)=> {
+  const onSubmit = async (values: z.infer<typeof FormSchema>) => {
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           ...values,
-          recipientEmail: 'ecell@iitbhu.ac.in', 
+          recipientEmail: "ecell@iitbhu.ac.in",
         }),
       });
-  
     } catch (error) {
-      console.error('Error submitting form', error);
+      console.error("Error submitting form", error);
     }
-    console.log(values)
-  }
-
-
+    console.log(values);
+  };
 
   return (
     <div className="sm:mx-24">
