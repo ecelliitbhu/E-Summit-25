@@ -1,4 +1,4 @@
-export const partners_data = [
+/*export const partners_data = [
   {
     name: "unstop",
     imgURL: "/partners/unnamed.jpg",
@@ -49,21 +49,28 @@ export const partners_data = [
     name: "impact_ful_pitch",
     imgURL: "/partners/impact_ful_pitch.jpg",
   },
-];
+];*/
 export const titleSponsor = [
   {
     name: "Axis Bank",
-    imgURL: "/partners/gallery_img1.jpg",
+    imgURL: "/partners/Axis_Bank-Logo.wine.png",
   },
 ];
+export const associateSponsor = [
+  {
+    name: "Saviant Consulting",
+    imgURL: "/partners/saviant-consulting-logo.jpeg",
+  },
+];
+
 export const ecosystemPartner = [
   {
     name: "Meity Startup Hub",
-    // imgURL:"/partners/meity_logo.png"
+    imgURL:"/partners/meity_startup_hub_logo.jpg"
   },
   {
     name: "Startup India",
-    // imgURL:"/partners/startup_india_logo.png"
+    imgURL:"/partners/4_startup_india_logo.jpg"
   },
   {
     name: "markkoknow",
@@ -74,59 +81,62 @@ export const ecosystemPartner = [
 export const startupShowcasePartner = [
   {
     name: "StartinUP",
-    // imgURL:"/partners/startinup_logo.png"
+    imgURL:"/partners/startinUP.jpg"
   },
 ];
 export const productLearningPartner = [
   {
     name: "The Product Folks",
-    // imgURL:"/partners/product_folks_logo.png"
+    imgURL:"/partners/product_folks.jpg"
   },
-  {},
 ];
 
 export const startupServicesPartner = [
   {
     name: "zoho",
-    imgURL: "/partners/zoho.png",
+    imgURL: "/partners/zfs.jpeg",
   },
   {
     name: "aws",
-    imgURL: "/partners/aws.png",
+    imgURL: "/partners/Startup Services and Investment Partners/aws.png",
   },
   {
     name: "qapita",
-    imgURL: "/partners/qapita.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/qapita_logo.jpg",
   },
   {
     name: "clever_tap",
-    imgURL: "/partners/clevertap.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/clevertap.png",
   },
   {
-    name: "microsoft for startups",
-    imgURL: "/partners/microsoft.jpeg",
+    name: "Oracle for Scaleups",
+    imgURL: "/partners/Startup Services and Investment Partners/Oracle for Scaleups.png",
   },
 ];
 export const investmentPartners = [
   {
     name: "ian",
-    imgURL: "/partners/IAN.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/IAN.jpeg",
   },
   {
     name: "100x_vc",
-    imgURL: "/partners/100x_vc.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/100x_vc.jpg",
   },
   {
     name: "java_capital",
-    imgURL: "/partners/java_capital.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/Java Capital_Logo.png",
   },
   {
     name: "IvyCamp Ventures ",
-    // imgURL:
+    imgURL: "/partners/Startup Services and Investment Partners/IvyCap.jpg",
+  },
+  {
+    name: "Inflection Point",
+    imgURL: "/partners/Startup Services and Investment Partners/ipv.png",
   },
   {
     name: "Legaverse",
-    // imgURL:
+    imgURL: "/partners/Startup Services and Investment Partners/LVLogo.jpg",
   },
   {
     name: "pedalstart",
@@ -134,22 +144,114 @@ export const investmentPartners = [
   },
   {
     name: "amalgam_capital",
-    imgURL: "/partners/amalgam.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/amalgam.png",
   },
   {
     name: "2am VC",
-    // imgURL: "/partners/2amvc.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/2_a_m_ventures_logo.jpg",
   },
   {
     name: "Speciale Invest",
-    // imgURL: "/partners/speciale.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/specialeinvest.png",
   },
   {
     name: "WestBridge Capital",
-    // imgURL:"/partners/westbridge.jpg"
+    imgURL:"/partners/Startup Services and Investment Partners/wb-capital.png"
   },
   {
-    name: "Aroa Capital",
-    // imgURL:"/partners/arora_capital.png"
+    name: "Aroa Ventures",
+    imgURL:"/partners/aroaventures.jpg"
   },
 ];
+export const mediaPartner = [
+  {
+    name: "ED Times",
+    imgURL: "/partners/download.jpg",
+  },
+  {
+    name: "mystartuptv.fyi",
+    imgURL: "/partners/startup_tv.jpg",
+  },
+  {
+    name: "Economic Times",
+    imgURL: "/partners/economic times logo.jpeg",
+  },
+  {
+    name: "Startupnews.tv",
+    imgURL: "/partners/startup news.png",
+  },
+];
+export const travelPartner = [
+  {
+    name: "AbhiBus",
+    imgURL: "/partners/abhi_bus.jpg",
+  },
+  {
+    name: "ixigo",
+    imgURL: "/partners/ixigo.jpg",
+  },
+];
+export const logisticsPartner = [
+  {
+    name: "Safexpress",
+    imgURL: "/partners/safe_express.png",
+  },
+];
+export const poweredBy = [
+  {
+    name: "Unstop",
+    imgURL: "/partners/unnamed.jpg",
+  },
+];
+export const eventPartner = [
+  {
+    name: "Impactful Pitch",
+    imgURL: "/partners/impact_ful_pitch.jpg",
+  },
+  {
+    name: "E-Learn",
+    imgURL: "/partners/elearn.svg",
+  },
+];
+export const martechPartner = [
+  {
+    name: "Netcore",
+    imgURL: "/partners/netcore.jpeg",
+  },
+];
+export const incubationPartner = [
+  {
+    name: "I3F",
+    imgURL: "/partners/i3flogo.webp",
+  },
+  {
+    name: "I-DAPT HUB",
+    imgURL: "/partners/IDAPT.jpg",
+  },
+];
+export const saasPartner = [
+  {
+    name: "oneHash",
+    imgURL: "/partners/one-hash logo.svg",
+  },
+];
+export const educationPartner = [
+  {
+    name: "IMS Learning Resource",
+    imgURL: "/partners/ims.avif",
+  },
+  {
+    name: "Finlatics",
+    imgURL: "/partners/finlatics.jpg",
+  },
+  {
+    name: "Sircle",
+    imgURL: "/partners/sircle.svg",
+  },
+];
+export const munchingPartner = [
+  {
+    name: "Balaji Wafers",
+    imgURL: "/partners/balaji wafers.png",
+  },
+]
