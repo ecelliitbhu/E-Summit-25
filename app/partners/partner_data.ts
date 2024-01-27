@@ -94,23 +94,23 @@ export const productLearningPartner = [
 export const startupServicesPartner = [
   {
     name: "zoho",
-    imgURL: "/partners/zfs.jpeg",
+    imgURL: "/partners/Startup Services and Investment Partners/zfs.jpg",
   },
   {
     name: "aws",
-    imgURL: "/partners/Startup Services and Investment Partners/aws.png",
+    imgURL: "/partners/Startup Services and Investment Partners/aws.jpg",
   },
   {
     name: "qapita",
-    imgURL: "/partners/Startup Services and Investment Partners/qapita_logo.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/qapita.jpg",
   },
   {
     name: "clever_tap",
-    imgURL: "/partners/Startup Services and Investment Partners/clevertap.png",
+    imgURL: "/partners/Startup Services and Investment Partners/clevertap.jpg",
   },
   {
     name: "Oracle for Scaleups",
-    imgURL: "/partners/Startup Services and Investment Partners/Oracle for Scaleups.png",
+    imgURL: "/partners/Startup Services and Investment Partners/Oracle.jpg",
   },
 ];
 export const investmentPartners = [
