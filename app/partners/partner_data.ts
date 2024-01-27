@@ -210,7 +210,7 @@ export const eventPartner = [
   },
   {
     name: "E-Learn",
-    imgURL: "/partners/elearn.svg",
+    imgURL: "/partners/elearn.jpg",
   },
 ];
 export const martechPartner = [
