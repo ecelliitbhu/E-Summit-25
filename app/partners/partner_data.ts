@@ -264,3 +264,9 @@ export const munchingPartner = [
     imgURL: "/partners/balaji wafers.png",
   },
 ]
+export const gamingPartner = [
+  {
+    name : "Zenet",
+    imgURL: "/partners/zenet.jpg",
+  },
+]
