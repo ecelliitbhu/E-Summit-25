@@ -94,29 +94,29 @@ export const productLearningPartner = [
 export const startupServicesPartner = [
   {
     name: "zoho",
-    imgURL: "/partners/zfs.jpeg",
+    imgURL: "/partners/Startup Services and Investment Partners/zfs.jpg",
   },
   {
     name: "aws",
-    imgURL: "/partners/Startup Services and Investment Partners/aws.png",
+    imgURL: "/partners/Startup Services and Investment Partners/aws.jpg",
   },
   {
     name: "qapita",
-    imgURL: "/partners/Startup Services and Investment Partners/qapita_logo.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/qapita.jpg",
   },
   {
     name: "clever_tap",
-    imgURL: "/partners/Startup Services and Investment Partners/clevertap.png",
+    imgURL: "/partners/Startup Services and Investment Partners/clevertap.jpg",
   },
   {
     name: "Oracle for Scaleups",
-    imgURL: "/partners/Startup Services and Investment Partners/Oracle for Scaleups.png",
+    imgURL: "/partners/Startup Services and Investment Partners/Oracle.jpg",
   },
 ];
 export const investmentPartners = [
   {
     name: "ian",
-    imgURL: "/partners/Startup Services and Investment Partners/IAN.jpeg",
+    imgURL: "/partners/Startup Services and Investment Partners/IAN.jpg",
   },
   {
     name: "100x_vc",
@@ -124,19 +124,19 @@ export const investmentPartners = [
   },
   {
     name: "java_capital",
-    imgURL: "/partners/Startup Services and Investment Partners/Java Capital_Logo.png",
+    imgURL: "/partners/Startup Services and Investment Partners/java_capital.jpg",
   },
   {
     name: "IvyCamp Ventures ",
-    imgURL: "/partners/Startup Services and Investment Partners/IvyCap.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/ivy_camp.jpg",
   },
   {
     name: "Inflection Point",
-    imgURL: "/partners/Startup Services and Investment Partners/ipv.png",
+    imgURL: "/partners/Startup Services and Investment Partners/ipv.jpg",
   },
   {
     name: "Legaverse",
-    imgURL: "/partners/Startup Services and Investment Partners/LVLogo.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/legaverse.jpg",
   },
   {
     name: "pedalstart",
@@ -144,7 +144,7 @@ export const investmentPartners = [
   },
   {
     name: "amalgam_capital",
-    imgURL: "/partners/Startup Services and Investment Partners/amalgam.png",
+    imgURL: "/partners/Startup Services and Investment Partners/amalgam.jpg",
   },
   {
     name: "2am VC",
@@ -152,11 +152,11 @@ export const investmentPartners = [
   },
   {
     name: "Speciale Invest",
-    imgURL: "/partners/Startup Services and Investment Partners/specialeinvest.png",
+    imgURL: "/partners/Startup Services and Investment Partners/specialeinvest.jpg",
   },
   {
     name: "WestBridge Capital",
-    imgURL:"/partners/Startup Services and Investment Partners/wb-capital.png"
+    imgURL:"/partners/Startup Services and Investment Partners/WestBridge-Capital.jpg"
   },
   {
     name: "Aroa Ventures",
@@ -210,7 +210,7 @@ export const eventPartner = [
   },
   {
     name: "E-Learn",
-    imgURL: "/partners/elearn.svg",
+    imgURL: "/partners/elearn.jpg",
   },
 ];
 export const martechPartner = [
@@ -222,7 +222,7 @@ export const martechPartner = [
 export const incubationPartner = [
   {
     name: "I3F",
-    imgURL: "/partners/i3flogo.webp",
+    imgURL: "/partners/i3flogo_224x130.webp",
   },
   {
     name: "I-DAPT HUB",
@@ -252,6 +252,6 @@ export const educationPartner = [
 export const munchingPartner = [
   {
     name: "Balaji Wafers",
-    imgURL: "/partners/balaji wafers.png",
+    imgURL: "/partners/balaji wafers.jpg",
   },
 ]
