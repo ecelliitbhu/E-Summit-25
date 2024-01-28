@@ -1,25 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Metadata } from "next";
 import PartnerCard from "@/components/PartnerCard";
-import {
-  titleSponsor,
-  associateSponsor,
-  ecosystemPartner,
-  startupShowcasePartner,
-  productLearningPartner,
-  startupServicesPartner,
-  investmentPartners,
-  mediaPartner,
-  travelPartner,
-  poweredBy,
-  eventPartner,
-  martechPartner,
-  incubationPartner,
-  saasPartner,
-  educationPartner,
-  munchingPartner,
-  logisticsPartner,
-} from "./partner_data";
+import { titleSponsor, coSponsor, associateSponsor, ecosystemPartner, startupShowcasePartner, productLearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner } from "./partner_data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
@@ -40,7 +22,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Title Partner
@@ -62,7 +44,29 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6 "
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6 "
+            }
+          >
+            Co-Title Partner
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {coSponsor.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6 "
             }
           >
             Associate Partner
@@ -84,7 +88,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Ecosystem Partner
@@ -106,7 +110,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Startup Showcase Partner
@@ -128,7 +132,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Product Learning Partner
@@ -150,7 +154,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Startup Services Partner
@@ -172,7 +176,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Investment Partner
@@ -194,7 +198,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Incubation Partner
@@ -216,7 +220,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Saas Partner
@@ -238,7 +242,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Martech Partner
@@ -260,7 +264,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Event Partner
@@ -282,7 +286,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Powered By
@@ -304,7 +308,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Education Partner
@@ -326,7 +330,30 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+            }
+          >
+            Gaming Partner
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {gamingPartner.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Munching Partner
@@ -348,7 +375,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Logistics Partner
@@ -370,7 +397,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Travel Partner
@@ -392,7 +419,7 @@ const page: FunctionComponent<Props> = (props) => {
         <div>
           <h1
             className={
-              "text-white text-4xl md:text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
             Media Partner
