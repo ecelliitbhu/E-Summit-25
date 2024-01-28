@@ -142,7 +142,8 @@ export const investmentPartners = [
   },
   {
     name: "Inflection Point",
-    imgURL: "/partners/Startup_Services_and_Investment_Partners/ipv.jpg",
+    imgURL: "/partners/Startup Services and Investment Partners/ipv.png",
+
   },
   {
     name: "Legaverse",
@@ -183,7 +184,7 @@ export const mediaPartner = [
   },
   {
     name: "mystartuptv.fyi",
-    imgURL: "/partners/startup_tv.jpg",
+    imgURL: "/partners/startup_tv.webp",
   },
   {
     name: "Economic Times",
@@ -239,7 +240,7 @@ export const incubationPartner = [
   },
   {
     name: "I-DAPT HUB",
-    imgURL: "/partners/IDAPT.jpg",
+    imgURL: "/partners/i-dapt logo.gif",
   },
 ];
 export const saasPartner = [
@@ -265,7 +266,7 @@ export const educationPartner = [
 export const munchingPartner = [
   {
     name: "Balaji Wafers",
-    imgURL: "/partners/balaji wafers.jpg",
+    imgURL: "/partners/bw.png",
   },
 ];
 export const gamingPartner = [
