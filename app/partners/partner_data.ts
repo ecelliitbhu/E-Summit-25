@@ -71,11 +71,11 @@ export const associateSponsor = [
 export const ecosystemPartner = [
   {
     name: "Meity Startup Hub",
-    imgURL:"/partners/meity_startup_hub_logo.jpg"
+    imgURL: "/partners/meity_startup_hub_logo.jpg",
   },
   {
     name: "Startup India",
-    imgURL:"/partners/4_startup_india_logo.jpg"
+    imgURL: "/partners/4_startup_india_logo.jpg",
   },
   {
     name: "markkoknow",
@@ -86,32 +86,32 @@ export const ecosystemPartner = [
 export const startupShowcasePartner = [
   {
     name: "StartinUP",
-    imgURL:"/partners/startinUP.jpg"
+    imgURL: "/partners/startinUP.jpg",
   },
 ];
 export const productLearningPartner = [
   {
     name: "The Product Folks",
-    imgURL:"/partners/product_folks.jpg"
+    imgURL: "/partners/product_folks.jpg",
   },
 ];
 
 export const startupServicesPartner = [
   {
     name: "zoho",
-    imgURL: "/partners/Startup Services and Investment Partners/zfs.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/zfs.jpg",
   },
   {
     name: "aws",
-    imgURL: "/partners/Startup Services and Investment Partners/aws.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/aws.jpg",
   },
   {
     name: "qapita",
-    imgURL: "/partners/Startup Services and Investment Partners/qapita.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/qapita.jpg",
   },
   {
     name: "clever_tap",
-    imgURL: "/partners/Startup Services and Investment Partners/clevertap.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/clevertap.jpg",
   },
   {
     name: "Microsoft for Startups",
@@ -119,33 +119,34 @@ export const startupServicesPartner = [
   },
   {
     name: "Oracle for Scaleups",
-    imgURL: "/partners/Startup Services and Investment Partners/Oracle.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/Oracle.jpg",
   },
 ];
 export const investmentPartners = [
   {
     name: "ian",
-    imgURL: "/partners/Startup Services and Investment Partners/IAN.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/IAN.jpg",
   },
   {
     name: "100x_vc",
-    imgURL: "/partners/Startup Services and Investment Partners/100x_vc.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/100x_vc.jpg",
   },
   {
     name: "java_capital",
-    imgURL: "/partners/Startup Services and Investment Partners/java_capital.jpg",
+    imgURL:
+      "/partners/Startup_Services_and_Investment_Partners/java_capital.jpg",
   },
   {
     name: "IvyCamp Ventures ",
-    imgURL: "/partners/Startup Services and Investment Partners/ivy_camp.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/ivy_camp.jpg",
   },
   {
     name: "Inflection Point",
-    imgURL: "/partners/Startup Services and Investment Partners/ipv.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/ipv.jpg",
   },
   {
     name: "Legaverse",
-    imgURL: "/partners/Startup Services and Investment Partners/legaverse.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/legaverse.jpg",
   },
   {
     name: "pedalstart",
@@ -153,23 +154,26 @@ export const investmentPartners = [
   },
   {
     name: "amalgam_capital",
-    imgURL: "/partners/Startup Services and Investment Partners/amalgam.jpg",
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/amalgam.jpg",
   },
   {
     name: "2am VC",
-    imgURL: "/partners/Startup Services and Investment Partners/2_a_m_ventures_logo.jpg",
+    imgURL:
+      "/partners/Startup_Services_and_Investment_Partners/2_a_m_ventures_logo.jpg",
   },
   {
     name: "Speciale Invest",
-    imgURL: "/partners/Startup Services and Investment Partners/specialeinvest.jpg",
+    imgURL:
+      "/partners/Startup_Services_and_Investment_Partners/specialeinvest.jpg",
   },
   {
     name: "WestBridge Capital",
-    imgURL:"/partners/Startup Services and Investment Partners/WestBridge-Capital.jpg"
+    imgURL:
+      "/partners/Startup_Services_and_Investment_Partners/WestBridge-Capital.jpg",
   },
   {
     name: "Aroa Ventures",
-    imgURL:"/partners/aroaventures.jpg"
+    imgURL: "/partners/aroaventures.jpg",
   },
 ];
 export const mediaPartner = [
@@ -263,10 +267,10 @@ export const munchingPartner = [
     name: "Balaji Wafers",
     imgURL: "/partners/balaji wafers.jpg",
   },
-]
+];
 export const gamingPartner = [
   {
-    name : "Zenet",
+    name: "Zenet",
     imgURL: "/partners/zenet.jpg",
   },
-]
+];
