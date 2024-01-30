@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -55,7 +54,8 @@ const Itinerary: () => JSX.Element = () => {
       venue: "ABLT-4",
       speaker: true,
       speaker_name: "Sanjeev Bhikchandani",
-      speaker_img:"https://media.licdn.com/dms/image/C5103AQEvdOsk-5Xchg/profile-displayphoto-shrink_800_800/0/1574759254204?e=1712188800&v=beta&t=y3tN1vHPHlEDE9KyAioTxdZWPndsiurH3Ta45co-Jzc",
+      speaker_img:
+        "https://media.licdn.com/dms/image/C5103AQEvdOsk-5Xchg/profile-displayphoto-shrink_800_800/0/1574759254204?e=1712188800&v=beta&t=y3tN1vHPHlEDE9KyAioTxdZWPndsiurH3Ta45co-Jzc",
       time: "10 AM- 11 AM",
     },
     {
@@ -69,7 +69,7 @@ const Itinerary: () => JSX.Element = () => {
       time: "2:00 PM- 5:00 PM",
     },
     {
-      name: "Rajputana Ground 3:00 PM - 4:30 PM Panel Discussion: Beyond Metro Mania",
+      name: "Panel Discussion: Beyond Metro Mania",
       venue: "ABLT-4",
       time: "3:00 PM- 4:30 PM",
     },
@@ -105,7 +105,8 @@ const Itinerary: () => JSX.Element = () => {
       venue: "ABLT-1",
       speaker: true,
       speaker_name: "Nitin Sharma",
-      speaker_img:"https://media.licdn.com/dms/image/C4D03AQEvzw3ECM7P6w/profile-displayphoto-shrink_400_400/0/1661743340968?e=1712188800&v=beta&t=U2YKviDyqLl44Aq_xfi9p_g9AvObJ0cXn0dDhKYI5lY",
+      speaker_img:
+        "https://media.licdn.com/dms/image/C4D03AQEvzw3ECM7P6w/profile-displayphoto-shrink_400_400/0/1661743340968?e=1712188800&v=beta&t=U2YKviDyqLl44Aq_xfi9p_g9AvObJ0cXn0dDhKYI5lY",
       time: "11:00 AM- 12:00 PM",
     },
     {
@@ -123,8 +124,9 @@ const Itinerary: () => JSX.Element = () => {
       venue: "ABLT-4",
       speaker: true,
       speaker_name: "Rajeev Samant",
-      speaker_img:"https://media.licdn.com/dms/image/C4D03AQELvx5LDCeTpg/profile-displayphoto-shrink_400_400/0/1626258971648?e=1712188800&v=beta&t=uvKFiXC4dR4ouKSaMZq854hd4dAt6He-2RPFFq65Gdg",
-      
+      speaker_img:
+        "https://media.licdn.com/dms/image/C4D03AQELvx5LDCeTpg/profile-displayphoto-shrink_400_400/0/1626258971648?e=1712188800&v=beta&t=uvKFiXC4dR4ouKSaMZq854hd4dAt6He-2RPFFq65Gdg",
+
       time: "2:00 PM- 3:00 PM",
     },
     {
@@ -142,7 +144,8 @@ const Itinerary: () => JSX.Element = () => {
       venue: "ABLT-4",
       speaker: true,
       speaker_name: "Vijender Singh Chouhan",
-      speaker_img:"https://media.licdn.com/dms/image/C4D03AQGnWiJj98yWmA/profile-displayphoto-shrink_800_800/0/1598290098447?e=2147483647&v=beta&t=I6LR_AtrnZ8-TtaV6L819KC7X8jPMYUnV-MlCHvpSvI",
+      speaker_img:
+        "https://media.licdn.com/dms/image/C4D03AQGnWiJj98yWmA/profile-displayphoto-shrink_800_800/0/1598290098447?e=2147483647&v=beta&t=I6LR_AtrnZ8-TtaV6L819KC7X8jPMYUnV-MlCHvpSvI",
       time: "6:00 PM - 7:00 PM ",
     },
     {
@@ -215,35 +218,35 @@ const Itinerary: () => JSX.Element = () => {
               {third.map((element) => {
                 return (
                   <Card className="p-3">
-                  <div className="flex justify-start">
-                    {" "}
-                    <Badge variant="outline">{element.time}</Badge>
-                  </div>
-                  <div>
-                    <p className="text-xs my-2 ">{element.name}</p>
-                    {element.speaker && (
-                      <div className="flex">
-                        <div className="my-1">
-                          <Avatar>
-                            <AvatarImage src={element.speaker_img} />
-                          </Avatar>
-                        </div>
-                        <p className="flex items-center ml-2 text-xs font-medium">
-                          {element.speaker_name}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                  <div>
-                    <p>
+                    <div className="flex justify-start">
                       {" "}
-                      Venue :{" "}
-                      <span className="font-semibold text-sm">
-                        {element.venue}
-                      </span>
-                    </p>
-                  </div>
-                </Card>
+                      <Badge variant="outline">{element.time}</Badge>
+                    </div>
+                    <div>
+                      <p className="text-xs my-2 ">{element.name}</p>
+                      {element.speaker && (
+                        <div className="flex">
+                          <div className="my-1">
+                            <Avatar>
+                              <AvatarImage src={element.speaker_img} />
+                            </Avatar>
+                          </div>
+                          <p className="flex items-center ml-2 text-xs font-medium">
+                            {element.speaker_name}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                    <div>
+                      <p>
+                        {" "}
+                        Venue :{" "}
+                        <span className="font-semibold text-sm">
+                          {element.venue}
+                        </span>
+                      </p>
+                    </div>
+                  </Card>
                 );
               })}
             </div>
@@ -253,35 +256,35 @@ const Itinerary: () => JSX.Element = () => {
               {fourth.map((element) => {
                 return (
                   <Card className="p-3">
-                  <div className="flex justify-start">
-                    {" "}
-                    <Badge variant="outline">{element.time}</Badge>
-                  </div>
-                  <div>
-                    <p className="text-xs my-2 ">{element.name}</p>
-                    {element.speaker && (
-                      <div className="flex">
-                        <div className="my-1">
-                          <Avatar>
-                            <AvatarImage src={element.speaker_img} />
-                          </Avatar>
-                        </div>
-                        <p className="flex items-center ml-2 text-xs font-medium">
-                          {element.speaker_name}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                  <div>
-                    <p>
+                    <div className="flex justify-start">
                       {" "}
-                      Venue :{" "}
-                      <span className="font-semibold text-sm">
-                        {element.venue}
-                      </span>
-                    </p>
-                  </div>
-                </Card>
+                      <Badge variant="outline">{element.time}</Badge>
+                    </div>
+                    <div>
+                      <p className="text-xs my-2 ">{element.name}</p>
+                      {element.speaker && (
+                        <div className="flex">
+                          <div className="my-1">
+                            <Avatar>
+                              <AvatarImage src={element.speaker_img} />
+                            </Avatar>
+                          </div>
+                          <p className="flex items-center ml-2 text-xs font-medium">
+                            {element.speaker_name}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                    <div>
+                      <p>
+                        {" "}
+                        Venue :{" "}
+                        <span className="font-semibold text-sm">
+                          {element.venue}
+                        </span>
+                      </p>
+                    </div>
+                  </Card>
                 );
               })}
             </div>
