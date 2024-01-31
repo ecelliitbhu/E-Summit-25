@@ -18,9 +18,13 @@ import {
 interface OwnProps {}
 
 const nav = [
+  // {
+  //   name: "ABOUT",
+  //   link: "/#about",
+  // },
   {
-    name: "ABOUT",
-    link: "/#about",
+    name: "Itinerary",
+    link: "/itinerary",
   },
   {
     name: "EVENTS",
@@ -99,7 +103,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                           className={"text-primary-foreground"}
                           variant={"link"}
                         >
-                          {navigator.name}
+                          {navigator.name.toUpperCase()}
                         </Button>
                       </Link>
                     </li>

@@ -177,9 +177,12 @@ const Itinerary: () => JSX.Element = () => {
           </TabsList>
           <TabsContent value="second">
             <div className="grid grid-cols-3 gap-2">
-              {second.map((element) => {
+              <div style={{textAlign:'center'}}>Track A <br/> Events & Competition</div>
+              <div style={{textAlign:'center'}}>Track B <br/> Talks & Panel</div>
+              <div style={{textAlign:'center'}}>Track C <br/> Showcase & Networking</div>
+              {second.map((element,index) => {
                 return (
-                  <Card className="p-3">
+                  <Card className="p-3" key={index}>
                     <div className="flex justify-start">
                       {" "}
                       <Badge variant="outline">{element.time}</Badge>
@@ -191,6 +194,7 @@ const Itinerary: () => JSX.Element = () => {
                           <div className="my-1">
                             <Avatar>
                               <AvatarImage src={element.speaker_img} />
+                              <AvatarFallback>{element.speaker_img[0]}</AvatarFallback>
                             </Avatar>
                           </div>
                           <p className="flex items-center ml-2 text-xs font-medium">
@@ -212,12 +216,16 @@ const Itinerary: () => JSX.Element = () => {
                 );
               })}
             </div>
+                  <Badge className="flex justify-center items-center m-8 text-base font-medium">Dinner 8:00 PM Onward</Badge>
           </TabsContent>
           <TabsContent value="third">
             <div className="grid grid-cols-3 gap-2">
-              {third.map((element) => {
+              <div style={{textAlign:'center'}}>Track A <br/> Events & Competition</div>
+              <div style={{textAlign:'center'}}>Track B <br/> Talks & Panel</div>
+              <div style={{textAlign:'center'}}>Track C <br/> Showcase & Networking</div>
+              {third.map((element,index) => {
                 return (
-                  <Card className="p-3">
+                  <Card className="p-3" key={index}>
                     <div className="flex justify-start">
                       {" "}
                       <Badge variant="outline">{element.time}</Badge>
@@ -229,6 +237,7 @@ const Itinerary: () => JSX.Element = () => {
                           <div className="my-1">
                             <Avatar>
                               <AvatarImage src={element.speaker_img} />
+                              <AvatarFallback>{element.speaker_img[0]}</AvatarFallback>
                             </Avatar>
                           </div>
                           <p className="flex items-center ml-2 text-xs font-medium">
@@ -253,9 +262,12 @@ const Itinerary: () => JSX.Element = () => {
           </TabsContent>
           <TabsContent value="fourth">
             <div className="grid grid-cols-3 gap-2">
-              {fourth.map((element) => {
+              <div style={{textAlign:'center'}}>Track A <br/> Events & Competition</div>
+              <div style={{textAlign:'center'}}>Track B <br/> Talks & Panel</div>
+              <div style={{textAlign:'center'}}>Track C <br/> Showcase & Networking</div>
+              {fourth.map((element,index) => {
                 return (
-                  <Card className="p-3">
+                  <Card className="p-3" key={index}>
                     <div className="flex justify-start">
                       {" "}
                       <Badge variant="outline">{element.time}</Badge>
@@ -267,6 +279,7 @@ const Itinerary: () => JSX.Element = () => {
                           <div className="my-1">
                             <Avatar>
                               <AvatarImage src={element.speaker_img} />
+                              <AvatarFallback>{element.speaker_img[0]}</AvatarFallback>
                             </Avatar>
                           </div>
                           <p className="flex items-center ml-2 text-xs font-medium">
@@ -288,6 +301,7 @@ const Itinerary: () => JSX.Element = () => {
                 );
               })}
             </div>
+                  <Badge className="flex justify-center items-center m-8 text-base font-medium">Dinner 8:00 PM Onward</Badge>
           </TabsContent>
         </Tabs>
       </div>

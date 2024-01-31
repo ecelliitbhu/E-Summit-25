@@ -1,3 +1,4 @@
+"use client";
 // Import React and styles
 import React from "react";
 import styles from "./About.module.css";

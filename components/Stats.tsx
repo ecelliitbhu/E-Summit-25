@@ -1,7 +1,9 @@
+"use client";
 import React, { FunctionComponent, useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import "@/app/globals.css";
 import { Tilt } from "react-tilt";
+
 interface Stat {
   value: string;
   label: string;

@@ -1,17 +1,11 @@
-"use client";
-// import Faqs from "@/components/faq/Faq";
+// "use client";
 import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
 import About from "@/components/About/about";
-import Footer from "@/components/Footer";
 import WSYA from "@/components/WSYA/WSYA";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import Stats from "@/components/Stats";
-import Gallery from "@/components/gallery/gallery";
 
-import The_card from "@/components/EventsCard";
-
-import EventsCard from "@/components/EventsCard";
 import CTA from "@/components/CTA";
 
 export default function Home() {
