@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import styles from "./sponsor_card.module.css";
 import SvgDefs from "./svg_defs";
 import inflection from "../../public/carousel/Inflection-removebg-preview.png";
@@ -37,6 +36,8 @@ import se from "../../public/carousel/safe.png";
 import gfg from "../../public/carousel/gfg.png";
 import go from "../../public/carousel/grabon.png";
 
+import { X } from "lucide-react";
+
 const MarqueeComponent: React.FC = () => {
   return (
     <div className={`${styles.root} dark`}>
@@ -46,425 +47,149 @@ const MarqueeComponent: React.FC = () => {
 
         <div className={styles.marquee}>
           <div className={styles.marquee__group}>
-            <Image
-              alt={"sponsors"}
-              src={inflection.src}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={hundred.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={antler.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={axilor.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={faad.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={forty.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={fibonacci.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={fluid.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={kae.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={launch.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={lets.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={pedal.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={sooni.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={west.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={xscale.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={yours.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={gs.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={aws.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={amul.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={digital.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={zee.src}
-              className={styles.cardh}
-              width={200}
-              height={200}
-            />
-            <Image alt={"sponsors"} src={unstop.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={jag.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={micro.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={redbus.src}
-              className={styles.cardh}
-              width={200}
-              height={200}
-            />
-            <Image alt={"sponsors"} src={un.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={zoho.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={fresh.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={icici.src}
-              className={styles.cardh}
-              width={200}
-              height={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={bob.src}
-              className={styles.cardh}
-              width={200}
-              height={200}
-            />
-            <Image alt={"sponsors"} src={se.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={gfg.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={go.src} height={200} width={200} />
+            <img src={inflection.src} height={200} width={200} />
+            <img src={hundred.src} height={200} width={200} />
+            <img src={antler.src} height={200} width={200} />
+            <img src={axilor.src} height={200} width={200} />
+            <img src={faad.src} height={200} width={200} />
+            <img src={forty.src} height={200} width={200} />
+            <img src={fibonacci.src} height={200} width={200} />
+            <img src={fluid.src} height={200} width={200} />
+            <img src={kae.src} className={styles.cardh} />
+            <img src={launch.src} height={200} width={200} />
+            <img src={lets.src} height={200} width={200} />
+            <img src={pedal.src} height={200} width={200} />
+            <img src={sooni.src} className={styles.cardh} />
+            <img src={west.src} height={200} width={200} />
+            <img src={xscale.src} height={200} width={200} />
+            <img src={yours.src} height={200} width={200} />
+            <img src={gs.src} height={200} width={200} />
+            <img src={aws.src} height={200} width={200} />
+            <img src={amul.src} className={styles.cardh} />
+            <img src={digital.src} className={styles.cardh} />
+            <img src={zee.src} className={styles.cardh} />
+            <img src={unstop.src} height={200} width={200} />
+            <img src={jag.src} height={200} width={200} />
+            <img src={micro.src} height={200} width={200} />
+            <img src={redbus.src} className={styles.cardh} />
+            <img src={un.src} height={200} width={200} />
+            <img src={zoho.src} height={200} width={200} />
+            <img src={fresh.src} height={200} width={200} />
+            <img src={icici.src} className={styles.cardh} />
+            <img src={bob.src} className={styles.cardh} />
+            <img src={se.src} height={200} width={200} />
+            <img src={gfg.src} className={styles.cardh} />
+            <img src={go.src} height={200} width={200} />
           </div>
 
           <div aria-hidden="true" className={styles.marquee__group}>
-            <Image
-              alt={"sponsors"}
-              src={inflection.src}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={hundred.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={antler.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={axilor.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={faad.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={forty.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={fibonacci.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={fluid.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={kae.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={launch.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={lets.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={pedal.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={sooni.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={west.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={xscale.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={yours.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={gs.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={aws.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={amul.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={digital.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={zee.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={unstop.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={jag.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={micro.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={redbus.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={un.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={zoho.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={fresh.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={icici.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={bob.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={se.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={gfg.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={go.src} height={200} width={200} />
+            <img src={inflection.src} height={200} width={200} />
+            <img src={hundred.src} height={200} width={200} />
+            <img src={antler.src} height={200} width={200} />
+            <img src={axilor.src} height={200} width={200} />
+            <img src={faad.src} height={200} width={200} />
+            <img src={forty.src} height={200} width={200} />
+            <img src={fibonacci.src} height={200} width={200} />
+            <img src={fluid.src} height={200} width={200} />
+            <img src={kae.src} className={styles.cardh} />
+            <img src={launch.src} height={200} width={200} />
+            <img src={lets.src} height={200} width={200} />
+            <img src={pedal.src} height={200} width={200} />
+            <img src={sooni.src} className={styles.cardh} />
+            <img src={west.src} height={200} width={200} />
+            <img src={xscale.src} height={200} width={200} />
+            <img src={yours.src} height={200} width={200} />
+            <img src={gs.src} height={200} width={200} />
+            <img src={aws.src} height={200} width={200} />
+            <img src={amul.src} className={styles.cardh} />
+            <img src={digital.src} className={styles.cardh} />
+            <img src={zee.src} className={styles.cardh} />
+            <img src={unstop.src} height={200} width={200} />
+            <img src={jag.src} height={200} width={200} />
+            <img src={micro.src} height={200} width={200} />
+            <img src={redbus.src} className={styles.cardh} />
+            <img src={un.src} height={200} width={200} />
+            <img src={zoho.src} height={200} width={200} />
+            <img src={fresh.src} height={200} width={200} />
+            <img src={icici.src} className={styles.cardh} />
+            <img src={bob.src} className={styles.cardh} />
+            <img src={se.src} height={200} width={200} />
+            <img src={gfg.src} className={styles.cardh} />
+            <img src={go.src} height={200} width={200} />
           </div>
         </div>
 
         <div className={styles.marquee}>
           <div className={styles.marquee__group__reverse}>
-            <Image
-              alt={"sponsors"}
-              src={inflection.src}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={hundred.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={antler.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={axilor.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={faad.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={forty.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={fibonacci.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={fluid.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={kae.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={launch.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={lets.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={pedal.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={sooni.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={west.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={xscale.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={yours.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={gs.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={aws.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={amul.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={digital.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={zee.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={unstop.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={jag.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={micro.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={redbus.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={un.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={zoho.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={fresh.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={icici.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={bob.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={se.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={gfg.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={go.src} height={200} width={200} />
+            <img src={inflection.src} height={200} width={200} />
+            <img src={hundred.src} height={200} width={200} />
+            <img src={antler.src} height={200} width={200} />
+            <img src={axilor.src} height={200} width={200} />
+            <img src={faad.src} height={200} width={200} />
+            <img src={forty.src} height={200} width={200} />
+            <img src={fibonacci.src} height={200} width={200} />
+            <img src={fluid.src} height={200} width={200} />
+            <img src={kae.src} className={styles.cardh} />
+            <img src={launch.src} height={200} width={200} />
+            <img src={lets.src} height={200} width={200} />
+            <img src={pedal.src} height={200} width={200} />
+            <img src={sooni.src} className={styles.cardh} />
+            <img src={west.src} height={200} width={200} />
+            <img src={xscale.src} height={200} width={200} />
+            <img src={yours.src} height={200} width={200} />
+            <img src={gs.src} height={200} width={200} />
+            <img src={aws.src} height={200} width={200} />
+            <img src={amul.src} className={styles.cardh} />
+            <img src={digital.src} className={styles.cardh} />
+            <img src={zee.src} className={styles.cardh} />
+            <img src={unstop.src} height={200} width={200} />
+            <img src={jag.src} height={200} width={200} />
+            <img src={micro.src} height={200} width={200} />
+            <img src={redbus.src} className={styles.cardh} />
+            <img src={un.src} height={200} width={200} />
+            <img src={zoho.src} height={200} width={200} />
+            <img src={fresh.src} height={200} width={200} />
+            <img src={icici.src} className={styles.cardh} />
+            <img src={bob.src} className={styles.cardh} />
+            <img src={se.src} height={200} width={200} />
+            <img src={gfg.src} className={styles.cardh} />
+            <img src={go.src} height={200} width={200} />
           </div>
 
           <div aria-hidden="true" className={styles.marquee__group__reverse}>
-            <Image
-              alt={"sponsors"}
-              src={inflection.src}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={hundred.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={antler.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={axilor.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={faad.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={forty.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={fibonacci.src}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={fluid.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={kae.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={launch.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={lets.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={pedal.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={sooni.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={west.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={xscale.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={yours.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={gs.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={aws.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={amul.src}
-              className={styles.cardh}
-              width={200}
-              height={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={digital.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={zee.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={unstop.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={jag.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={micro.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={redbus.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={un.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={zoho.src} height={200} width={200} />
-            <Image alt={"sponsors"} src={fresh.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={icici.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image
-              alt={"sponsors"}
-              src={bob.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={se.src} height={200} width={200} />
-            <Image
-              alt={"sponsors"}
-              src={gfg.src}
-              className={styles.cardh}
-              height={200}
-              width={200}
-            />
-            <Image alt={"sponsors"} src={go.src} height={200} width={200} />
+            <img src={inflection.src} height={200} width={200} />
+            <img src={hundred.src} height={200} width={200} />
+            <img src={antler.src} height={200} width={200} />
+            <img src={axilor.src} height={200} width={200} />
+            <img src={faad.src} height={200} width={200} />
+            <img src={forty.src} height={200} width={200} />
+            <img src={fibonacci.src} height={200} width={200} />
+            <img src={fluid.src} height={200} width={200} />
+            <img src={kae.src} className={styles.cardh} />
+            <img src={launch.src} height={200} width={200} />
+            <img src={lets.src} height={200} width={200} />
+            <img src={pedal.src} height={200} width={200} />
+            <img src={sooni.src} className={styles.cardh} />
+            <img src={west.src} height={200} width={200} />
+            <img src={xscale.src} height={200} width={200} />
+            <img src={yours.src} height={200} width={200} />
+            <img src={gs.src} height={200} width={200} />
+            <img src={aws.src} height={200} width={200} />
+            <img src={amul.src} className={styles.cardh} />
+            <img src={digital.src} className={styles.cardh} />
+            <img src={zee.src} className={styles.cardh} />
+            <img src={unstop.src} height={200} width={200} />
+            <img src={jag.src} height={200} width={200} />
+            <img src={micro.src} height={200} width={200} />
+            <img src={redbus.src} className={styles.cardh} />
+            <img src={un.src} height={200} width={200} />
+            <img src={zoho.src} height={200} width={200} />
+            <img src={fresh.src} height={200} width={200} />
+            <img src={icici.src} className={styles.cardh} />
+            <img src={bob.src} className={styles.cardh} />
+            <img src={se.src} height={200} width={200} />
+            <img src={gfg.src} className={styles.cardh} />
+            <img src={go.src} height={200} width={200} />
           </div>
         </div>
       </div>
