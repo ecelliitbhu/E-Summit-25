@@ -242,7 +242,7 @@ const Itinerary: () => JSX.Element = () => {
                 return (
                   <div key={index}>
                     {element.track_A &&
-                      element.track_A.map((event, eventIndex) => {
+                      element.track_A.map((event: any, eventIndex) => {
                         return (
                           <Card className="p-3" key={index}>
                             <div className="flex justify-start">
@@ -349,11 +349,11 @@ const Itinerary: () => JSX.Element = () => {
               >
                 Track C <br /> Showcase & Networking
               </div>
-              {third.map((element, index) => {
+              {third.map((element: any, index) => {
                 return (
                   <div key={index}>
                     {element.track_A &&
-                      element.track_A.map((event, eventIndex) => {
+                      element.track_A.map((event: any, eventIndex: number) => {
                         return (
                           <Card className="p-3 my-2" key={index}>
                             <div className="flex justify-start">
@@ -391,7 +391,7 @@ const Itinerary: () => JSX.Element = () => {
                         );
                       })}
                     {element.track_B &&
-                      element.track_B.map((event, eventIndex) => {
+                      element.track_B.map((event: any, eventIndex: number) => {
                         return (
                           <Card className="p-3 my-2" key={index}>
                             <div className="flex justify-start">
@@ -429,7 +429,7 @@ const Itinerary: () => JSX.Element = () => {
                         );
                       })}
                     {element.track_C &&
-                      element.track_C.map((event, eventIndex) => {
+                      element.track_C.map((event: any, eventIndex: number) => {
                         return (
                           <Card className="p-3 my-2" key={index}>
                             <div className="flex justify-start">
@@ -495,7 +495,7 @@ const Itinerary: () => JSX.Element = () => {
                 return (
                   <div key={index}>
                     {element.track_A &&
-                      element.track_A.map((event, eventIndex) => {
+                      element.track_A.map((event: any, eventIndex) => {
                         return (
                           <Card className="p-3 my-2" key={index}>
                             <div className="flex justify-start">
@@ -571,7 +571,7 @@ const Itinerary: () => JSX.Element = () => {
                         );
                       })}
                     {element.track_C &&
-                      element.track_C.map((event, eventIndex) => {
+                      element.track_C.map((event: any, eventIndex) => {
                         return (
                           <Card className="p-3 my-2" key={index}>
                             <div className="flex justify-start">
