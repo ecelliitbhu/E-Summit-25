@@ -142,8 +142,7 @@ export const investmentPartners = [
   },
   {
     name: "Inflection Point",
-    imgURL: "/partners/Startup Services and Investment Partners/ipv.png",
-
+    imgURL: "/partners/Startup_Services_and_Investment_Partners/ipv.png",
   },
   {
     name: "Legaverse",
@@ -151,7 +150,8 @@ export const investmentPartners = [
   },
   {
     name: "pedalstart",
-    imgURL: "/partners/pedal_start.jpg",
+    imgURL:
+      "/partners/Startup_Services_and_Investment_Partners/pedal_start.jpg",
   },
   {
     name: "amalgam_capital",
@@ -174,7 +174,8 @@ export const investmentPartners = [
   },
   {
     name: "Aroa Ventures",
-    imgURL: "/partners/aroaventures.jpg",
+    imgURL:
+      "/partners/Startup_Services_and_Investment_Partners/aroaventures.jpg",
   },
 ];
 export const mediaPartner = [
@@ -188,11 +189,11 @@ export const mediaPartner = [
   },
   {
     name: "Economic Times",
-    imgURL: "/partners/economic times logo.jpeg",
+    imgURL: "/partners/economic_times_logo.jpeg",
   },
   {
     name: "Startupnews.tv",
-    imgURL: "/partners/startup news.png",
+    imgURL: "/partners/startup_news.png",
   },
 ];
 export const travelPartner = [
