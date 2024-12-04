@@ -20,7 +20,7 @@ const About = () => {
       <div className={styles.card}>
         <div className={styles.cardContent}>
           <h3 className={"m-0 text-primary font-bold"}>
-            ABOUT-ESUMMIT&apos;24
+            ABOUT-ESUMMIT&apos;25
           </h3>
           <h1 className={"m-0 text-secondary"}>
             E-Summit is an electrifying celebration of innovation and

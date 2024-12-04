@@ -145,7 +145,17 @@ const Navbar: FunctionComponent<Props> = (props) => {
             </div>
             <div className={"hidden lg:block"}>
               <Link href={"/payment"} className="no-underline">
-                <Button variant={"default"}>Register</Button>
+                <Button variant={"default"} 
+                style={{
+                  background: "linear-gradient(90deg, #6A23A6, #E91045)",
+                  color: "white", 
+                  border: "none", 
+                  padding: "0.5rem 1.5rem", 
+                  fontWeight: "bold",
+                  borderRadius: "0.375rem",
+                  textAlign: "center", 
+                  cursor: "pointer",
+                }}>Register</Button>
               </Link>
             </div>
           </div>
