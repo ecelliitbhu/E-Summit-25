@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import {
   funEvents,
-  schoolEvents,
+  // schoolEvents,
   startupEvents,
   stategyEvents,
 } from "@/app/events/eventsData";
@@ -25,7 +25,7 @@ const page: FunctionComponent<Props> = (props) => {
       <EventsSection sectionTitle="Startup Events" events={startupEvents} />
       <EventsSection sectionTitle="Strategy Events" events={stategyEvents} />
       <EventsSection sectionTitle="Fun Events" events={funEvents} />
-      <EventsSection sectionTitle="School Event" events={schoolEvents} />
+      {/* <EventsSection sectionTitle="School Event" events={schoolEvents} /> */}
     </section>
   );
 };
