@@ -19,7 +19,17 @@ export default function Component() {
       <div className="container grid items-center gap-4 px-4 md:px-6">
         <div className="space-y-3 text-center">
           <h2 className=" text-2xl sm:text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">
-            Get Your Passes for the Most Exciting Event of the Year!
+          Get Your{" "}
+          <span
+          style={{
+          background: "linear-gradient(90deg, #6A23A6, #E91045)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          }}
+          >
+          Passes
+          </span>{" "}
+          for the Most Exciting Event of the Year!
           </h2>
           <p className="w-full text-xs sm:text-sm text-center md:text-xl/relaxed text-primary-foreground lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Don&apos;t miss out on this unique opportunity to connect with

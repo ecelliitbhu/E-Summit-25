@@ -27,12 +27,17 @@ type Props = OwnProps;
 const page: FunctionComponent<Props> = (props) => {
   return (
     <section>
-      <div className="pt-24 justify-center w-full min-h-screen">
+      <div className="pt-24 justify-center w-full min-h-screen flex flex-col items-center">
         <div>
           <h1
-            className={
-              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
-            }
+             className={"text-6xl m-4 flex justify-center font-semibold sm:py-6"}
+             style={{
+               background: "linear-gradient(90deg, #6A23A6, #E91045)",
+               WebkitBackgroundClip: "text",
+               WebkitTextFillColor: "transparent",
+               display: "inline-block", 
+               
+             }}
           >
             Speakers
           </h1>

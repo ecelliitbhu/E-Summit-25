@@ -9,7 +9,7 @@ type EventProps = {
 };
 
 type EventsSectionProps = {
-  sectionTitle: string;
+  sectionTitle:  React.ReactNode;
   events: EventProps[];
 };
 
