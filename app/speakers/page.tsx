@@ -6,6 +6,7 @@ import { past_speakers_data } from "@/app/speakers/speaker_data";
 import { present_speakers_data } from "@/app/speakers/speaker_data";
 import SpeakerCard from "@/components/SpeakerCard";
 
+
 export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   title: {
@@ -27,7 +28,7 @@ type Props = OwnProps;
 const page: FunctionComponent<Props> = (props) => {
   return (
     <section>
-      <div className="pt-24 justify-center w-full min-h-screen flex flex-col items-center">
+      <div className="pt-24 w-full min-h-screen flex flex-col items-center">
         <div>
           <h1
              className={"text-6xl m-4 flex justify-center font-semibold sm:py-6"}
@@ -52,7 +53,7 @@ const page: FunctionComponent<Props> = (props) => {
               <TabsTrigger value="pastSpeaker">Past Speaker</TabsTrigger>
             </TabsList>
             <TabsContent value="presentSpeaker">
-              <div className={"md:flex flex-wrap justify-center items-center p-10"}>
+              {/* <div className={"md:flex flex-wrap justify-center items-center p-10"}>
                 {present_speakers_data.map((speaker: any, index) => (
                     <SpeakerCard
                       name={speaker.name}
@@ -64,7 +65,18 @@ const page: FunctionComponent<Props> = (props) => {
                       key={index}
                     />
                   ))}
-              </div>
+              </div> */}
+               
+              <div className={"flex justify-center mt-44"}>
+          <h1
+            className={
+              " text-6xl m-4 flex justify-center font-semibold sm:py-6 "
+            }
+            
+          >
+            COMING  SOON...
+          </h1>
+        </div>
             </TabsContent>
             <TabsContent value="pastSpeaker">
               <div

@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import PartnerCard from "@/components/PartnerCard";
 import { titleSponsor, coSponsor, associateSponsor, ecosystemPartner, startupShowcasePartner, productLearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner } from "./partner_data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { color } from "framer-motion";
 
 export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
@@ -18,17 +19,22 @@ type Props = OwnProps;
 const page: FunctionComponent<Props> = (props) => {
   return (
     <section>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      <div className="pt-24 justify-center mt-80 w-full min-h-1 sm:text-center sm:text-base ">
         <div>
           <h1
             className={
-              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+              "text-6xl m-4 flex justify-center font-semibold sm:py-6 "
             }
+            style={{
+              background: "linear-gradient(90deg, #6A23A6, #E91045)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              display: "inline-block", }}
           >
-            Title Partner
+            COMING  SOON...
           </h1>
         </div>
-        <div className={"flex justify-center"}>
+        {/* <div className={"flex justify-center"}>
           <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
             {titleSponsor.map((speaker: any, index) => (
               <PartnerCard
@@ -38,9 +44,9 @@ const page: FunctionComponent<Props> = (props) => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -436,8 +442,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </div> */}
+     </section>
   );
 };
 
