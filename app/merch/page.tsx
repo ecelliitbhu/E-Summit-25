@@ -6,8 +6,17 @@ import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { useRouter } from "next/navigation";
 
+
+
 export default function CardWithForm() {
   return (
+    <section>
+  <div className={"mt-32 sm:mx-4 flex justify-center items-center"}>
+    <p className="text-4xl font-bold"> Coming Soon</p>
+  </div>
+</section>
+  );
+  /** return (
     <>
       <div className={"flex flex-col items-center justify-center"}>
         <div className="flex flex-col justify-around   mt-12 lg:mt-44">
@@ -40,5 +49,5 @@ export default function CardWithForm() {
         </div>
       </div>
     </>
-  );
+  ); **/
 }

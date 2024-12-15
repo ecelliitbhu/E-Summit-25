@@ -12,22 +12,22 @@ import { ParallaxProvider } from "react-scroll-parallax";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  applicationName: "E-Summit'24 | IIT BHU Varanasi",
+  applicationName: "E-Summit'25 | IIT BHU Varanasi",
   referrer: "origin-when-cross-origin",
   title: {
-    default: "E-Summit'24 | IIT BHU Varanasi",
-    template: "%s | E-Summit'24 | IIT BHU Varanasi",
+    default: "E-Summit'25 | IIT BHU Varanasi",
+    template: "%s | E-Summit'25 | IIT BHU Varanasi",
   },
-  description: "E-Summit'24 | IIT BHU Varanasi",
+  description: "E-Summit'25 | IIT BHU Varanasi",
   category: "Technology and Entrepreneurship Summit",
   keywords: [
     "E-Summit",
-    "E-Summit'24",
-    "E-Summit'24 IIT BHU Varanasi",
+    "E-Summit'25",
+    "E-Summit'25 IIT BHU Varanasi",
     "IIT BHU Varanasi",
     "E-Summit IIT BHU Varanasi",
-    "E-Summit'24 IIT BHU",
-    "esummit 24",
+    "E-Summit'25 IIT BHU",
+    "esummit 25",
     "esummit",
   ],
 };
