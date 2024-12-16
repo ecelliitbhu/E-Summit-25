@@ -10,10 +10,10 @@ type Props = OwnProps;
 const page: FunctionComponent<Props> = (props) => {
   return (
     <section>
-      <div className={"mt-32 sm:mx-4"}>
-        <Itinerary/>
-      </div>
-    </section>
+  <div className={"mt-32 sm:mx-4 flex justify-center items-center"}>
+    <p className="text-4xl font-bold"> Coming Soon</p>
+  </div>
+</section>
   );
 };
 

@@ -23,7 +23,7 @@ const nav = [
   //   link: "/#about",
   // },
   {
-    name: "Itinerary",
+    name: "ITINERARY",
     link: "/itinerary",
   },
   {

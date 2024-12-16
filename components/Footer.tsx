@@ -82,7 +82,7 @@ export default function Footer() {
             change makers to leave behind a legacy!
             <span className="mt-4 block">
               {" "}
-              &copy; {new Date().getFullYear()} E-Cell IIT BHU{" "}
+              &copy; 2025 E-Cell IIT BHU{" "}
             </span>
           </p>
         </div>
