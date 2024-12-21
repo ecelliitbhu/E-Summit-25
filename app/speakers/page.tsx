@@ -67,7 +67,7 @@ const page: FunctionComponent<Props> = (props) => {
                   ))}
               </div> */}
                
-              <div className={"flex justify-center mt-44"}>
+              {/* <div className={"flex justify-center mt-44"}>
           <h1
             className={
               " text-6xl m-4 flex justify-center font-semibold sm:py-6 "
@@ -76,7 +76,20 @@ const page: FunctionComponent<Props> = (props) => {
           >
             COMING  SOON...
           </h1>
-        </div>
+        </div> */}
+               <div className="flex flex-col justify-center items-center w-full h-[400px]">
+    <h1
+      className="text-6xl m-4 font-semibold sm:py-6"
+      style={{
+        background: "linear-gradient(90deg, #6A23A6, #E91045)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        display: "inline-block",
+      }}
+    >
+      COMING SOON...
+    </h1>
+  </div>    
             </TabsContent>
             <TabsContent value="pastSpeaker">
               <div

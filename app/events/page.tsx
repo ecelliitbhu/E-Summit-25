@@ -27,14 +27,33 @@ const gradientTextStyle = {
 
 const page: FunctionComponent<Props> = (props) => {
   return (
-    <section className="pt-24 justify-center w-full min-h-screen">
+    // <section className="pt-24 justify-center w-full min-h-screen">
 
-      <EventsSection sectionTitle="Startup Events" events={startupEvents} />
-      <EventsSection sectionTitle="Strategy Events" events={stategyEvents} />
-      <EventsSection sectionTitle="Fun Events" events={funEvents} />
-      {/* <EventsSection sectionTitle="School Event" events={schoolEvents} /> */}
+    //   {/* <EventsSection sectionTitle="Startup Events" events={startupEvents} />
+    //   <EventsSection sectionTitle="Strategy Events" events={stategyEvents} />
+    //   <EventsSection sectionTitle="Fun Events" events={funEvents} /> */}
+    //   {/* <EventsSection sectionTitle="School Event" events={schoolEvents} /> */}
 
-    </section>
+      
+
+    // </section>
+
+
+    <section className="flex justify-center items-center w-full min-h-screen">
+    <div>
+      <h1
+        className="text-6xl m-4 font-semibold sm:py-6"
+        style={{
+          background: "linear-gradient(90deg, #6A23A6, #E91045)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          display: "inline-block",
+        }}
+      >
+        COMING SOON...
+      </h1>
+    </div>
+  </section>
   );
 };
 
