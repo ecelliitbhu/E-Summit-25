@@ -7,6 +7,33 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import { EffectCoverflow, Navigation } from "swiper/modules";
 
+const NavigationButton = ({
+  direction,
+  uniqueClass,
+  iconPath,
+}: {
+  direction: "prev" | "next";
+  uniqueClass: string;
+  iconPath: string;
+}) => {
+  return (
+    <div
+      className={`${uniqueClass}-button-${direction} absolute top-1/2 ${direction === 'prev' ? 'left-[-50px] sm:left-[-60px]' : 'right-[-50px] sm:right-[-60px]'} transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-10 h-10 sm:w-12 sm:h-12 flex justify-center items-center rounded-full shadow-lg transition-all duration-300 hover:scale-110`}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="white"
+        className="w-6 h-6"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d={iconPath} />
+      </svg>
+    </div>
+  );
+};
+
 const CustomSlider = ({
   heading,
   gradientText,
@@ -24,7 +51,7 @@ const CustomSlider = ({
 }) => {
   return (
     <div className="container relative mx-auto mt-10 px-4 sm:px-6 lg:px-8">
-      {/* Dynamic Heading */}
+    
       <h2 className="text-center text-3xl font-bold text-white mb-8 select-none">
         {heading.split(gradientText)[0]}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
@@ -51,7 +78,7 @@ const CustomSlider = ({
             nextEl: `.${uniqueClass}-button-next`,
             prevEl: `.${uniqueClass}-button-prev`,
             clickable: true,
-          }as any}
+          } as any}
           modules={[EffectCoverflow, Navigation]}
           className="swiper-container"
           breakpoints={{
@@ -72,7 +99,7 @@ const CustomSlider = ({
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="bg-[#1e1e1e] relative rounded-lg shadow-xl w-[300px] h-[350px] overflow-hidden select-none">
-                {/* For Participants */}
+               
                 {slide.name && (
                   <div>
                     <div className="absolute top-4 left-4">
@@ -89,7 +116,7 @@ const CustomSlider = ({
                     </div>
                   </div>
                 )}
-                {/* For Sponsors */}
+              
                 {!slide.name && (
                   <div className="flex justify-center items-center w-full h-full">
                     <img
@@ -104,35 +131,17 @@ const CustomSlider = ({
           ))}
         </Swiper>
 
-        {/* Navigation Buttons */}
-        <div
-          className={`${uniqueClass}-button-prev absolute top-1/2 left-[-50px] sm:left-[-60px] transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-10 h-10 sm:w-12 sm:h-12 flex justify-center items-center rounded-full shadow-lg transition-all duration-300 hover:scale-110`}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="white"
-            className="w-6 h-6"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-        </div>
-        <div
-          className={`${uniqueClass}-button-next absolute top-1/2 right-[-50px] sm:right-[-60px] transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-10 h-10 sm:w-12 sm:h-12 flex justify-center items-center rounded-full shadow-lg transition-all duration-300 hover:scale-110`}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="white"
-            className="w-6 h-6"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 19l7-7-7-7" />
-          </svg>
-        </div>
+       
+        <NavigationButton 
+          direction="prev" 
+          uniqueClass={uniqueClass} 
+          iconPath="M15 19l-7-7 7-7" 
+        />
+        <NavigationButton 
+          direction="next" 
+          uniqueClass={uniqueClass} 
+          iconPath="M9 19l7-7-7-7" 
+        />
       </div>
 
       <style jsx>{`
