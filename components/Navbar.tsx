@@ -14,6 +14,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface OwnProps {}
 
@@ -53,6 +55,7 @@ type Props = OwnProps;
 const Navbar: FunctionComponent<Props> = (props) => {
   const [scrolling, setScrolling] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to toggle dropdown
+  const [isRegistrationOpen, setIsRegistrationOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,6 +71,15 @@ const Navbar: FunctionComponent<Props> = (props) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const handleRegisterClick = (e: React.MouseEvent) => {
+    if (!isRegistrationOpen) {
+      e.preventDefault(); 
+      toast.info("Registration will open soon. Stay tuned!", {
+        position: "top-center",
+        autoClose: 3000,
+      });
+    }
+  };
   return (
     <header className="w-[100%] min-h-fit sticky z-10 top-8 max-w-[76.5rem] m-auto  lg:p-0 ">
       <nav className="w-full rounded-full z-10 bg-background opacity-95  md:absolute fixed  mt-1">
@@ -144,7 +156,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               </DropdownMenu>
             </div>
             <div className={"hidden lg:block"}>
-              <Link href={"/payment"} className="no-underline">
+              {/* <Link href={"/payment"} className="no-underline">
                 <Button variant={"default"} 
                 style={{
                   background: "linear-gradient(90deg, #6A23A6, #E91045)",
@@ -156,11 +168,33 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   textAlign: "center", 
                   cursor: "pointer",
                 }}>Register</Button>
+              </Link> */}
+                  <Link
+                href={isRegistrationOpen ? "/payment" : "#"} 
+                className="no-underline"
+              >
+                <Button
+                  onClick={handleRegisterClick} 
+                  variant={"default"}
+                  style={{
+                    background: "linear-gradient(90deg, #6A23A6, #E91045)",
+                    color: "white",
+                    border: "none",
+                    padding: "0.5rem 1.5rem",
+                    fontWeight: "bold",
+                    borderRadius: "0.375rem",
+                    textAlign: "center",
+                    cursor: "pointer",
+                  }}
+                >
+                  Register
+                </Button>
               </Link>
             </div>
           </div>
         </div>
       </nav>
+      <ToastContainer />
     </header>
   );
 };
