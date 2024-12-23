@@ -3,6 +3,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import { EffectCoverflow, Navigation } from "swiper/modules";
@@ -74,6 +75,7 @@ const CustomSlider = ({
             modifier: 1.5,
             ...coverflowEffect,
           }}
+         
           navigation={{
             nextEl: `.${uniqueClass}-button-next`,
             prevEl: `.${uniqueClass}-button-prev`,
