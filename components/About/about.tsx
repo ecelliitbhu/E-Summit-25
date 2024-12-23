@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.section
+    style={{ marginTop: "40px" }}
       initial={{ x: -200, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: true }}

@@ -18,7 +18,7 @@ const statsData: Stat[] = [
   { value: "50+", label: "Partners" },
 ];
 
-const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
+const StatItem: FunctionComponent<Stat & { isFirstItem: boolean }> = ({ value, label, isFirstItem }) => {
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const numericValue = parseInt(value.replace(/\D/g, ""));
@@ -56,8 +56,13 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
   return (
     <Tilt>
       <div
+       
         ref={ref}
-        className="text-center m-4 lg:mb-0 flex-col justify-center items-center  p-4  stat"
+        className={`
+          text-center m-4  flex-col justify-center items-center p-4 stat
+          ${isFirstItem ? '' : 'md:border-l-2 border-white border-t-2 md:border-t-0 '} 
+        
+        `}
       >
         <div className="flex justify-center items-center">
           <motion.h2 className=" text-3xl sm:text-5xl font-bold text-primary-foreground">
@@ -72,16 +77,22 @@ const StatItem: FunctionComponent<Stat> = ({ value, label }) => {
 };
 const Stats: FunctionComponent = () => {
   return (
-    <section className=" px-0 md:px-20 py-10 overflow-hidden relative pb-16">
-      <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
-        Key Event Statistics
-      </h1>
-      <div className="flex-col sm:flex md:flex-row flex-wrap justify-center items-center w-full">
-        {statsData.map((stat, index) => (
-          <StatItem key={index} value={stat.value} label={stat.label} />
-        ))}
-      </div>
-    </section>
+    <section className="px-0 md:px-20 py-10 overflow-hidden relative pb-16">
+    <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
+      Key Event Statistics
+    </h1>
+    <div className="md:w-full w-2/3 mx-auto bg-white/10 px-8 py-6 rounded-xl shadow-lg backdrop-blur-sm flex flex-col md:flex-row justify-around items-center">
+      {statsData.map((stat, index) => (
+        // Passing `isFirstItem` as a prop to StatItem to apply different border styles
+        <StatItem 
+          key={index} 
+          value={stat.value} 
+          label={stat.label} 
+          isFirstItem={index === 0}  // `isFirstItem` is true for the first item
+        />
+      ))}
+    </div>
+  </section>
   );
 };
 
