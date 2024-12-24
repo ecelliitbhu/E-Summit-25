@@ -1,5 +1,5 @@
 // "use client";
-import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
+// import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
 import About from "@/components/About/about";
 import WSYA from "@/components/WSYA/WSYA";
 import Hero from "@/components/Hero";
@@ -25,7 +25,7 @@ export default function Home() {
 
         <About />
         <WSYA />
-        <MarqueeComponent />
+        
         <FAQ />
       </main>
     </section>

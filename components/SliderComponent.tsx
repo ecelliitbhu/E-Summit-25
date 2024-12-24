@@ -35,7 +35,7 @@ const ResponsiveComponent = () => {
     { img: "/carousel/bob.png" },
     { img: "/carousel/digitalocean.png" },
     { img: "/carousel/faad-removebg-preview.png" },
-    { img: "/carousel/Fibbnaccix-removebg-preview.png" },
+    { img: "/carousel/Fibbonaccix-removebg-preview.png" },
     { img: "/carousel/fluidventures-removebg-preview.png" },
     { img: "/carousel/FortyTwo.Vc-removebg-preview.png" },
     { img: "/carousel/freshworks.png" },
@@ -56,7 +56,7 @@ const ResponsiveComponent = () => {
     { img: "/carousel/unstop-removebg-preview.png" },
     { img: "/carousel/westbridge-removebg-preview.png" },
     { img: "/carousel/Xscale-removebg-preview.png" },
-    { img: "/carousel/Yournest-removebg-preview.png" },
+    { img: "/carousel/Yournest.png" },
     { img: "/carousel/zoho.png" },
     { img: "/carousel/zee-removebg-preview.png" },
   ];
@@ -66,9 +66,10 @@ const ResponsiveComponent = () => {
     <>
       {isSmallScreen ? (
         <>
+        
         <AlternativeComponent
-          heading="What our Participants speaks for us?"
-          gradientText="Participants speaks"
+          heading="What our Participants speak for us?"
+          gradientText="Participants speak"
           slidesData={slidesData}
           uniqueClass="participants-slider"
         />

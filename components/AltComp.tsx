@@ -1,46 +1,45 @@
-import React from 'react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Grid, Navigation } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Grid, Navigation } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/grid';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/navigation";
 
 const AlternativeComponent = ({ heading, gradientText, slidesData, uniqueClass }) => {
+  // console.log("Heading:", heading);
+  // console.log("GradientText:", gradientText);
   return (
-    <div className={uniqueClass}>
-      <h2>{heading}</h2>
-      <p style={{ background: 'linear-gradient(90deg, #00f, #0ff)', padding: '5px' }}>
-        {gradientText}
-      </p>
-
+    <div className={`w-full max-w-screen-xl mx-auto `}>
+  
+   
+     <div className="relative ">
+     <h1 className="text-2xl font-bold mb-8 mt-8 text-center realative">{heading}</h1>  
+</div>
       <Swiper
-        slidesPerView={1} // Adjust this to 1 for single slide per view or more if you need multiple
-        spaceBetween={20} // Space between slides
+        slidesPerView={1} // Only one column of slides
+         
         grid={{
-          rows: 3, // Rows in the grid
-          fill: 'row', // Ensure each row fills correctly
+          rows: 3, // 3 rows in the grid
+          fill: "row", 
         }}
-        modules={[Grid, Navigation]} // Enable grid and navigation
-        navigation // Enable arrow navigation
-        className="mySwiper"
+        modules={[Grid, Navigation]} 
+        navigation 
+        className="mySwiper md:w-full w-1/3  flex justify-around"
       >
         {slidesData.map((item, index) => (
-          <SwiperSlide key={index}>
-            {/* Check if the item contains text data (i.e., name, description, post) */}
+          <SwiperSlide key={index} >
             {item.name ? (
-              <div className="flex flex-col items-center bg-white bg-opacity-10 p-5 rounded-lg text-white">
-                <h4 className="mb-2">{item.name}</h4>
-                <p>{item.description}</p>
+              <div className="flex flex-col items-center mx-auto mb-3 bg-white bg-opacity-10 p-5 rounded-lg text-white w-full max-w-[300px]">
+                <h4 className="mb-2 text-lg font-semibold">{item.name}</h4>
+                <p className="text-sm">{item.post}</p>
               </div>
             ) : (
-              // For brand logos, just show the image
-              <div className="bg-white bg-opacity-10 p-5 rounded-lg flex justify-center items-center">
+              <div className="bg-white bg-opacity-10 p-8  mx-auto mb-5 rounded-lg flex justify-center items-center w-full max-w-[120px]">
                 <img
                   src={item.img}
                   alt={`Brand ${index}`}
-                  className="w-[120px] h-auto object-contain"
+                  className="w-auto h-auto max-h-[80px]  object-contain"
                 />
               </div>
             )}

@@ -77,11 +77,11 @@ const StatItem: FunctionComponent<Stat & { isFirstItem: boolean }> = ({ value, l
 };
 const Stats: FunctionComponent = () => {
   return (
-    <section className="px-0 md:px-20 py-10 overflow-hidden relative pb-16">
+    <section className="px-0 md:px-20 py-10 overflow-hidden relative pb-16 ">
     <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
       Key Event Statistics
     </h1>
-    <div className="md:w-full w-2/3 mx-auto bg-white/10 px-8 py-6 rounded-xl shadow-lg backdrop-blur-sm flex flex-col md:flex-row justify-around items-center">
+    <div className="md:w-full w-1/3 mx-auto bg-white/10 px-8 py-6 rounded-xl shadow-lg backdrop-blur-sm flex flex-col md:flex-row justify-around items-center">
       {statsData.map((stat, index) => (
         // Passing `isFirstItem` as a prop to StatItem to apply different border styles
         <StatItem 

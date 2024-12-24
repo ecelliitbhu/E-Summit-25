@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
+    <div className="w-1/3 sm:w-1/2 md:w-full mx-auto ">
     <motion.section
     style={{ marginTop: "40px" }}
       initial={{ x: -200, opacity: 0 }}
@@ -23,12 +24,12 @@ const About = () => {
           <h3 className={"m-0 text-primary font-bold"}>
             ABOUT-ESUMMIT&apos;25
           </h3>
-          <h1 className={"m-0 text-secondary"}>
+          <h1 className={"m-0 text-secondary break-words"}>
             E-Summit is an electrifying celebration of innovation and
             entrepreneurship, brought to you by the Entrepreneurship Cell (
             E-Cell ) at the Indian Institute of Technology ( IIT ) BHU.
           </h1>
-          <p className={"m-0 text-secondary"}>
+          <p className={"m-0 text-secondary breaks-words"}>
             This annual festival is a convergence of visionary thinkers, budding
             entrepreneurs,and established industry leaders, all united by a
             common passion. - &quot;The drive to create,innoavte and transform
@@ -41,6 +42,7 @@ const About = () => {
         </div>
       </div>
     </motion.section>
+    </div>
   );
 };
 
