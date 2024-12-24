@@ -5,8 +5,14 @@ import { Grid, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/navigation";
+interface AlternativeComponentProps {
+  heading: string;
+  gradientText: string;
+  slidesData: any[]; 
+  uniqueClass: string;
+}
 
-const AlternativeComponent = ({ heading, gradientText, slidesData, uniqueClass }) => {
+const  AlternativeComponent: React.FC<AlternativeComponentProps>  = ({ heading, gradientText, slidesData, uniqueClass }) => {
   // console.log("Heading:", heading);
   // console.log("GradientText:", gradientText);
   return (
