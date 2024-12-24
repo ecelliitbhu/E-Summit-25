@@ -3,6 +3,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import { EffectCoverflow, Navigation } from "swiper/modules";
@@ -74,6 +75,7 @@ const CustomSlider = ({
             modifier: 1.5,
             ...coverflowEffect,
           }}
+         
           navigation={{
             nextEl: `.${uniqueClass}-button-next`,
             prevEl: `.${uniqueClass}-button-prev`,
@@ -102,29 +104,32 @@ const CustomSlider = ({
                
                 {slide.name && (
                   <div>
-                    <div className="absolute top-4 left-4">
+                    {/* <div className="absolute top-4 left-4">
                       <img
                         src={slide.img}
                         alt={slide.name}
                         className="rounded-full w-14 h-14 border-2 border-white"
                       />
-                    </div>
-                    <div className="absolute top-24 left-6 right-6">
-                      <h3 className="text-lg font-semibold text-white">{slide.name}</h3>
-                      <p className="text-sm text-gray-400">{slide.description}</p>
+                    </div> */}
+                    <div className="absolute top-8 left-6 right-6">
+                      <h3 className="text-lg font-semibold text-white mb-3">{slide.name}</h3>
+                      {/* <p className="text-sm text-gray-400">{slide.description}</p> */}
                       <p className="font-medium text-pink-500">{slide.post}</p>
                     </div>
                   </div>
                 )}
               
                 {!slide.name && (
-                  <div className="flex justify-center items-center w-full h-full">
+                  <div className="flex justify-center mt-24">
+                    <div className="h-full w-4/5 flex justify-center items-center">
                     <img
                       src={slide.img}
                       alt="Sponsor Logo"
-                      className="object-contain max-h-16"
+                      className="object-contain max-h-32"
                     />
                   </div>
+                  </div>
+                 
                 )}
               </div>
             </SwiperSlide>

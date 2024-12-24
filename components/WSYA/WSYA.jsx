@@ -66,12 +66,12 @@ const WSYA = () => {
   >
     Attend
   </span>{" "}?</h1>
-        <p className="max-w-xl mx-auto mb-5">
+        <p className="text-sm sm:text-base md:text-lg max-w-xl mx-auto mb-5 break-words">
           E-Summit has a range of events, competitions, panel discussions,
           <br /> networking, and pitching opportunities for every vertical of
           our entrepreneurial society.
         </p>
-        <div className="min-h-full flex flex-wrap justify-around align-middle">
+        <div className="min-h-full flex flex-col md:flex-row justify-around items-center">
           {items.map((item, index) => (
             <MotionDiv key={index} {...item} />
           ))}
