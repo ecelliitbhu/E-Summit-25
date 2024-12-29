@@ -1,8 +1,6 @@
 
-
-
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -19,10 +17,22 @@ const CustomSlider = ({
   slidesData: { img: string; name?: string; post?: string; description?: string }[];
   sliderType: "participant" | "sponsor";
 }) => {
-  const navigationPrev = `button-prev-${sliderType}`;
-  const navigationNext = `button-next-${sliderType}`;
+  const navigationPrev = useRef<HTMLDivElement>(null);
+  const navigationNext = useRef<HTMLDivElement>(null);
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  useEffect(() => {
+    if (navigationPrev.current && navigationNext.current) {
+      // Set up the navigation buttons if refs are ready
+      navigationPrev.current.addEventListener("click", () => {
+        setActiveIndex((prev) => prev - 1); // Navigate to the previous slide
+      });
+      navigationNext.current.addEventListener("click", () => {
+        setActiveIndex((prev) => prev + 1); // Navigate to the next slide
+      });
+    }
+  }, []);
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative z-10">
@@ -45,7 +55,7 @@ const CustomSlider = ({
         </h2>
       </div>
 
-      {/* Add margin to the slider container for spacing */}
+      {/* Slider Container */}
       <div className="relative w-full overflow-hidden z-10 mb-12">
         <Swiper
           loop={true}
@@ -59,8 +69,8 @@ const CustomSlider = ({
             0: { slidesPerView: 1, spaceBetween: 10 },
           }}
           navigation={{
-            nextEl: `.${navigationNext}`,
-            prevEl: `.${navigationPrev}`,
+            nextEl: navigationNext.current,
+            prevEl: navigationPrev.current,
           }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           modules={[Navigation]}
@@ -103,7 +113,8 @@ const CustomSlider = ({
 
         {/* Navigation Buttons */}
         <div
-          className={`absolute top-1/2 left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110 ${navigationPrev}`}
+          ref={navigationPrev}
+          className={`absolute top-1/2 left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +128,8 @@ const CustomSlider = ({
           </svg>
         </div>
         <div
-          className={`absolute top-1/2 right-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110 ${navigationNext}`}
+          ref={navigationNext}
+          className={`absolute top-1/2 right-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
