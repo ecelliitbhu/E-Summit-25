@@ -17,9 +17,9 @@ type Props = OwnProps;
 
 const Hero: FunctionComponent<Props> = () => {
   const [scrollY, setScrollY] = useState(0);
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [isRegistrationOpen, setIsRegistrationOpen] = useState(false); 
+  const [isRegistrationOpen, setIsRegistrationOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -51,7 +51,7 @@ const Hero: FunctionComponent<Props> = () => {
 
   const handleRegisterClick = (e: React.MouseEvent) => {
     if (!isRegistrationOpen) {
-      e.preventDefault(); 
+      e.preventDefault();
       toast.info("Registration will open soon. Stay tuned!", {
         position: "top-center",
         autoClose: 3000,
@@ -98,38 +98,44 @@ const Hero: FunctionComponent<Props> = () => {
           transition={{ duration: 2, ease: "easeInOut" }}
         >
           {expanded ? (
-            <Link href={isRegistrationOpen ? "/payment" : "#"} className="no-underline">
+            <Link
+              href={isRegistrationOpen ? "/payment" : "#"}
+              className="no-underline"
+            >
               <motion.button
                 onClick={handleRegisterClick}
                 className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
                 initial={{
                   width: "100px",
                   height: "50px",
-                  borderRadius: "50%",
+                  borderRadius: "25px",
+                  opacity: 0,
                 }}
                 animate={{
                   width: "300px",
                   height: "50px",
                   borderRadius: "25px",
+                  opacity: 1,
                 }}
-                transition={{ duration: 2.5, ease: "easeInOut" }}
+                transition={{ duration: 2.5, ease: "linear", delay: 1 }}
               >
                 Register
-                <motion.div
-                  className="absolute"
-                  initial={{ x: 0 }}
-                  animate={{ x: 125 }}
-                  transition={{
-                    duration: 2.5,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <Image src={Res} alt="Arrow Icon" width={50} height={50} />
-                </motion.div>
               </motion.button>
+              <motion.div
+                className="absolute"
+                initial={{ x: 0, y: -50 }}
+                animate={{ x: 250 }}
+                transition={{
+                  duration: 2.5,
+                  ease: "linear",
+                  delay: 1,
+                }}
+              >
+                <Image src={Res} alt="Arrow Icon" width={50} height={50} />
+              </motion.div>
             </Link>
           ) : (
-            <div className="rounded-full flex justify-center items-center bg-gradient-to-r from-purple-500 to-red-500 cursor-pointer mt-4">
+            <div className="rounded-full flex justify-center items-center bg-gradient-to-r from-purple-600 to-red-500 cursor-pointer mt-4">
               <Image src={Res} alt="Arrow Icon" width={50} height={50} />
             </div>
           )}
@@ -141,4 +147,3 @@ const Hero: FunctionComponent<Props> = () => {
 };
 
 export default Hero;
-
