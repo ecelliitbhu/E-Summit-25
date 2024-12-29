@@ -1,189 +1,271 @@
 
+// "use client";
+// import React, { useState } from "react";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import { Navigation } from "swiper/modules";
+
+// const CustomSlider = ({
+//   heading,
+//   gradientText,
+//   slidesData,
+//   sliderType,
+// }: {
+//   heading: string;
+//   gradientText: string;
+//   slidesData: { img: string; name?: string; post?: string; description?: string }[];
+//   sliderType: "participant" | "sponsor";
+// }) => {
+//   const navigationPrev = `button-prev-${sliderType}`;
+//   const navigationNext = `button-next-${sliderType}`;
+
+//   const [activeIndex, setActiveIndex] = useState<number>(0);
+
+//   return (
+//     <div className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative z-10">
+//       {/* Heading for Participants or Sponsors */}
+//       <div className="mb-12 text-center relative z-20">
+//         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 break-words">
+//           {sliderType === "participant" ? (
+//             <>
+//               What our{" "}
+//               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+//                 {gradientText}
+//               </span>{" "}
+//               for us?
+//             </>
+//           ) : (
+//             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+//               {gradientText}
+//             </span>
+//           )}
+//         </h2>
+//       </div>
+
+//       {/* Add margin to the slider container for spacing */}
+//       <div className="relative w-full overflow-hidden z-10 mb-12">
+//         <Swiper
+//           loop={true}
+//           grabCursor={true}
+//           centeredSlides={true}
+//           slidesPerView={3}
+//           spaceBetween={20}
+//           breakpoints={{
+//             1100: { slidesPerView: 3, spaceBetween: 20 },
+//             768: { slidesPerView: 2, spaceBetween: 15 },
+//             0: { slidesPerView: 1, spaceBetween: 10 },
+//           }}
+//           navigation={{
+//             nextEl: `.${navigationNext}`,
+//             prevEl: `.${navigationPrev}`,
+//           }}
+//           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+//           modules={[Navigation]}
+//         >
+//           {slidesData.map((slide, index) => (
+//             <SwiperSlide
+//               key={index}
+//               className={`transition-transform duration-300 ${
+//                 index === activeIndex ? "scale-110 z-10" : "scale-95 opacity-80"
+//               }`}
+//             >
+//               {sliderType === "participant" ? (
+//                 <div className="bg-[#1e1e1e] rounded-lg shadow-md p-6 flex flex-col items-start gap-3 min-h-[320px]">
+//                   <div className="flex flex-col items-start gap-2">
+//                     <img
+//                       src={slide.img}
+//                       alt={slide.name || "Participant"}
+//                       className="w-24 h-24 rounded-full object-cover"
+//                     />
+//                     <h3 className="text-white font-semibold text-lg">{slide.name}</h3>
+//                     <p className="text-gray-400 text-sm">{slide.description}</p>
+//                     <p className="text-purple-300 text-sm">{slide.post}</p>
+//                   </div>
+//                 </div>
+//               ) : (
+//                 <div
+//                   className="bg-[#1e1e1e] rounded-lg shadow-md flex justify-center items-center"
+//                   style={{ width: "100%", height: "200px" }}
+//                 >
+//                   <img
+//                     src={slide.img}
+//                     alt="Sponsor"
+//                     className="object-contain w-20 h-20 md:w-32 md:h-32"
+//                   />
+//                 </div>
+//               )}
+//             </SwiperSlide>
+//           ))}
+//         </Swiper>
+
+//         {/* Navigation Buttons */}
+//         <div
+//           className={`absolute top-1/2 left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110 ${navigationPrev}`}
+//         >
+//           <svg
+//             xmlns="http://www.w3.org/2000/svg"
+//             fill="none"
+//             viewBox="0 0 24 24"
+//             strokeWidth={2}
+//             stroke="white"
+//             className="w-6 h-6"
+//           >
+//             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+//           </svg>
+//         </div>
+//         <div
+//           className={`absolute top-1/2 right-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110 ${navigationNext}`}
+//         >
+//           <svg
+//             xmlns="http://www.w3.org/2000/svg"
+//             fill="none"
+//             viewBox="0 0 24 24"
+//             strokeWidth={2}
+//             stroke="white"
+//             className="w-6 h-6"
+//           >
+//             <path strokeLinecap="round" strokeLinejoin="round" d="M9 19l7-7-7-7" />
+//           </svg>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CustomSlider;
+
+
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
-import { EffectCoverflow, Navigation } from "swiper/modules";
-
-const NavigationButton = ({
-  direction,
-  uniqueClass,
-  iconPath,
-}: {
-  direction: "prev" | "next";
-  uniqueClass: string;
-  iconPath: string;
-}) => {
-  return (
-    <div
-      className={`${uniqueClass}-button-${direction} absolute top-1/2 ${direction === 'prev' ? 'left-[-50px] sm:left-[-60px]' : 'right-[-50px] sm:right-[-60px]'} transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-10 h-10 sm:w-12 sm:h-12 flex justify-center items-center rounded-full shadow-lg transition-all duration-300 hover:scale-110`}
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={2}
-        stroke="white"
-        className="w-6 h-6"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d={iconPath} />
-      </svg>
-    </div>
-  );
-};
+import { Navigation } from "swiper/modules";
 
 const CustomSlider = ({
   heading,
   gradientText,
   slidesData,
-  slidesPerView = 3,
-  coverflowEffect = {},
-  uniqueClass,
+  sliderType,
 }: {
   heading: string;
   gradientText: string;
-  slidesData: { img: string; name?: string; description?: string; post?: string; link?: string }[];
-  slidesPerView?: number;
-  coverflowEffect?: object;
-  uniqueClass: string;
+  slidesData: { img: string; name?: string; post?: string; description?: string }[];
+  sliderType: "participant" | "sponsor";
 }) => {
+  const navigationPrev = `button-prev-${sliderType}`;
+  const navigationNext = `button-next-${sliderType}`;
+
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+
   return (
-    <div className="container relative mx-auto mt-10 px-4 sm:px-6 lg:px-8">
-    
-      <h2 className="text-center text-3xl font-bold text-white mb-8 select-none">
-        {heading.split(gradientText)[0]}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
-          {gradientText}
-        </span>
-        {heading.split(gradientText)[1]}
-      </h2>
-      <div className="relative w-full max-w-6xl mx-auto">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative z-10">
+      {/* Heading for Participants or Sponsors */}
+      <div className="mb-12 text-center relative z-20">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 break-words">
+          {sliderType === "participant" ? (
+            <>
+              What our{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+                {gradientText}
+              </span>{" "}
+              for us?
+            </>
+          ) : (
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+              {gradientText}
+            </span>
+          )}
+        </h2>
+      </div>
+
+      {/* Add margin to the slider container for spacing */}
+      <div className="relative w-full overflow-hidden z-10 mb-12">
         <Swiper
-          effect={"coverflow"}
+          loop={true}
           grabCursor={true}
           centeredSlides={true}
-          loop={true}
-          slidesPerView={slidesPerView}
+          slidesPerView={3}
           spaceBetween={20}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1.5,
-            ...coverflowEffect,
-          }}
-         
-          navigation={{
-            nextEl: `.${uniqueClass}-button-next`,
-            prevEl: `.${uniqueClass}-button-prev`,
-            clickable: true,
-          } as any}
-          modules={[EffectCoverflow, Navigation]}
-          className="swiper-container"
           breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: slidesPerView,
-              spaceBetween: 20,
-            },
+            1100: { slidesPerView: 3, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 15 },
+            0: { slidesPerView: 1, spaceBetween: 10 },
           }}
+          navigation={{
+            nextEl: `.${navigationNext}`,
+            prevEl: `.${navigationPrev}`,
+          }}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          modules={[Navigation]}
         >
           {slidesData.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-[#1e1e1e] relative rounded-lg shadow-xl w-[300px] h-[350px] overflow-hidden select-none">
-               
-                {slide.name && (
-                  <div>
-                    {/* <div className="absolute top-4 left-4">
-                      <img
-                        src={slide.img}
-                        alt={slide.name}
-                        className="rounded-full w-14 h-14 border-2 border-white"
-                      />
-                    </div> */}
-                    <div className="absolute top-8 left-6 right-6">
-                      <h3 className="text-lg font-semibold text-white mb-3">{slide.name}</h3>
-                      {/* <p className="text-sm text-gray-400">{slide.description}</p> */}
-                      <p className="font-medium text-pink-500">{slide.post}</p>
-                    </div>
-                  </div>
-                )}
-              
-                {!slide.name && (
-                  <div className="flex justify-center mt-24">
-                    <div className="h-full w-4/5 flex justify-center items-center">
+            <SwiperSlide
+              key={index}
+              className={`transition-transform duration-300 ${
+                index === activeIndex ? "scale-110 z-10" : "scale-95 opacity-80"
+              }`}
+            >
+              {sliderType === "participant" ? (
+                <div className="bg-[#1e1e1e] rounded-lg shadow-md p-6 flex flex-col items-start gap-3 min-h-[320px]">
+                  <div className="flex flex-col items-start gap-2">
                     <img
                       src={slide.img}
-                      alt="Sponsor Logo"
-                      className="object-contain max-h-32"
+                      alt={slide.name || "Participant"}
+                      className="w-24 h-24 rounded-full object-cover"
                     />
+                    <h3 className="text-white font-semibold text-lg">{slide.name}</h3>
+                    <p className="text-gray-400 text-sm">{slide.description}</p>
+                    <p className="text-purple-300 text-sm">{slide.post}</p>
                   </div>
-                  </div>
-                 
-                )}
-              </div>
+                </div>
+              ) : (
+                <div
+                  className="bg-[#1e1e1e] rounded-lg shadow-md flex justify-center items-center"
+                  style={{ width: "100%", height: "200px" }}
+                >
+                  <img
+                    src={slide.img}
+                    alt="Sponsor"
+                    className="object-contain w-20 h-20 md:w-32 md:h-32"
+                  />
+                </div>
+              )}
             </SwiperSlide>
           ))}
         </Swiper>
 
-       
-        <NavigationButton 
-          direction="prev" 
-          uniqueClass={uniqueClass} 
-          iconPath="M15 19l-7-7 7-7" 
-        />
-        <NavigationButton 
-          direction="next" 
-          uniqueClass={uniqueClass} 
-          iconPath="M9 19l7-7-7-7" 
-        />
+        {/* Navigation Buttons */}
+        <div
+          className={`absolute top-1/2 left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110 ${navigationPrev}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="white"
+            className="w-6 h-6"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </div>
+        <div
+          className={`absolute top-1/2 right-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110 ${navigationNext}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="white"
+            className="w-6 h-6"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 19l7-7-7-7" />
+          </svg>
+        </div>
       </div>
-
-      <style jsx>{`
-        .swiper-container {
-          padding: 20px 0;
-        }
-        .swiper-slide {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .swiper-button-prev,
-        .swiper-button-next {
-          cursor: pointer;
-        }
-        .swiper-button-prev:hover,
-        .swiper-button-next:hover {
-          color: #ff007f;
-        }
-        .select-none {
-          user-select: none;
-        }
-        @media (max-width: 640px) {
-          .swiper-container {
-            padding: 10px 0;
-          }
-          .swiper-slide {
-            width: 100%;
-            height: auto;
-          }
-        }
-        @media (min-width: 640px) and (max-width: 1024px) {
-          .swiper-container {
-            padding: 15px 0;
-          }
-        }
-      `}</style>
     </div>
   );
 };
