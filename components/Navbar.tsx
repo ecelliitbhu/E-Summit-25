@@ -5,6 +5,7 @@ import logo from "@/public/logos/logoecell.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import Script from "next/script";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,6 +18,11 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+declare global {
+  interface Window {
+    popup?: (eventId: string) => void;
+  }
+}
 interface OwnProps {}
 
 const nav = [
@@ -56,6 +62,8 @@ const Navbar: FunctionComponent<Props> = (props) => {
   const [scrolling, setScrolling] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to toggle dropdown
   const [isRegistrationOpen, setIsRegistrationOpen] = useState(false); 
+  const [isScriptLoaded, setIsScriptLoaded] = useState(false);
+  const [showIframe, setShowIframe] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,21 +73,20 @@ const Navbar: FunctionComponent<Props> = (props) => {
         setScrolling(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const handleRegisterClick = (e: React.MouseEvent) => {
-    if (!isRegistrationOpen) {
-      e.preventDefault(); 
-      toast.info("Registration will open soon. Stay tuned!", {
-        position: "top-center",
-        autoClose: 3000,
-      });
-    }
-  };
+  // const handleRegisterClick = (e: React.MouseEvent) => {
+  //   if (!isRegistrationOpen) {
+  //     e.preventDefault(); 
+  //     toast.info("Registration will open soon. Stay tuned!", {
+  //       position: "top-center",
+  //       autoClose: 3000,
+  //     });
+  //   }
+  // };
+  
   return (
     <header className="w-[100%] min-h-fit sticky z-10 top-8 max-w-[76.5rem] m-auto  lg:p-0 ">
       <nav className="w-full rounded-full z-10 bg-background opacity-95  md:absolute fixed  mt-1">
@@ -156,7 +163,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               </DropdownMenu>
             </div>
             <div className={"hidden lg:block"}>
-              {/* <Link href={"/payment"} className="no-underline">
+              <Link href={"/payment"} className="no-underline">
                 <Button variant={"default"} 
                 style={{
                   background: "linear-gradient(90deg, #6A23A6, #E91045)",
@@ -168,8 +175,10 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   textAlign: "center", 
                   cursor: "pointer",
                 }}>Register</Button>
-              </Link> */}
-                  <Link
+              </Link>
+
+
+                  {/* <Link
                 href={isRegistrationOpen ? "/payment" : "#"} 
                 className="no-underline"
               >
@@ -189,12 +198,20 @@ const Navbar: FunctionComponent<Props> = (props) => {
                 >
                   Register
                 </Button>
-              </Link>
+              </Link> */}
+
+
             </div>
           </div>
         </div>
       </nav>
       <ToastContainer />
+      
+      <Script
+        src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js"
+        strategy="afterInteractive"
+        onLoad={() => setIsScriptLoaded(true)} // Mark the script as loaded when Townscript is ready
+      />
     </header>
   );
 };

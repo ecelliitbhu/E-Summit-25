@@ -49,15 +49,15 @@ const Hero: FunctionComponent<Props> = () => {
   const scale = scrollY > 50 ? 1.7 : 1;
   const smallScreenScale = scrollY > 10 ? 1.5 : 1;
 
-  const handleRegisterClick = (e: React.MouseEvent) => {
-    if (!isRegistrationOpen) {
-      e.preventDefault(); 
-      toast.info("Registration will open soon. Stay tuned!", {
-        position: "top-center",
-        autoClose: 3000,
-      });
-    }
-  };
+  // const handleRegisterClick = (e: React.MouseEvent) => {
+  //   if (!isRegistrationOpen) {
+  //     e.preventDefault(); 
+  //     toast.info("Registration will open soon. Stay tuned!", {
+  //       position: "top-center",
+  //       autoClose: 3000,
+  //     });
+  //   }
+  // };
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-black text-white relative">
@@ -98,9 +98,9 @@ const Hero: FunctionComponent<Props> = () => {
           transition={{ duration: 2, ease: "easeInOut" }}
         >
           {expanded ? (
-            <Link href={isRegistrationOpen ? "/payment" : "#"} className="no-underline">
+            <Link href={"/payment"} className="no-underline">
               <motion.button
-                onClick={handleRegisterClick}
+                // onClick={handleRegisterClick}
                 className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
                 initial={{
                   width: "100px",
