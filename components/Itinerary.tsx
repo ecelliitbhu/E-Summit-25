@@ -219,7 +219,7 @@ const Itinerary: () => JSX.Element = () => {
             <TabsTrigger value="fourth">4 Feb 2024</TabsTrigger>
           </TabsList>
           <TabsContent value="second">
-            <div className="grid  grid-cols-3 gap-2">
+            <div className="grid  md:grid-cols-3 grid-cols-1 gap-2">
               <div
                 style={{ textAlign: "center" }}
                 className="hidden md:inline-block "
@@ -244,7 +244,7 @@ const Itinerary: () => JSX.Element = () => {
                     {element.track_A &&
                       element.track_A.map((event: any, eventIndex) => {
                         return (
-                          <Card className="p-3" key={index}>
+                          <Card className="p-3 my-2" key={index}>
                             <div className="flex justify-start">
                               {" "}
                               <Badge variant="outline">{event.time}</Badge>
