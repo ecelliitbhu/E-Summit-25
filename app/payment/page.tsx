@@ -11,7 +11,9 @@ const page: FunctionComponent<Props> = (props) => {
       <div className="flex flex-col items-center justify-center w-full h-screen ">
         <iframe
           id="ts-iframe"
-          src="https://www.townscript.com/v2/widget/esummit-2024-iit-bhu-443243/booking"
+          // src="https://www.townscript.com/v2/widget/esummit-2024-iit-bhu-443243/booking"
+          src="https://www.townscript.com/v2/widget/esummit-2025-iit-bhu-434033/booking"
+
           height="600"
           width="80%"
           className={"border rounded-2xl "}
