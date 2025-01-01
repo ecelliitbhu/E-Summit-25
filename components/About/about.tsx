@@ -21,9 +21,10 @@ const About = () => {
     >
       <div className={styles.card}>
         <div className={styles.cardContent}>
-          <h3 className={"m-0 text-primary font-bold"}>
-            ABOUT-ESUMMIT&apos;25
-          </h3>
+        <h3 className={"m-0 text-primary font-bold "} style={{ fontSize: "2.5rem" }}>
+  ABOUT-ESUMMIT&apos;25
+</h3>
+
           <h1 className={"m-0 text-secondary break-words"}>
             E-Summit is an electrifying celebration of innovation and
             entrepreneurship, brought to you by the Entrepreneurship Cell (

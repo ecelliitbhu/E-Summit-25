@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect ,useRef} from "react";
 import CustomSlider from "./CustomSlider"; // Import your CustomSlider component
 import AlternativeComponent from "./AltComp";
 
@@ -18,7 +18,7 @@ const ResponsiveComponent = () => {
 
     return () => window.removeEventListener("resize", updateScreenSize); // Cleanup listener
   }, []);
-
+  
   const slidesData = [
     { name: "Participant 1", description: "Frontend Developer", post: "The summit was incredibly inspiring! The keynote sessions were thought-provoking, and the networking opportunities were top-notch. It gave me a fresh perspective on entrepreneurship.", img: "/images/profile1.jpg" },
     { name: "Participant 2", description: "Graphic Designer", post: "I loved the mix of workshops and speaker sessions. The practical insights shared by industry experts were extremely helpful for my startup journey.", img: "/images/profile2.jpg" },
@@ -84,16 +84,18 @@ const ResponsiveComponent = () => {
           heading="What our Participants speaks for us?"
           gradientText="Participants speaks"
           slidesData={slidesData}
-          uniqueClass="participants-slider"
+          // uniqueClass="participants-slider"
+           sliderType="participant"
         />
         <CustomSlider
   heading="Sponsors"
   gradientText="Sponsors"
   slidesData={brandLogos}
   
-  slidesPerView={3}
-  coverflowEffect={{ modifier: 0.5, depth: 50 }}
-  uniqueClass="sponsors-slider"
+  // slidesPerView={3}
+  // coverflowEffect={{ modifier: 0.5, depth: 50 }}
+  // uniqueClass="sponsors-slider"
+  sliderType="sponsor"
 />
 </>
 
