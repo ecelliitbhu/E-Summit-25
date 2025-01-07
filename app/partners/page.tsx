@@ -5,6 +5,7 @@ import { titleSponsor, coSponsor, associateSponsor, ecosystemPartner, startupSho
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { color } from "framer-motion";
 
+
 export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   title: {
