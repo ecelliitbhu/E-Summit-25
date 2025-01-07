@@ -88,7 +88,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
   // };
   
   return (
-    <header className="w-[100%] min-h-fit sticky z-10 top-8 max-w-[76.5rem] m-auto  lg:p-0 ">
+    <header className="w-[100%] min-h-fit sticky z-30 top-8 max-w-[76.5rem] m-auto  lg:p-0 ">
       <nav className="w-full rounded-full z-10 bg-background opacity-95  md:absolute fixed  mt-1">
         <div className={"relative block px-8"}>
           <div
