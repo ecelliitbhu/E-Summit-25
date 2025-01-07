@@ -7,7 +7,7 @@ interface OwnProps {}
 
 type Props = OwnProps;
 
-const page: FunctionComponent<Props> = (props) => {
+const Page: FunctionComponent<Props> = (props) => {
   const searchParams = useSearchParams();
   const initialType = searchParams?.get('type');
   const [type,setType]=useState(initialType)
@@ -43,4 +43,4 @@ const page: FunctionComponent<Props> = (props) => {
   );
 };
 
-export default page;
+export default Page;

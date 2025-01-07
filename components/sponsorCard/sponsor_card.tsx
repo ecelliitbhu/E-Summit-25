@@ -119,7 +119,7 @@ const MarqueeComponent: React.FC = () => {
           </div>
         </div>
 
-        <div className={styles.marquee}>
+        {/* <div className={styles.marquee}>
           <div className={styles.marquee__group__reverse}>
             <img src={inflection.src} height={200} width={200} />
             <img src={hundred.src} height={200} width={200} />
@@ -191,7 +191,7 @@ const MarqueeComponent: React.FC = () => {
             <img src={gfg.src} className={styles.cardh} />
             <img src={go.src} height={200} width={200} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

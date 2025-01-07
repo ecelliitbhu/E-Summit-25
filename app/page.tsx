@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import Stats from "@/components/Stats";
 import React from "react";
+import MarqueeComponent from "@/components/sponsorCard/sponsor_card";
 import SlidersComponent from "@/components/SliderComponent";
 
 
@@ -20,11 +21,12 @@ export default function Home() {
       <main className="grid items-center px-2 sm:px-6">
         <Hero />
         <Stats />
-     
-       <SlidersComponent/>
-
         <About />
         <WSYA />
+        <SlidersComponent />
+       <MarqueeComponent/>
+
+        
         
         <FAQ />
       </main>
