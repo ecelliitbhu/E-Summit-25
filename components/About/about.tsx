@@ -22,23 +22,22 @@ const About = () => {
       <div className={styles.card}>
         <div className={styles.cardContent}>
         <h3 className={"m-0 text-primary font-bold "} style={{ fontSize: "2.5rem" }}>
-  ABOUT-ESUMMIT&apos;25
+  ABOUT E-SUMMIT&apos;25
 </h3>
 
           <h1 className={"m-0 text-secondary break-words"}>
             E-Summit is an electrifying celebration of innovation and
             entrepreneurship, brought to you by the Entrepreneurship Cell (
-            E-Cell ) at the Indian Institute of Technology ( IIT ) BHU.
+            E-Cell ) of Indian Institute of Technology ( IIT ) BHU.
           </h1>
           <p className={"m-0 text-secondary breaks-words"}>
-            This annual festival is a convergence of visionary thinkers, budding
-            entrepreneurs,and established industry leaders, all united by a
-            common passion. - &quot;The drive to create,innoavte and transform
+           This isn't just your regular annual festival. Here dreams are nurtured, ideas are cultivated
+            and future entrepreneurs are born.
+          <br /> E-Summit is the convergence of visionary thinkers, budding
+            entrepreneurs and established industry leaders, all united by a
+            common passion- &quot;The drive to create, innovate and transform
             the future.&ldquo;
-            <br /> E-Summit is where dreams are nurtured,ideas are cultivated,
-            and future entrepreneurs are born. Join us in this exhilarating
-            journey of entrepreneurship, and together let&apos;s write the
-            future!
+            <br /> Join us in this exhilarating journey of entrepreneurship and together, let's write the future!
           </p>
         </div>
       </div>
