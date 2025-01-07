@@ -45,9 +45,9 @@ const EventsCard: (props: EventProps) => JSX.Element = (props: EventProps) => {
           </span>
         </h2>
         <div className={"flex justify-center"}>
-          <Link href={props.eventPage}>
+          <a href={props.eventPage} target="_blank">
             <Button variant={"secondary"}>Register</Button>
-          </Link>
+          </a>
         </div>
       </motion.div>
     </div>

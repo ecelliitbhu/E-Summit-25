@@ -26,10 +26,10 @@ declare global {
 interface OwnProps {}
 
 const nav = [
-  // {
-  //   name: "ABOUT",
-  //   link: "/#about",
-  // },
+  {
+    name: "HOME",
+    link: "/",
+  },
   {
     name: "ITINERARY",
     link: "/itinerary",
