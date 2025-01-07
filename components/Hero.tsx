@@ -1,7 +1,7 @@
 "use client";
 import React, { FunctionComponent, useState, useEffect } from "react";
 import Image from "next/image";
-import Logo from "@/public/logos/esummit25.png";
+import Logo from "@/public/logos/esummit25-removebg-preview.png";
 import Particle from "@/components/particle";
 import { motion } from "framer-motion";
 import Link from "next/link";
