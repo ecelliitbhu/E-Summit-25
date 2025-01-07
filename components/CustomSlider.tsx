@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,16 +5,24 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
-const CustomSlider = ({
+interface SlideData {
+  name?: string;
+  post?: string;
+  description?: string;
+}
+
+interface CustomSliderProps {
+  heading: string;
+  gradientText: string;
+  slidesData: SlideData[];
+  sliderType: "participant" | "sponsor";
+}
+
+const CustomSlider: React.FC<CustomSliderProps> = ({
   heading,
   gradientText,
   slidesData,
   sliderType,
-}: {
-  heading: string;
-  gradientText: string;
-  slidesData: { img: string; name?: string; post?: string; description?: string }[];
-  sliderType: "participant" | "sponsor";
 }) => {
   const navigationPrev = useRef<HTMLDivElement>(null);
   const navigationNext = useRef<HTMLDivElement>(null);
@@ -24,19 +31,17 @@ const CustomSlider = ({
 
   useEffect(() => {
     if (navigationPrev.current && navigationNext.current) {
-      // Set up the navigation buttons if refs are ready
       navigationPrev.current.addEventListener("click", () => {
-        setActiveIndex((prev) => prev - 1); // Navigate to the previous slide
+        setActiveIndex((prev) => prev - 1);
       });
       navigationNext.current.addEventListener("click", () => {
-        setActiveIndex((prev) => prev + 1); // Navigate to the next slide
+        setActiveIndex((prev) => prev + 1);
       });
     }
   }, []);
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative z-10">
-      {/* Heading for Participants or Sponsors */}
       <div className="mb-12 text-center relative z-20">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 break-words">
           {sliderType === "participant" ? (
@@ -55,7 +60,6 @@ const CustomSlider = ({
         </h2>
       </div>
 
-      {/* Slider Container */}
       <div className="relative w-full overflow-hidden z-10 mb-12">
         <Swiper
           loop={true}
@@ -82,36 +86,17 @@ const CustomSlider = ({
                 index === activeIndex ? "scale-110 z-10" : "scale-95 opacity-80"
               }`}
             >
-              {sliderType === "participant" ? (
-                <div className="bg-[#1e1e1e] rounded-lg shadow-md p-6 flex flex-col items-start gap-3 min-h-[320px]">
-                  <div className="flex flex-col items-start gap-2">
-                    <img
-                      src={slide.img}
-                      alt={slide.name || "Participant"}
-                      className="w-24 h-24 rounded-full object-cover"
-                    />
-                    <h3 className="text-white font-semibold text-lg">{slide.name}</h3>
-                    <p className="text-gray-400 text-sm">{slide.description}</p>
-                    <p className="text-purple-300 text-sm">{slide.post}</p>
-                  </div>
-                </div>
-              ) : (
-                <div
-                  className="bg-[#1e1e1e] rounded-lg shadow-md flex justify-center items-center"
-                  style={{ width: "100%", height: "200px" }}
-                >
-                  <img
-                    src={slide.img}
-                    alt="Sponsor"
-                    className="object-contain w-20 h-20 md:w-32 md:h-32"
-                  />
-                </div>
-              )}
+              <div className="bg-[#1e1e1e] rounded-lg shadow-md p-6 flex flex-col items-center gap-3 min-h-[200px]">
+              <p className="text-purple-300 text-sm">{slide.post}</p>
+  <h3 className="text-white font-semibold text-lg">{slide.name}</h3>
+  <p className="text-gray-400 text-sm">{slide.description}</p>
+  
+</div>
+
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Navigation Buttons */}
         <div
           ref={navigationPrev}
           className={`absolute top-1/2 left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110`}
