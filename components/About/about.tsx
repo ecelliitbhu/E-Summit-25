@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="w-1/3 sm:w-1/2 md:w-full mx-auto ">
+    <div className="w-full mx-auto ">
     <motion.section
     style={{ marginTop: "40px" }}
       initial={{ x: -200, opacity: 0 }}
@@ -21,7 +21,7 @@ const About = () => {
     >
       <div className={styles.card}>
         <div className={styles.cardContent}>
-        <h3 className={"m-0 text-primary font-bold "} style={{ fontSize: "2.5rem" }}>
+        <h3 className={"m-0 max-sm:text-md text-primary font-bold "} style={{ fontSize: "2.5rem" }}>
   ABOUT-ESUMMIT&apos;25
 </h3>
 
