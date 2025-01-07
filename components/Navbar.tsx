@@ -163,7 +163,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               </DropdownMenu>
             </div>
             <div className={"hidden lg:block"}>
-              <Link href={"/payment"} className="no-underline">
+              <Link href={"/payment?type=esummit"} className="no-underline">
                 <Button variant={"default"} 
                 style={{
                   background: "linear-gradient(90deg, #6A23A6, #E91045)",

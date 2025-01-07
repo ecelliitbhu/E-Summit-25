@@ -45,7 +45,7 @@ export default function Component() {
         </div>
         <div className="flex justify-center flex-col  min-[400px]:flex-row">
           <Link
-            href={"/payment"}
+            href={"/payment?type=esummit"}
             className={"flex justify-center items-center"}
           >
             <Button>Purchase Pass</Button>

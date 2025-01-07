@@ -91,7 +91,7 @@ const Hero: FunctionComponent<Props> = () => {
         >
           {expanded ? (
 
-            <Link href={"/payment"} className="no-underline">
+            <Link href={"/payment?type=esummit"} className="no-underline">
 
               <motion.button
                 // onClick={handleRegisterClick}
