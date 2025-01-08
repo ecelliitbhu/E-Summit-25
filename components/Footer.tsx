@@ -56,7 +56,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          <nav className="rounded-3xl border-4 border-primary-foreground p-6 dark:border-gray-700">
+          <nav className="rounded-3xl border-2 border-[#FFFFF0] p-6 dark:border-gray-700">
             <ul className="flex flex-wrap justify-center gap-6 text-sm font-bold">
               {linksData.map((link, index) => (
                 <li key={index}>

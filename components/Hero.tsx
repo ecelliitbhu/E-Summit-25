@@ -90,7 +90,8 @@ const Hero: FunctionComponent<Props> = () => {
           transition={{ duration: 2, ease: "easeInOut" }}
         >
           {expanded ? (
-
+            <div className="flex flex-col gap-8" >
+              <div>
             <Link href={"/payment?type=esummit"} className="no-underline">
 
               <motion.button
@@ -103,21 +104,21 @@ const Hero: FunctionComponent<Props> = () => {
                   opacity: 0,
                 }}
                 animate={{
-                  width: "300px",
+                  width: "500px",
                   height: "50px",
                   borderRadius: "25px",
                   opacity: 1,
                 }}
-                transition={{ duration: 2.5, ease: "linear", delay: 1 }}
+                transition={{ duration: 0.8, ease: "linear", delay: 1 }}
               >
-                Register
+                Register for E-Summit Passes
               </motion.button>
               <motion.div
                 className="absolute"
                 initial={{ x: 0, y: -50 }}
-                animate={{ x: 250 }}
+                animate={{ x: 450 }}
                 transition={{
-                  duration: 2.5,
+                  duration: 0.8,
                   ease: "linear",
                   delay: 1,
                 }}
@@ -125,6 +126,46 @@ const Hero: FunctionComponent<Props> = () => {
                 <Image src={Res} alt="Arrow Icon" width={50} height={50} />
               </motion.div>
             </Link>
+            </div>
+            <div>
+            <Link href={"/payment?type=StartupExpo"} className="no-underline">
+
+              <motion.button
+                // onClick={handleRegisterClick}
+                className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
+                initial={{
+                  width: "100px",
+                  height: "50px",
+                  borderRadius: "25px",
+                  opacity: 0,
+                }}
+                animate={{
+                  width: "500px",
+                  height: "50px",
+                  borderRadius: "25px",
+                  opacity: 1,
+                }}
+                transition={{ duration: 0.8, ease: "linear", delay: 1 }}
+              >
+                Register for Startup Expo
+              </motion.button>
+              <motion.div
+                className="absolute"
+                initial={{ x: 0, y: -50 }}
+                animate={{ x: 450 }}
+                transition={{
+                  duration: 0.8,
+                  ease: "linear",
+                  delay: 1,
+                }}
+              >
+                <Image src={Res} alt="Arrow Icon" width={50} height={50} />
+              </motion.div>
+            </Link>
+            
+           </div>
+           </div>
+            
           ) : (
             <div className="rounded-full flex justify-center items-center bg-gradient-to-r from-purple-600 to-red-500 cursor-pointer mt-4">
               <Image src={Res} alt="Arrow Icon" width={50} height={50} />
