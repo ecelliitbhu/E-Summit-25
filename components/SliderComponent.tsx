@@ -27,27 +27,13 @@ const ResponsiveComponent = () => {
   ];
 
   return (
-    <>
-      {isSmallScreen ? (
-        <>
-          <AlternativeComponent
-            heading="What our Participants speak for us?"
-            gradientText="Participants speak"
-            slidesData={slidesData}
-            uniqueClass="participants-slider"
-          />
-        </>
-      ) : (
-        <>
-          <CustomSlider
-            heading="What our Participants speaks for us?"
-            gradientText="Participants speaks"
-            slidesData={slidesData}
-            sliderType="participant"
-          />
-        </>
-      )}
-    </>
+        <CustomSlider
+          heading="What our Participants speaks for us?"
+          gradientText="Participants speaks"
+          slidesData={slidesData}
+          // uniqueClass="participants-slider"
+           sliderType="participant"
+        />
   );
 };
 

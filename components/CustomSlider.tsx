@@ -41,7 +41,7 @@ const CustomSlider: React.FC<CustomSliderProps> = ({
   }, []);
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative z-10">
+    <div className="container mx-auto px-0 sm:px-6 lg:px-8 overflow-hidden relative z-10">
       <div className="mb-12 text-center relative z-20">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 break-words">
           {sliderType === "participant" ? (
@@ -86,8 +86,8 @@ const CustomSlider: React.FC<CustomSliderProps> = ({
                 index === activeIndex ? "scale-110 z-10" : "scale-95 opacity-80"
               }`}
             >
-              <div className="bg-[#1e1e1e] rounded-lg shadow-md p-6 flex flex-col items-center gap-3 min-h-[200px]">
-              <p className="text-purple-300 text-sm">{slide.post}</p>
+              <div className="bg-[#1e1e1e] rounded-lg shadow-md sm:px-8 p-6 flex flex-col items-center gap-3 min-h-[200px]">
+              <p className="text-purple-300 text-center text-sm">{slide.post}</p>
   <h3 className="text-white font-semibold text-lg">{slide.name}</h3>
   <p className="text-gray-400 text-sm">{slide.description}</p>
   
@@ -99,7 +99,7 @@ const CustomSlider: React.FC<CustomSliderProps> = ({
 
         <div
           ref={navigationPrev}
-          className={`absolute top-1/2 left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110`}
+          className={`absolute max-sm:w-7 max-sm:h-7 top-1/2 left-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const CustomSlider: React.FC<CustomSliderProps> = ({
         </div>
         <div
           ref={navigationNext}
-          className={`absolute top-1/2 right-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110`}
+          className={`absolute max-sm:w-7 max-sm:h-7 top-1/2 right-2 transform -translate-y-1/2 z-10 cursor-pointer bg-gradient-to-r from-pink-500 to-purple-600 w-12 h-12 flex justify-center items-center rounded-full shadow-md hover:scale-110`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -41,11 +41,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-black font-sans antialiased",
+          "min-h-screen bg-black  font-sans antialiased",
           fontSans.variable,
         )}
       >
-        <div className="flex min-h-screen flex-col">
+        <div className="flex items-center w-full min-h-screen flex-col">
           <Navbar />
           {/*<ParallaxProvider>*/}
           <main className="flex-1  ">{children}</main>
