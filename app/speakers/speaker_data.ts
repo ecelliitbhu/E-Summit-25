@@ -1,13 +1,5 @@
 export const past_speakers_data = [
   {
-    name: "Dharamveer Singh Chauhan",
-    des: "Co-Founder and CEO, Zo World and Zostel",
-    imgURL: "/pastspeaker/Dharamveer Singh Chouhan.jpg",
-    xURL: "https://twitter.com/dvcoolster",
-    instaURL: "https://www.instagram.com/dvcoolster/?hl=en",
-    linkedinURL: "https://www.linkedin.com/in/dvcoolster/?originalSubdomain=in",
-  },
-  {
     name: "Kaustav Mukherjee",
     des: "Managing Director, BCG",
     imgURL: "/pastspeaker/Kaustav Mukherjee.jpg",
@@ -227,6 +219,14 @@ export const past_speakers_data = [
     xURL: "",
     instaURL: "",
     linkedinURL: "https://www.linkedin.com/in/murlithirumale/",
+  },
+  {
+    name: "Dharamveer Singh Chauhan",
+    des: "Co-Founder and CEO, Zo World and Zostel",
+    imgURL: "/pastspeaker/Dharamveer Singh Chouhan.jpg",
+    xURL: "https://twitter.com/dvcoolster",
+    instaURL: "https://www.instagram.com/dvcoolster/?hl=en",
+    linkedinURL: "https://www.linkedin.com/in/dvcoolster/?originalSubdomain=in",
   },
 ];
 
