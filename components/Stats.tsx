@@ -11,7 +11,7 @@ interface Stat {
 
 const statsData: Stat[] = [
   { value: "250+", label: "Startups" },
-  { value: "8000+", label: "Attendee" },
+  { value: "8000+", label: "Attendees" },
   { value: "20+", label: "Guest Speakers" },
   { value: "15+", label: "Investors" },
   { value: "10+", label: "Events" },

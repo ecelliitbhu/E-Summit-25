@@ -1,13 +1,16 @@
 "use client"
 import React, { FunctionComponent, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 interface OwnProps {}
 
 type Props = OwnProps;
 
 const Page: FunctionComponent<Props> = (props) => {
-  const [type, setType] = useState('esummit');
-
+  const searchParams = useSearchParams();
+  const initialType = searchParams.get('type') || 'esummit';
+  const [type, setType] = useState(initialType);
+  
   const handleToggle = () => {
     setType(type === 'esummit' ? 'startup_expo' : 'esummit');
   };
