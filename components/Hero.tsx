@@ -83,6 +83,9 @@ const Hero: FunctionComponent<Props> = () => {
           entrepreneurship? You&apos;ve arrived at the proper location. You are
           wanted by us!
         </p>
+        <p className="mt-4 text-lg text-primary-foreground font-semibold">
+          31st Jan to 2nd Feb 2025
+        </p>
         <motion.div
           className="mt-24 md:mt-10 flex justify-center items-center"
           initial={{ opacity: 0 }}
