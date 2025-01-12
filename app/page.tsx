@@ -20,7 +20,9 @@ export default function Home() {
     <section className="pb-8 pt-6 md:py-10">
       <main className="grid items-center px-4 sm:px-6">
         <Hero />
-        <Stats />
+        <div className="mt-12 sm:mt-16 lg:mt-20">
+          <Stats />
+        </div>
         <About />
         <WSYA />
         <SlidersComponent />
