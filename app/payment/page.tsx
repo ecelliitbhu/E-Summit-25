@@ -8,7 +8,7 @@ type Props = OwnProps;
 
 const Page: FunctionComponent<Props> = (props) => {
   const searchParams = useSearchParams();
-  const initialType = searchParams.get('type') || 'esummit';
+  const initialType = searchParams?.get('type') || 'esummit';
   const [type, setType] = useState(initialType);
   
   const handleToggle = () => {
