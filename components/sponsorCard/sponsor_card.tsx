@@ -41,6 +41,13 @@ import { X } from "lucide-react";
 const MarqueeComponent: React.FC = () => {
   return (
     <div className={`${styles.root} dark`}>
+      <div className="mb-12 text-center relative z-20">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 break-words">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+              Sponsors
+            </span>
+          </h2>
+        </div>
       <div className={styles.wrapper}>
         {/* Definition of all svgs are imported under SvgDefs component */}
         <SvgDefs />

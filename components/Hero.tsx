@@ -68,6 +68,7 @@ const Hero: FunctionComponent<Props> = () => {
             duration: 1.5,
             ease: "easeInOut",
           }}
+          style={{marginTop: '15%'}}
         >
           <Image
             src={Logo}
@@ -77,13 +78,13 @@ const Hero: FunctionComponent<Props> = () => {
             className="mx-auto"
           />
         </motion.div>
-        <p className="mt-28 text-sm text-gray-300 mx-auto max-w-2xl hidden md:block">
+        <p className="mt-28 text-sm text-gray-300 mx-auto max-w-2xl hidden md:block font-bold">
           Are you one of those people working day and night on that one startup
           idea? Are you the one who wants to explore the world of
           entrepreneurship? You&apos;ve arrived at the proper location. You are
           wanted by us!
         </p>
-        <p className="mt-4 text-lg text-primary-foreground font-semibold">
+        <p className="mt-4 text-2xl text-primary-foreground font-extrabold">
           31st Jan to 2nd Feb 2025
         </p>
         <motion.div
@@ -107,7 +108,7 @@ const Hero: FunctionComponent<Props> = () => {
                   opacity: 0,
                 }}
                 animate={{
-                  width: "500px",
+                  width: "400px",
                   height: "50px",
                   borderRadius: "25px",
                   opacity: 1,
@@ -119,7 +120,7 @@ const Hero: FunctionComponent<Props> = () => {
               <motion.div
                 className="absolute"
                 initial={{ x: 0, y: -50 }}
-                animate={{ x: 450 }}
+                animate={{ x: 350 }}
                 transition={{
                   duration: 0.8,
                   ease: "linear",
@@ -143,7 +144,7 @@ const Hero: FunctionComponent<Props> = () => {
                   opacity: 0,
                 }}
                 animate={{
-                  width: "500px",
+                  width: "400px",
                   height: "50px",
                   borderRadius: "25px",
                   opacity: 1,
@@ -155,7 +156,7 @@ const Hero: FunctionComponent<Props> = () => {
               <motion.div
                 className="absolute"
                 initial={{ x: 0, y: -50 }}
-                animate={{ x: 450 }}
+                animate={{ x: 350 }}
                 transition={{
                   duration: 0.8,
                   ease: "linear",
