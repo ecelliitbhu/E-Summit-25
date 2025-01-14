@@ -44,7 +44,7 @@ const MarqueeComponent: React.FC = () => {
       <div className="mb-12 text-center relative z-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 break-words">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
-              Sponsors
+            Previous Sponsors
             </span>
           </h2>
         </div>
