@@ -54,10 +54,10 @@ const nav = [
     name: "MERCH",
     link: "/merch",
   },
-  {
-    name: "STARTUP EXPO",
-    link: "/payment?type=startup_expo",
-  },
+  // {
+  //   name: "STARTUP EXPO",
+  //   link: "/payment?type=startup_expo",
+  // },
 ];
 
 type Props = OwnProps;
