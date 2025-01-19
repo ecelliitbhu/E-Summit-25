@@ -49,8 +49,8 @@ const page: FunctionComponent<Props> = (props) => {
             className="sm:w-[400px] md:w-[1200px] text-center"
           >
             <TabsList>
-              <TabsTrigger value="presentSpeaker">Present Speaker</TabsTrigger>
-              <TabsTrigger value="pastSpeaker">Past Speaker</TabsTrigger>
+              <TabsTrigger value="presentSpeaker">Present Speakers</TabsTrigger>
+              <TabsTrigger value="pastSpeaker">Past Speakers</TabsTrigger>
             </TabsList>
             <TabsContent value="presentSpeaker">
               {/* <div className={"md:flex flex-wrap justify-center items-center p-10"}>

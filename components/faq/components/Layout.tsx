@@ -61,6 +61,7 @@ const Layout = ({
             <Accordion
               question={el.question}
               answer={el.answer}
+              
               turn={turn}
               setTurn={setTurn}
               idx={el.idx}

@@ -36,14 +36,14 @@ const SpeakerCard: FunctionComponent<Props> = (props: OwnProps) => {
         </p>
       </div>
       <div className="flex justify-center p-6 pt-2 gap-7">
-        <Link
+        {/* <Link
           className="hover:scale-125 transition ease-in-out"
           href={props.instaURL}
           target="_blank"
           rel="noreferrer"
         >
           <FaInstagram className="text-pink-600 text-2xl hover:text-pink-600/75 cursor-pointer transition ease-in-out" />
-        </Link>
+        </Link> */}
         <Link
           className="text-blue-600 hover:text-blue-600/75 hover:scale-125 transition ease-in-out"
           href={props.linkedinURL}
@@ -52,14 +52,14 @@ const SpeakerCard: FunctionComponent<Props> = (props: OwnProps) => {
         >
           <FaLinkedin className="text-blue-600 text-2xl hover:text-blue-600/75 cursor-pointer transition ease-in-out" />
         </Link>
-        <Link
+        {/* <Link
           className="hover:scale-125 transition ease-in-out"
           href={props.instaURL}
           target="_blank"
           rel="noreferrer"
         >
           <FaTwitter className="text-blue-600 text-2xl hover:text-blue-600/75 cursor-pointer transition ease-in-out" />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
