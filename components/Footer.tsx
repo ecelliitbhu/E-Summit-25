@@ -6,7 +6,7 @@ export default function Footer() {
   const linksData = [
     { href: "https://www.ecelliitbhu.com/", text: "E-Cell IIT-BHU" },
     {
-      href: "https://www.startupweekendvaranasi.com/",
+      href: "https://techstars-weekend.vercel.app/",
       text: "Startup Weekend Varanasi",
     },
     {
@@ -71,7 +71,7 @@ export default function Footer() {
             </ul>
           </nav>
 
-          <p className="mx-auto max-w-lg text-xs">
+          <p className="mx-auto max-w-lg text-xs text-center ">
             E - Cell, IIT BHU Varanasi is a non-profit organization established
             to nurture the entrepreneurial culture in our college, and open
             doors for the next generation of startup founders, entrepreneurs and

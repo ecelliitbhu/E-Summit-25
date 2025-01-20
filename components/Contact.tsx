@@ -24,14 +24,20 @@ import {
 } from "@/components/ui/select";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
+import {data} from "../lib/data"
+import { toast, useToast } from "./ui/use-toast";
+
 
 const FormSchema = z.object({
-  name: z.string().min(5, {
-    message: "Username must be at least 5 characters.",
-  }),
-  email: z.string().email(),
-  phone: z.string().min(10, { message: "Invalid Phone number" }),
-  message: z.string().min(10).max(500),
+  name: z.string()
+    .min(1, { message: "Name is required." }), 
+  email: z.string()
+    .email({ message: "Invalid email address." }) 
+    .min(1, { message: "Email is required." }), 
+  phone: z.string()
+    .min(10, { message: "Invalid phone number." }) 
+    .min(1, { message: "Phone number is required." }), 
+  message: z.string().max(500), 
   role: z.enum(["Founder", "Investor", "Student", "Sponsor", "Speaker"]),
 });
 
@@ -43,21 +49,26 @@ const Contact: FunctionComponent = (props) => {
       email: "",
       phone: "",
       message: "",
+      role:"Founder"
     },
   });
-
+console.log(form)
   const onSubmit = async (values: z.infer<typeof FormSchema>) => {
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...values,
-          recipientEmail: "ecell@iitbhu.ac.in",
-        }),
-      });
+      data.push(values)
+      console.log(data)
+      // const response = await fetch("/api/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({
+      //     ...values,
+      //     recipientEmail: "ecell@iitbhu.ac.in",
+      //   }),
+      // });
+      console.log(values)
+      alert("Submitted successfully.")
     } catch (error) {
       console.error("Error submitting form", error);
     }
@@ -204,18 +215,23 @@ const Contact: FunctionComponent = (props) => {
               control={form.control}
               name="role"
               render={({ field }) => (
-                <Select>
+
+                <FormItem>
+                  <FormControl>
+                <Select {...field}>
                   <SelectTrigger className="w-[180px]">
-                    <SelectValue placeholder="Role" />
+                    <SelectValue  placeholder="Role" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="founder">Founder</SelectItem>
-                    <SelectItem value="investor">Investor</SelectItem>
-                    <SelectItem value="sponsor">Sponsor</SelectItem>
-                    <SelectItem value="speaker">Speaker</SelectItem>
-                    <SelectItem value="student">Student</SelectItem>
+                    <SelectItem value="Founder">Founder</SelectItem>
+                    <SelectItem value="Investor">Investor</SelectItem>
+                    <SelectItem value="Sponsor">Sponsor</SelectItem>
+                    <SelectItem value="Speaker">Speaker</SelectItem>
+                    <SelectItem value="Student">Student</SelectItem>
                   </SelectContent>
                 </Select>
+                </FormControl>
+                </FormItem>
               )}
             />
 
