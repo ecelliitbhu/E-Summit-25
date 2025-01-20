@@ -2,6 +2,8 @@
 import React, { FunctionComponent, useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "@/public/logos/esummit25-removebg-preview.png";
+import Saras from "@/public/partners/saras.svg";
+import Ibf from "@/public/partners/IBF.jpg";
 import Particle from "@/components/particle";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -46,10 +48,8 @@ const Hero: FunctionComponent<Props> = () => {
     }
   }, [expanded]);
 
-  const scale = scrollY > 50 ? 1.7 : 1;
+  const scale = scrollY > 50 ? 1.6 : 1;
   const smallScreenScale = scrollY > 10 ? 1.5 : 1;
-
-
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-black text-white relative">
@@ -68,7 +68,40 @@ const Hero: FunctionComponent<Props> = () => {
             duration: 1.5,
             ease: "easeInOut",
           }}
-          style={{marginTop: '15%'}}
+          style={{ marginTop: "50%" }}
+        >
+          <div className="flex justify-center items-center gap-0">
+            <Image
+              src={Saras}
+              width={isSmallScreen ? 100 : 150}
+              height={isSmallScreen ? 100 : 150}
+              alt="Saras logo"
+              className="mx-auto"
+            />
+            <span className="text-2xl font-bold">×</span>
+            <Image
+              src={Ibf}
+              width={isSmallScreen ? 100 : 150}
+              height={isSmallScreen ? 100 : 150}
+              alt="IBF logo"
+              className="mx-auto"
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+            scale: 1,
+          }}
+          animate={{
+            opacity: 1,
+            scale: isSmallScreen ? smallScreenScale : scale,
+          }}
+          transition={{
+            duration: 1.5,
+            ease: "easeInOut",
+          }}
+          style={{ marginTop: "5%" }}
         >
           <Image
             src={Logo}
@@ -94,82 +127,81 @@ const Hero: FunctionComponent<Props> = () => {
           transition={{ duration: 2, ease: "easeInOut" }}
         >
           {expanded ? (
-            <div className="flex flex-col gap-8" >
+            <div className="flex flex-col gap-8">
               <div>
-            <Link href={"/payment?type=esummit"} className="no-underline">
-
-              <motion.button
-                // onClick={handleRegisterClick}
-                className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
-                initial={{
-                  width: "100px",
-                  height: "50px",
-                  borderRadius: "25px",
-                  opacity: 0,
-                }}
-                animate={{
-                  width: "400px",
-                  height: "50px",
-                  borderRadius: "25px",
-                  opacity: 1,
-                }}
-                transition={{ duration: 0.8, ease: "linear", delay: 1 }}
-              >
-                Register for E-Summit Passes
-              </motion.button>
-              <motion.div
-                className="absolute"
-                initial={{ x: 0, y: -50 }}
-                animate={{ x: 350 }}
-                transition={{
-                  duration: 0.8,
-                  ease: "linear",
-                  delay: 1,
-                }}
-              >
-                <Image src={Res} alt="Arrow Icon" width={50} height={50} />
-              </motion.div>
-            </Link>
+                <Link href={"/payment?type=esummit"} className="no-underline">
+                  <motion.button
+                    // onClick={handleRegisterClick}
+                    className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
+                    initial={{
+                      width: "100px",
+                      height: "50px",
+                      borderRadius: "25px",
+                      opacity: 0,
+                    }}
+                    animate={{
+                      width: "400px",
+                      height: "50px",
+                      borderRadius: "25px",
+                      opacity: 1,
+                    }}
+                    transition={{ duration: 0.8, ease: "linear", delay: 1 }}
+                  >
+                    Register for E-Summit Passes
+                  </motion.button>
+                  <motion.div
+                    className="absolute"
+                    initial={{ x: 0, y: -50 }}
+                    animate={{ x: 350 }}
+                    transition={{
+                      duration: 0.8,
+                      ease: "linear",
+                      delay: 1,
+                    }}
+                  >
+                    <Image src={Res} alt="Arrow Icon" width={50} height={50} />
+                  </motion.div>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  href={"/payment?type=StartupExpo"}
+                  className="no-underline"
+                >
+                  <motion.button
+                    // onClick={handleRegisterClick}
+                    className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
+                    initial={{
+                      width: "100px",
+                      height: "50px",
+                      borderRadius: "25px",
+                      opacity: 0,
+                    }}
+                    animate={{
+                      width: "400px",
+                      height: "50px",
+                      borderRadius: "25px",
+                      opacity: 1,
+                    }}
+                    transition={{ duration: 0.8, ease: "linear", delay: 1 }}
+                  >
+                    Register for Startup Expo
+                  </motion.button>
+                  <motion.div
+                    className="absolute"
+                    initial={{ x: 0, y: -50 }}
+                    animate={{ x: 350 }}
+                    transition={{
+                      duration: 0.8,
+                      ease: "linear",
+                      delay: 1,
+                    }}
+                  >
+                    <Image src={Res} alt="Arrow Icon" width={50} height={50} />
+                  </motion.div>
+                </Link>
+              </div>
             </div>
-            <div>
-            <Link href={"/payment?type=StartupExpo"} className="no-underline">
-
-              <motion.button
-                // onClick={handleRegisterClick}
-                className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
-                initial={{
-                  width: "100px",
-                  height: "50px",
-                  borderRadius: "25px",
-                  opacity: 0,
-                }}
-                animate={{
-                  width: "400px",
-                  height: "50px",
-                  borderRadius: "25px",
-                  opacity: 1,
-                }}
-                transition={{ duration: 0.8, ease: "linear", delay: 1 }}
-              >
-                Register for Startup Expo
-              </motion.button>
-              <motion.div
-                className="absolute"
-                initial={{ x: 0, y: -50 }}
-                animate={{ x: 350 }}
-                transition={{
-                  duration: 0.8,
-                  ease: "linear",
-                  delay: 1,
-                }}
-              >
-                <Image src={Res} alt="Arrow Icon" width={50} height={50} />
-              </motion.div>
-            </Link>
-            
-           </div>
-           </div>
-            
           ) : (
             <div className="rounded-full flex justify-center items-center bg-gradient-to-r from-purple-600 to-red-500 cursor-pointer mt-4">
               <Image src={Res} alt="Arrow Icon" width={50} height={50} />
