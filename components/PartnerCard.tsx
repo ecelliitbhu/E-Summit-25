@@ -12,6 +12,8 @@ import {
 interface OwnProps {
   name: string;
   imgURL: string;
+  siteURL: string;
+  
 }
 
 type Props = OwnProps;
@@ -24,14 +26,17 @@ const PartnerCard: FunctionComponent<Props> = (props: OwnProps) => {
          <TooltipTrigger asChild>
           <div className="relative flex flex-col  cursor-pointer bg-card shadow-md bg-clip-border rounded-xl w-64 m-4 md:m-2">
       <div className="relative mx-4 overflow-hidden  shadow-lg bg-clip-border rounded-xl">
+        <Link href={props?.siteURL}>
         <Image
           width={800}
           height={500}
           // fill={true}
+          
           src={props.imgURL}
           alt={props.name}
           className={"h-[130px] object-cover"}
         />
+        </Link>
       </div>
     </div>
                 </TooltipTrigger>
