@@ -70,7 +70,7 @@ const Hero: FunctionComponent<Props> = () => {
           }}
           style={{ marginTop: "50%" }}
         >
-          <div className="flex justify-center items-center gap-0">
+          <div className="flex justify-center w-fit mx-auto items-center gap-4">
             <Image
               src={Saras}
               width={isSmallScreen ? 100 : 150}
@@ -117,7 +117,7 @@ const Hero: FunctionComponent<Props> = () => {
           entrepreneurship? You&apos;ve arrived at the proper location. You are
           wanted by us!
         </p>
-        <p className="mt-4 text-2xl text-primary-foreground font-extrabold">
+        <p className="mt-14 md:mt-4 text-2xl text-primary-foreground font-extrabold">
           31st Jan to 2nd Feb 2025
         </p>
         <motion.div
