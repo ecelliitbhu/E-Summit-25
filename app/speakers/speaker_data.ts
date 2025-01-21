@@ -1,6 +1,6 @@
 export const past_speakers_data = [
   {
-    name: "Vijendra Singh Chauhan",
+    name: "Vijender Singh Chauhan",
     des: "Associate Professor @DU, Interviewer & TEDx speaker",
     imgURL: "/pastspeaker/vijchau.png",
     xURL: "",
