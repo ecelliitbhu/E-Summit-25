@@ -1,5 +1,21 @@
 export const past_speakers_data = [
   {
+    name: "Vijendra Singh Chauhan",
+    des: "Associate Professor @DU, Interviewer & TEDx speaker",
+    imgURL: "/pastspeaker/vijchau.png",
+    xURL: "",
+    instaURL: "",
+    linkedinURL: "",
+  },
+  {
+    name: "Sanjay Sethi",
+    des: "Co-Founder & CEO, @Shopclues",
+    imgURL: "/pastspeaker/sanjaysethi.png",
+    xURL: "",
+    instaURL: "",
+    linkedinURL: "",
+  },
+  {
     name: "Kaustav Mukherjee",
     des: "Managing Director, BCG",
     imgURL: "/pastspeaker/Kaustav Mukherjee.jpg",

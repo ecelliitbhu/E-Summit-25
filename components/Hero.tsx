@@ -84,9 +84,10 @@ const Hero: FunctionComponent<Props> = () => {
               width={isSmallScreen ? 100 : 150}
               height={isSmallScreen ? 100 : 150}
               alt="IBF logo"
-              className="mx-auto"
+              className="mx-auto brightness-150"
             />
           </div>
+          <div className="text-lg md:text-2xl font-bold md:mt-2.5 mt-2">presents</div>
         </motion.div>
         <motion.div
           initial={{
@@ -101,7 +102,7 @@ const Hero: FunctionComponent<Props> = () => {
             duration: 1.5,
             ease: "easeInOut",
           }}
-          style={{ marginTop: "5%" }}
+          style={{ marginTop: isSmallScreen ? "2%" : "5%" }}
         >
           <Image
             src={Logo}
