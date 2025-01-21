@@ -5,8 +5,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   title: {
-    default: "Contact | E-Summit'24 IIT BHU",
-    template: "%s | Contact | E-Summit'24 IIT BHU",
+    default: "Contact | E-Summit'25 IIT BHU",
+    template: "%s | Contact | E-Summit'25 IIT BHU",
   },
 };
 interface OwnProps {}
