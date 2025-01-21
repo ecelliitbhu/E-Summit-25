@@ -77,7 +77,7 @@ const StatItem: FunctionComponent<Stat & { isFirstItem: boolean }> = ({ value, l
 };
 const Stats: FunctionComponent = () => {
   return (
-    <section className="px-0 md:px-20 py-10 overflow-hidden relative pb-16 mt-24">
+    <section className="px-0 md:px-20 py-10 overflow-hidden relative pb-16 mt-28">
     <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
       Key Event Statistics
     </h1>

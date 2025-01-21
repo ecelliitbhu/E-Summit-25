@@ -48,7 +48,7 @@ const Hero: FunctionComponent<Props> = () => {
     }
   }, [expanded]);
 
-  const scale = scrollY > 50 ? 1.6 : 1;
+  const scale = scrollY > 50 ? 1.5 : 1;
   const smallScreenScale = scrollY > 10 ? 1.5 : 1;
 
   return (
@@ -84,9 +84,10 @@ const Hero: FunctionComponent<Props> = () => {
               width={isSmallScreen ? 100 : 150}
               height={isSmallScreen ? 100 : 150}
               alt="IBF logo"
-              className="mx-auto"
+              className="mx-auto brightness-150"
             />
           </div>
+          <div className="text-lg md:text-2xl font-bold md:mt-2.5 mt-2">presents</div>
         </motion.div>
         <motion.div
           initial={{
@@ -101,7 +102,7 @@ const Hero: FunctionComponent<Props> = () => {
             duration: 1.5,
             ease: "easeInOut",
           }}
-          style={{ marginTop: "5%" }}
+          style={{ marginTop: isSmallScreen ? "2%" : "5%" }}
         >
           <Image
             src={Logo}
@@ -132,7 +133,7 @@ const Hero: FunctionComponent<Props> = () => {
                 <Link href={"/payment?type=esummit"} className="no-underline">
                   <motion.button
                     // onClick={handleRegisterClick}
-                    className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
+                    className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-10 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-md"
                     initial={{
                       width: "100px",
                       height: "50px",
@@ -140,7 +141,7 @@ const Hero: FunctionComponent<Props> = () => {
                       opacity: 0,
                     }}
                     animate={{
-                      width: "400px",
+                      width: "310px",
                       height: "50px",
                       borderRadius: "25px",
                       opacity: 1,
@@ -152,7 +153,7 @@ const Hero: FunctionComponent<Props> = () => {
                   <motion.div
                     className="absolute"
                     initial={{ x: 0, y: -50 }}
-                    animate={{ x: 350 }}
+                    animate={{ x: 260 }}
                     transition={{
                       duration: 0.8,
                       ease: "linear",
@@ -170,7 +171,7 @@ const Hero: FunctionComponent<Props> = () => {
                 >
                   <motion.button
                     // onClick={handleRegisterClick}
-                    className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-16 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-lg"
+                    className="bg-gradient-to-r from-purple-600 to-red-500 text-white px-12 py-3.5 rounded-full flex items-center justify-center font-extrabold transition-transform relative text-md mx-auto"
                     initial={{
                       width: "100px",
                       height: "50px",
@@ -178,7 +179,7 @@ const Hero: FunctionComponent<Props> = () => {
                       opacity: 0,
                     }}
                     animate={{
-                      width: "400px",
+                      width: "310px",
                       height: "50px",
                       borderRadius: "25px",
                       opacity: 1,
@@ -190,7 +191,7 @@ const Hero: FunctionComponent<Props> = () => {
                   <motion.div
                     className="absolute"
                     initial={{ x: 0, y: -50 }}
-                    animate={{ x: 350 }}
+                    animate={{ x: 260 }}
                     transition={{
                       duration: 0.8,
                       ease: "linear",
