@@ -10,8 +10,8 @@ import SpeakerCard from "@/components/SpeakerCard";
 export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   title: {
-    default: "Speakers | E-Summit'24 IIT BHU",
-    template: "%s | Speakers | E-Summit'24 IIT BHU",
+    default: "Speakers | E-Summit'25 IIT BHU",
+    template: "%s | Speakers | E-Summit'25 IIT BHU",
   },
 };
 interface OwnProps {}
