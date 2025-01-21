@@ -71,21 +71,26 @@ const Hero: FunctionComponent<Props> = () => {
           style={{ marginTop: "50%" }}
         >
           <div className="flex justify-center w-fit mx-auto items-center gap-4">
+            <Link href={"https://sarasai.org/"}>
             <Image
               src={Saras}
               width={isSmallScreen ? 100 : 150}
               height={isSmallScreen ? 100 : 150}
               alt="Saras logo"
               className="mx-auto"
-            />
+              
+              />
+            </Link>
             <span className="text-2xl font-bold">×</span>
+            <Link href={"https://www.iitbhufoundation.org/"}>
             <Image
               src={Ibf}
               width={isSmallScreen ? 100 : 150}
               height={isSmallScreen ? 100 : 150}
               alt="IBF logo"
               className="mx-auto brightness-150"
-            />
+              />
+            </Link>
           </div>
           <div className="text-lg md:text-2xl font-bold md:mt-2.5 mt-2">presents</div>
         </motion.div>

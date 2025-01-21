@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Metadata } from "next";
 import PartnerCard from "@/components/PartnerCard";
-import { titleSponsor, coSponsor, associateSponsor, ecosystemPartner, startupShowcasePartner, productLearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner } from "./partner_data";
+import { titleSponsor, associateSponsor,  ecosystemPartner, startupShowcasePartner, LearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner, instituePartner } from "./partner_data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { color } from "framer-motion";
 
@@ -41,7 +41,7 @@ const page: FunctionComponent<Props> = (props) => {
               "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6 "
             }
           >
-            Title Partner
+            Title Partners
           </h1>       
         </div>
         <div className={"flex justify-center"}>
@@ -50,13 +50,14 @@ const page: FunctionComponent<Props> = (props) => {
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
                 key={index}
               />
             ))}
           </div>
         </div>
       </div>
-       <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+       {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -77,7 +78,7 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
@@ -85,7 +86,7 @@ const page: FunctionComponent<Props> = (props) => {
               "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6 "
             }
           >
-            Associate Partner
+            Startup Partner
           </h1>
         </div>
         <div className={"flex justify-center"}>
@@ -94,13 +95,14 @@ const page: FunctionComponent<Props> = (props) => {
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
                 key={index}
               />
             ))}
           </div>
         </div>
       </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -121,8 +123,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -143,7 +145,7 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
@@ -151,15 +153,16 @@ const page: FunctionComponent<Props> = (props) => {
               "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
-            Product Learning Partner
+            Learning Partner
           </h1>
         </div>
         <div className={"flex justify-center"}>
           <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
-            {productLearningPartner.map((speaker: any, index) => (
+            {LearningPartner.map((speaker: any, index) => (
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
                 key={index}
               />
             ))}
@@ -173,7 +176,7 @@ const page: FunctionComponent<Props> = (props) => {
               "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
-            Startup Services Partner
+            Startup Services Partners
           </h1>
         </div>
         <div className={"flex justify-center"}>
@@ -182,13 +185,14 @@ const page: FunctionComponent<Props> = (props) => {
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
                 key={index}
               />
             ))}
           </div>
         </div>
       </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -209,8 +213,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -231,8 +235,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -253,8 +257,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -275,8 +279,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -297,8 +301,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -319,8 +323,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -341,8 +345,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -363,9 +367,9 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -386,7 +390,7 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
@@ -403,6 +407,7 @@ const page: FunctionComponent<Props> = (props) => {
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
                 key={index}
               />
             ))}
@@ -410,6 +415,29 @@ const page: FunctionComponent<Props> = (props) => {
         </div>
       </div>
       <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+            }
+          >
+            Institute Partner
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {instituePartner.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -430,8 +458,8 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+      </div> */}
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
             className={
@@ -452,7 +480,7 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </div>
-      </div> 
+      </div>  */}
      </section>
   //   <section className="flex justify-center items-center w-full min-h-screen">
   //   {/* <div>
