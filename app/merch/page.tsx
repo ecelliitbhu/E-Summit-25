@@ -15,6 +15,7 @@ export default function CardWithForm() {
           <CardContent>
             <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-md">
               <Image
+unoptimized
                 src="/images/T-Shirt Front.png"
                 alt="E-Summit 2024 Merchandise Front"
                 width={600}
@@ -30,6 +31,7 @@ export default function CardWithForm() {
           <CardContent>
             <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-md">
               <Image
+unoptimized
                 src="/images/T-Shirt Back.png"
                 alt="E-Summit 2024 Merchandise Back"
                 width={600}

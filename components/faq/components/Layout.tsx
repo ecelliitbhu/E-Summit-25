@@ -45,6 +45,7 @@ const Layout = ({
             }
           >
             <Image
+unoptimized
               // className="bg-transparent"
               src={down}
               alt=""

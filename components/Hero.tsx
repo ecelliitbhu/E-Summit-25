@@ -11,7 +11,7 @@ import Res from "@/public/reg.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-interface OwnProps {}
+interface OwnProps { }
 
 import "@/app/globals.css";
 
@@ -72,23 +72,25 @@ const Hero: FunctionComponent<Props> = () => {
         >
           <div className="flex justify-center w-fit mx-auto items-center gap-4">
             <Link href={"https://sarasai.org/"}>
-            <Image
-              src={Saras}
-              width={isSmallScreen ? 100 : 150}
-              height={isSmallScreen ? 100 : 150}
-              alt="Saras logo"
-              className="mx-auto"
-              
+              <Image
+                unoptimized
+                src={Saras}
+                width={isSmallScreen ? 100 : 150}
+                height={isSmallScreen ? 100 : 150}
+                alt="Saras logo"
+                className="mx-auto"
+
               />
             </Link>
             <span className="text-2xl font-bold">×</span>
             <Link href={"https://www.iitbhufoundation.org/"}>
-            <Image
-              src={Ibf}
-              width={isSmallScreen ? 100 : 150}
-              height={isSmallScreen ? 100 : 150}
-              alt="IBF logo"
-              className="mx-auto brightness-150"
+              <Image
+                unoptimized
+                src={Ibf}
+                width={isSmallScreen ? 100 : 150}
+                height={isSmallScreen ? 100 : 150}
+                alt="IBF logo"
+                className="mx-auto brightness-150"
               />
             </Link>
           </div>
@@ -110,6 +112,7 @@ const Hero: FunctionComponent<Props> = () => {
           style={{ marginTop: isSmallScreen ? "2%" : "5%" }}
         >
           <Image
+            unoptimized
             src={Logo}
             width={isSmallScreen ? 200 : 300}
             height={isSmallScreen ? 200 : 300}
@@ -165,7 +168,8 @@ const Hero: FunctionComponent<Props> = () => {
                       delay: 1,
                     }}
                   >
-                    <Image src={Res} alt="Arrow Icon" width={50} height={50} />
+                    <Image
+                      unoptimized src={Res} alt="Arrow Icon" width={50} height={50} />
                   </motion.div>
                 </Link>
               </div>
@@ -203,14 +207,16 @@ const Hero: FunctionComponent<Props> = () => {
                       delay: 1,
                     }}
                   >
-                    <Image src={Res} alt="Arrow Icon" width={50} height={50} />
+                    <Image
+                      unoptimized src={Res} alt="Arrow Icon" width={50} height={50} />
                   </motion.div>
                 </Link>
               </div>
             </div>
           ) : (
             <div className="rounded-full flex justify-center items-center bg-gradient-to-r from-purple-600 to-red-500 cursor-pointer mt-4">
-              <Image src={Res} alt="Arrow Icon" width={50} height={50} />
+              <Image
+                unoptimized src={Res} alt="Arrow Icon" width={50} height={50} />
             </div>
           )}
         </motion.div>

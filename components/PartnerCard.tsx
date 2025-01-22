@@ -26,6 +26,7 @@ const PartnerCard: FunctionComponent<Props> = (props: OwnProps) => {
           <div className="relative flex flex-col  cursor-pointer bg-card shadow-md bg-clip-border rounded-xl w-64 m-4 md:m-2">
       <a href={props?.siteURL} target="_blank" rel="no-referrer" className="relative mx-4 overflow-hidden  shadow-lg bg-clip-border rounded-xl">
         <Image
+unoptimized
           width={800}
           height={500}
           // fill={true}

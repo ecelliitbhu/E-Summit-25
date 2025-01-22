@@ -19,6 +19,7 @@ const SpeakerCard: FunctionComponent<Props> = (props: OwnProps) => {
     <div className="relative flex flex-col  hover:bg-accent  bg-card shadow-md bg-clip-border rounded-xl w-64 m-4 md:m-2">
       <div className="relative mx-4 mt-4 overflow-hidden  shadow-lg bg-clip-border rounded-xl">
         <Image
+unoptimized
           width={500}
           height={800}
           // fill={true}

@@ -13,7 +13,8 @@ const Gallery = () => {
         <div className={styles.container}>
           {imageUrls.map((imageUrl, index) => (
             <div className={styles.img} key={index}>
-              <Image src={imageUrl.url} alt={`Image-${index}`} width={100} height={100} />
+              <Image
+unoptimized src={imageUrl.url} alt={`Image-${index}`} width={100} height={100} />
             </div>
           ))}
         </div>

@@ -35,8 +35,10 @@ const Accordion = ({question, answer, turn, setTurn, idx}: Props) => {
            <div className='flex items-center justify-between h-14 text-left'>
               <span className='ml-2 font-medium lg:font-semibold lg:text-xl text-sm text-sky-600'>{question}</span>
               <div>
-               { turn![idx] ? <Image src={minus} alt="" width={20} height={20}/> :
-                <Image src={plus} alt="" width={20} height={20}/>}
+               { turn![idx] ? <Image
+unoptimized src={minus} alt="" width={20} height={20}/> :
+                <Image
+unoptimized src={plus} alt="" width={20} height={20}/>}
 
               </div>
            </div>

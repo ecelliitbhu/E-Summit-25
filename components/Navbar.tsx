@@ -106,6 +106,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               className="block w-10 -m-4 items-center"
             >
               <Image
+unoptimized
                 src={logo}
                 style={{ width: "50px", height: "20px" }}
                 alt="E-Summit'24 logo"

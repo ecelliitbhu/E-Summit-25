@@ -27,6 +27,7 @@ const EventsCard: (props: EventProps) => JSX.Element = (props: EventProps) => {
       >
         <div className={"flex justify-center"}>
           <Image
+unoptimized
             src={props.imageUrl}
             alt={props.title}
             width={250}
@@ -57,6 +58,7 @@ const EventsCard: (props: EventProps) => JSX.Element = (props: EventProps) => {
 export default EventsCard;
 // <article className="group relative flex flex-col space-y-2">
 //   <Image
+unoptimized
 //     src={props.imageUrl}
 //     alt={props.title}
 //     width={404}

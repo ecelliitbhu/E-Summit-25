@@ -16,7 +16,8 @@ const MotionDiv = ({ src, width, height, alt, text }) => (
     className="mt-8 flex flex-col items-center justify-center"
   >
     <div className="filter invert">
-      <Image src={src} width={width} height={height} alt={alt} />
+      <Image
+unoptimized src={src} width={width} height={height} alt={alt} />
     </div>
     <p className="">{text}</p>
   </motion.div>
