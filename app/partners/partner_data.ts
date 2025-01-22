@@ -53,7 +53,7 @@
 export const titleSponsor = [
   {
     name: "Saras",
-    imgURL: "/partners/saras-logo_ps.png",
+    imgURL: "/partners/Full-Horizontal-logo-ORANGE_ps.png",
     siteURL: "https://sarasai.org/",
   },
   {
@@ -320,7 +320,7 @@ export const gamingPartner = [
   export const instituePartner = [
     {
       name: "Ashoka University",
-      imgURL: "/partners/ashoka-university_ps.png",
-      siteURL: "https://www.ashoka.edu.in/",
+      imgURL: "/partners/ashoka_vns_ps.png",
+      siteURL: "https://ashokainstitute.com/",
     }, 
 ];
