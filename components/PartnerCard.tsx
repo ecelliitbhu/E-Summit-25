@@ -25,8 +25,7 @@ const PartnerCard: FunctionComponent<Props> = (props: OwnProps) => {
 
          <TooltipTrigger asChild>
           <div className="relative flex flex-col  cursor-pointer bg-card shadow-md bg-clip-border rounded-xl w-64 m-4 md:m-2">
-      <div className="relative mx-4 overflow-hidden  shadow-lg bg-clip-border rounded-xl">
-        <Link href={props?.siteURL}>
+      <Link href={props?.siteURL} className="relative mx-4 overflow-hidden  shadow-lg bg-clip-border rounded-xl">
         <Image
           width={800}
           height={500}
@@ -37,7 +36,6 @@ const PartnerCard: FunctionComponent<Props> = (props: OwnProps) => {
           className={"h-[130px] object-cover"}
         />
         </Link>
-      </div>
     </div>
                 </TooltipTrigger>
         <TooltipContent>
