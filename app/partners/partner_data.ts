@@ -53,12 +53,12 @@
 export const titleSponsor = [
   {
     name: "Saras",
-    imgURL: "/partners/Full-Horizontal-logo-ORANGE_ps.png",
+    imgURL: "/partners/title1.png",
     siteURL: "https://sarasai.org/",
   },
   {
     name: "IBF",
-    imgURL: "/partners/IBF_ps.png",
+    imgURL: "/partners/title2.png",
     siteURL: "https://www.iitbhufoundation.org/",
   },
 ];
