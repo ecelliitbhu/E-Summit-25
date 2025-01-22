@@ -58,7 +58,6 @@ unoptimized
 export default EventsCard;
 // <article className="group relative flex flex-col space-y-2">
 //   <Image
-unoptimized
 //     src={props.imageUrl}
 //     alt={props.title}
 //     width={404}
