@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Metadata } from "next";
 import PartnerCard from "@/components/PartnerCard";
-import { titleSponsor, associateSponsor,  ecosystemPartner, startupShowcasePartner, LearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner, instituePartner } from "./partner_data";
+import { titleSponsor, associateSponsor,  ecosystemPartner, startupShowcasePartner, LearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner, instituePartner, newpartners } from "./partner_data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { color } from "framer-motion";
 
@@ -169,6 +169,8 @@ const page: FunctionComponent<Props> = (props) => {
           </div>
         </div>
       </div>
+
+      
       <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1
@@ -187,11 +189,40 @@ const page: FunctionComponent<Props> = (props) => {
                 imgURL={speaker.imgURL}
                 siteURL={speaker.siteURL}
                 key={index}
+                
               />
             ))}
           </div>
         </div>
       </div>
+
+
+
+
+      
+      {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+            }
+          >
+            New Partners
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {newpartners.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div> */}
       {/* <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
         <div>
           <h1

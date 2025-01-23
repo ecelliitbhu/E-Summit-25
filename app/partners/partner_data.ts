@@ -135,6 +135,49 @@ export const startupServicesPartner = [
     imgURL: "/partners/impact_ful_pitch.jpg",
     siteURL: "https://www.impactfulpitch.com/",
   },
+
+
+
+  {
+    name: "riverwalk",
+    imgURL: "/partners/riverwalk.jpeg",
+    siteURL: "https://riverwalkholdings.com/",
+  },
+  {
+    name: "Randev Ventures",
+    imgURL: "/partners/Randev.jpeg",
+    siteURL: "https://www.randevventures.com/about-us/",
+  },
+  {
+    name: "Eraya Capital",
+    imgURL: "/partners/eraya.jpeg",
+    siteURL: "https://www.linkedin.com/company/eraya-capital/?originalSubdomain=in",
+  },
+  {
+    name: "Grow",
+    imgURL: "/partners/grow.jpeg",
+    siteURL: "https://growx.vc/",
+  },
+  {
+    name: "Kansaltancy",
+    imgURL: "/partners/kans.jpeg",
+    siteURL: "https://www.kansaltancy.com/",
+  },
+  {
+    name: "Benzai",
+    imgURL: "/partners/benzai.jpeg",
+    siteURL: "https://benzai10.co.in/",
+  },
+  {
+    name: "Aroa",
+    imgURL: "/partners/aroa.jpeg",
+    siteURL: "https://www.aroaventures.com/",
+  },
+  {
+    name: "Unconsult",
+    imgURL: "/partners/unconsult.jpeg",
+    siteURL: "https://www.unconsult.in/",
+  },
 ];
 export const investmentPartners = [
   {
@@ -225,6 +268,9 @@ export const mediaPartner = [
     imgURL: "/partners/startup_news.png",
     siteURL: "https://sarasai.org/",
   },
+];
+export const newpartners = [
+
 ];
 export const travelPartner = [
   {

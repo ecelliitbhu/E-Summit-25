@@ -32,7 +32,8 @@ unoptimized
           // fill={true}
           src={props.imgURL}
           alt={props.name}
-          className={"h-[130px] object-cover"}
+          // className={"h-[130px] object-cover"}
+          className="h-[130px] w-full object-contain" 
         />
         </a>
     </div>
