@@ -138,140 +138,141 @@ export const startupServicesPartner = [
 
 
 
-  {
-    name: "riverwalk",
-    imgURL: "/partners/riverwalk.jpeg",
-    siteURL: "https://riverwalkholdings.com/",
-  },
-  {
-    name: "Randev Ventures",
-    imgURL: "/partners/Randev.jpeg",
-    siteURL: "https://www.randevventures.com/about-us/",
-  },
-  {
-    name: "Eraya Capital",
-    imgURL: "/partners/eraya.jpeg",
-    siteURL: "https://www.linkedin.com/company/eraya-capital/?originalSubdomain=in",
-  },
-  {
-    name: "Grow",
-    imgURL: "/partners/grow.jpeg",
-    siteURL: "https://growx.vc/",
-  },
-  {
-    name: "Kansaltancy",
-    imgURL: "/partners/kans.jpeg",
-    siteURL: "https://www.kansaltancy.com/",
-  },
-  {
-    name: "Benzai",
-    imgURL: "/partners/benzai.jpeg",
-    siteURL: "https://benzai10.co.in/",
-  },
-  {
-    name: "Aroa",
-    imgURL: "/partners/aroa.jpeg",
-    siteURL: "https://www.aroaventures.com/",
-  },
-  {
-    name: "Unconsult",
-    imgURL: "/partners/unconsult.jpeg",
-    siteURL: "https://www.unconsult.in/",
-  },
+ 
 ];
 export const investmentPartners = [
-  {
-    name: "ian",
-    imgURL: "/partners/Startup_Services_and_Investment_Partners/IAN.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "100x_vc",
-    imgURL: "/partners/Startup_Services_and_Investment_Partners/100x_vc.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "java_capital",
-    imgURL:
-      "/partners/Startup_Services_and_Investment_Partners/java_capital.jpg",
-      siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "IvyCamp Ventures ",
-    imgURL: "/partners/Startup_Services_and_Investment_Partners/ivy_camp.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "Inflection Point",
-    imgURL: "/partners/Startup_Services_and_Investment_Partners/ipv.png",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "Legaverse",
-    imgURL: "/partners/Startup_Services_and_Investment_Partners/legaverse.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "pedalstart",
-    imgURL:
-      "/partners/Startup_Services_and_Investment_Partners/pedal_start.jpg",
-      siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "amalgam_capital",
-    imgURL: "/partners/Startup_Services_and_Investment_Partners/amalgam.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "2am VC",
-    imgURL:
-      "/partners/Startup_Services_and_Investment_Partners/2_a_m_ventures_logo.jpg",
-      siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "Speciale Invest",
-    imgURL:
-      "/partners/Startup_Services_and_Investment_Partners/specialeinvest.jpg",
-      siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "WestBridge Capital",
-    imgURL:
-      "/partners/Startup_Services_and_Investment_Partners/WestBridge-Capital.jpg",
-      siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "Aroa Ventures",
-    imgURL:
-      "/partners/Startup_Services_and_Investment_Partners/aroaventures.jpg",
-      siteURL: "https://sarasai.org/",
-  },
-];
-export const mediaPartner = [
-  {
-    name: "ED Times",
-    imgURL: "/partners/download.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "mystartuptv.fyi",
-    imgURL: "/partners/startup_tv.webp",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "Economic Times",
-    imgURL: "/partners/economic_times_logo.jpeg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "Startupnews.tv",
-    imgURL: "/partners/startup_news.png",
-    siteURL: "https://sarasai.org/",
-  },
-];
-export const newpartners = [
+//   {
+//     name: "ian",
+//     imgURL: "/partners/Startup_Services_and_Investment_Partners/IAN.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "100x_vc",
+//     imgURL: "/partners/Startup_Services_and_Investment_Partners/100x_vc.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "java_capital",
+//     imgURL:
+//       "/partners/Startup_Services_and_Investment_Partners/java_capital.jpg",
+//       siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "IvyCamp Ventures ",
+//     imgURL: "/partners/Startup_Services_and_Investment_Partners/ivy_camp.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "Inflection Point",
+//     imgURL: "/partners/Startup_Services_and_Investment_Partners/ipv.png",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "Legaverse",
+//     imgURL: "/partners/Startup_Services_and_Investment_Partners/legaverse.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "pedalstart",
+//     imgURL:
+//       "/partners/Startup_Services_and_Investment_Partners/pedal_start.jpg",
+//       siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "amalgam_capital",
+//     imgURL: "/partners/Startup_Services_and_Investment_Partners/amalgam.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "2am VC",
+//     imgURL:
+//       "/partners/Startup_Services_and_Investment_Partners/2_a_m_ventures_logo.jpg",
+//       siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "Speciale Invest",
+//     imgURL:
+//       "/partners/Startup_Services_and_Investment_Partners/specialeinvest.jpg",
+//       siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "WestBridge Capital",
+//     imgURL:
+//       "/partners/Startup_Services_and_Investment_Partners/WestBridge-Capital.jpg",
+//       siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "Aroa Ventures",
+//     imgURL:
+//       "/partners/Startup_Services_and_Investment_Partners/aroaventures.jpg",
+//       siteURL: "https://sarasai.org/",
+//   },
+// ];
+// export const mediaPartner = [
+//   {
+//     name: "ED Times",
+//     imgURL: "/partners/download.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "mystartuptv.fyi",
+//     imgURL: "/partners/startup_tv.webp",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "Economic Times",
+//     imgURL: "/partners/economic_times_logo.jpeg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "Startupnews.tv",
+//     imgURL: "/partners/startup_news.png",
+//     siteURL: "https://sarasai.org/",
+//   },
 
+{
+  name: "riverwalk",
+  imgURL: "/partners/riverwalk.jpeg",
+  siteURL: "https://riverwalkholdings.com/",
+},
+{
+  name: "Randev Ventures",
+  imgURL: "/partners/Randev.jpeg",
+  siteURL: "https://www.randevventures.com/about-us/",
+},
+{
+  name: "Grow",
+  imgURL: "/partners/grow.jpeg",
+  siteURL: "https://growx.vc/",
+},
+{
+  name: "Eraya Capital",
+  imgURL: "/partners/eraya.jpeg",
+  siteURL: "https://www.linkedin.com/company/eraya-capital/?originalSubdomain=in",
+},
+
+{
+  name: "Kansaltancy",
+  imgURL: "/partners/kans.jpeg",
+  siteURL: "https://www.kansaltancy.com/",
+},
+{
+  name: "Benzai",
+  imgURL: "/partners/benzai.jpeg",
+  siteURL: "https://benzai10.co.in/",
+},
+{
+  name: "Aroa",
+  imgURL: "/partners/aroa.jpeg",
+  siteURL: "https://www.aroaventures.com/",
+},
+{
+  name: "Unconsult",
+  imgURL: "/partners/unconsult.jpeg",
+  siteURL: "https://www.unconsult.in/",
+},
 ];
+
 export const travelPartner = [
   {
     name: "AbhiBus",
