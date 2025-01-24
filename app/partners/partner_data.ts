@@ -237,7 +237,7 @@ export const investmentPartners = [
 },
 {
   name: "Randev Ventures",
-  imgURL: "/partners/Randev.jpeg",
+  imgURL: "/partners/randev.jpeg",
   siteURL: "https://www.randevventures.com/about-us/",
 },
 {
