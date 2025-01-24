@@ -59,25 +59,25 @@ const StatItem: FunctionComponent<Stat & { isFirstItem: boolean }> = ({ value, l
        
         ref={ref}
         className={`
-          text-center m-4  flex-col justify-center items-center p-4 stat
+          mt-4 text-center flex flex-col justify-center items-center p-4
           ${isFirstItem ? '' : 'md:border-l-2 border-white border-t-2 md:border-t-0 '} 
         
         `}
       >
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center gap-1">
           <motion.h2 className=" text-3xl sm:text-5xl font-bold text-primary-foreground">
             {rounded}
           </motion.h2>
-          <span className="text-4xl font-semibold">+</span>
+          <span className="text-3xl sm:text-4xl font-semibold">+</span>
         </div>
-        <p className="text-primary capitalize">{label.toUpperCase()}</p>
+        <p className="text-primary mt-2 capitalize">{label.toUpperCase()}</p>
       </div>
     </Tilt>
   );
 };
 const Stats: FunctionComponent = () => {
   return (
-    <section className="px-0 md:px-20 py-10 overflow-hidden relative pb-16 mt-28">
+    <section className="px-0 md:px-20 py-10 overflow-hidden relative pb-16 mt-28 ">
     <h1 className="text-3xl md:text-4xl text-primary-foreground font-bold text-center mb-6">
       Key Event Statistics
     </h1>

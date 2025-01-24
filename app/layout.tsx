@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Head from "next/head";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -39,6 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon-dark.ico" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon-light.ico" media="(prefers-color-scheme: light)" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-black  font-sans antialiased",
