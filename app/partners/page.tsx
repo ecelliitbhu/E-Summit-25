@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Metadata } from "next";
 import PartnerCard from "@/components/PartnerCard";
-import { titleSponsor, associateSponsor,  ecosystemPartner, startupShowcasePartner, LearningPartner, startupServicesPartner, investmentPartners, mediaPartner, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner, instituePartner } from "./partner_data";
+import { titleSponsor, associateSponsor,  ecosystemPartner, startupShowcasePartner, LearningPartner, startupServicesPartner, investmentPartners, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner, instituePartner } from "./partner_data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { color } from "framer-motion";
 
