@@ -3,6 +3,7 @@ export const book_data = [
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
     genre: "Fiction",
+    description: "Description here",
     reviews: [
       {
         reviewer: "John Doe",
@@ -25,7 +26,6 @@ export const book_data = [
     ],
     imgURL: "path/to/image.jpg",
   },
-  // New book entries
   {
     title: "To Kill a Mockingbird",
     author: "Harper Lee",

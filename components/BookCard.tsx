@@ -1,34 +1,54 @@
-import React from "react";
-import Link from "next/link"; // Importing Link from next/link
+import type React from "react";
+import Link from "next/link";
+import { Card, CardContent } from "./ui/card";
+
+interface Review {
+  reviewer: string;
+  comment: string;
+  rating: number;
+}
 
 interface BookCardProps {
   title: string;
   author: string;
   imgURL: string;
-  reviews: { reviewer: string; comment: string; rating: number }[];
-  index: number; // Adding index as a prop
+  reviews: Review[];
+  index: number;
 }
 
-const BookCard: React.FC<BookCardProps> = ({ title, author, imgURL, reviews, index }) => {
+const BookCard: React.FC<BookCardProps> = ({
+  title,
+  author,
+  imgURL,
+  reviews,
+  index,
+}) => {
   return (
-    <div className="border rounded-lg p-4 m-2 w-64 h-auto"> {/* Increased height to auto */}
-      <img src={imgURL} alt={title} className="w-full h-48 object-cover rounded" />
-      <Link href={`/recommendations/book?id=${index}`}> {/* Added href to the Link */}
-        <h2 className="text-xl font-bold">{title}</h2> {/* Removed truncation for title */}
-      </Link>
-      <p className="text-gray-700">by {author}</p> {/* Removed truncation for author */}
+    <Card className="m-2 w-64">
+      <CardContent className="p-4">
+        <img
+          src={imgURL || "/placeholder.svg"}
+          alt={title}
+          className="w-full h-48 object-cover rounded mb-4"
+        />
+        <Link href={`/recommendations/${index}`}>
+          <h2 className="text-xl font-bold hover:underline">{title}</h2>
+        </Link>
+        <p className="text-muted-foreground">by {author}</p>
 
-      <div className="mt-2">
-        <h3 className="font-semibold">Reviews:</h3>
-        {reviews.map((review, index) => (
-          <div key={index} className="border-t mt-2 pt-2">
-            <p className="font-medium">{review.reviewer}</p> {/* Removed truncation for reviewer */}
-            <p>{review.comment}</p> {/* Removed truncation for comment */}
-            <p className="text-yellow-500">Rating: {review.rating} / 5</p>
-          </div>
-        ))}
-      </div>
-    </div>
+        <div className="mt-4">
+          <h3 className="font-semibold mb-2">Reviews:</h3>
+          {reviews.map((review, idx) => (
+            <div key={idx} className="border-t mt-2 pt-2">
+              <p className="font-medium">{review.reviewer}</p>
+              <p className="text-sm text-muted-foreground">{review.comment}</p>
+              <p className="text-yellow-500">Rating: {review.rating} / 5</p>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
   );
 };
+
 export default BookCard;
