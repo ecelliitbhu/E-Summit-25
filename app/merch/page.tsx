@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function CardWithForm() {
   return (
+    <>
     <div className="flex flex-col items-center justify-center w-full min-h-screen">
       {/* Cards Container */}
       <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-8 mt-20 lg:mt-28">
@@ -15,7 +16,7 @@ export default function CardWithForm() {
           <CardContent>
             <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-md">
               <Image
-unoptimized
+                unoptimized
                 src="/images/T-Shirt Front.png"
                 alt="E-Summit 2024 Merchandise Front"
                 width={600}
@@ -31,7 +32,7 @@ unoptimized
           <CardContent>
             <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-md">
               <Image
-unoptimized
+                unoptimized
                 src="/images/T-Shirt Back.png"
                 alt="E-Summit 2024 Merchandise Back"
                 width={600}
@@ -43,22 +44,23 @@ unoptimized
         </Card>
       </div>
 
-      {/* Coming Soon Section */}
-      <section>
-        <div className="mt-12 sm:mx-4 flex justify-center items-center">
-          <p
-            className="text-4xl font-bold"
-            style={{
-              background: "linear-gradient(90deg, #6A23A6, #E91045)", // Adjust gradient as per your website's theme
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              display: "inline-block",
-            }}
-          >
-            Coming Soon
-          </p>
-        </div>
-      </section>
+      {/* Button for redirecting to Google Forms */}
+      <Link href="https://forms.gle/ybXS7KoaHxqDSkH79" target="_blank" passHref>
+        <Button className="mt-12" variant={"default"} 
+                        style={{
+                          background: "linear-gradient(90deg, #6A23A6, #E91045)",
+                          color: "white", 
+                          border: "none", 
+                          padding: "0.5rem 1.5rem", 
+                          fontWeight: "bold",
+                          borderRadius: "0.375rem",
+                          textAlign: "center", 
+                          cursor: "pointer",
+                        }}>
+          Buy Merch
+        </Button>
+      </Link>
     </div>
+    </>
   );
 }
