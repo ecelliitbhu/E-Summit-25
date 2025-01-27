@@ -132,7 +132,7 @@ export const startupServicesPartner = [
   },
   {
     name: "Impactful Pitch",
-    imgURL: "/partners/impact_ful_pitch.jpg",
+    imgURL: "/partners/impactful_pitch.jpg",
     siteURL: "https://www.impactfulpitch.com/",
   },
 

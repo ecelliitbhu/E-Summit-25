@@ -29,23 +29,14 @@ const BookCard: React.FC<BookCardProps> = ({
         <img
           src={imgURL || "/placeholder.svg"}
           alt={title}
-          className="w-full h-48 object-cover rounded mb-4"
+          className="w-full h-full object-cover rounded mb-4"
         />
         <Link href={`/recommendations/${index}`}>
           <h2 className="text-xl font-bold hover:underline">{title}</h2>
         </Link>
         <p className="text-muted-foreground">by {author}</p>
 
-        <div className="mt-4">
-          <h3 className="font-semibold mb-2">Reviews:</h3>
-          {reviews.map((review, idx) => (
-            <div key={idx} className="border-t mt-2 pt-2">
-              <p className="font-medium">{review.reviewer}</p>
-              <p className="text-sm text-muted-foreground">{review.comment}</p>
-              <p className="text-yellow-500">Rating: {review.rating} / 5</p>
-            </div>
-          ))}
-        </div>
+        
       </CardContent>
     </Card>
   );
