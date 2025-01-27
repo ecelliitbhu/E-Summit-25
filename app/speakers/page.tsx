@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Contact from "@/components/Contact";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { past_speakers_data } from "@/app/speakers/speaker_data";
-import { present_speakers_data } from "@/app/speakers/speaker_data";
 import SpeakerCard from "@/components/SpeakerCard";
 
 
