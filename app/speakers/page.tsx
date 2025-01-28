@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Contact from "@/components/Contact";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { past_speakers_data } from "@/app/speakers/speaker_data";
+import { present_speakers_data } from "@/app/speakers/speaker_data";
 import SpeakerCard from "@/components/SpeakerCard";
 
 
@@ -76,19 +77,22 @@ const page: FunctionComponent<Props> = (props) => {
             COMING  SOON...
           </h1>
         </div> */}
-               <div className="flex flex-col justify-center items-center w-full h-[400px]">
-    <h1
-      className="text-6xl m-4 font-semibold sm:py-6"
-      style={{
-        background: "linear-gradient(90deg, #6A23A6, #E91045)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        display: "inline-block",
-      }}
-    >
-      COMING SOON...
-    </h1>
-  </div>    
+           <div
+                className={"md:flex flex-wrap  justify-center items-start p-10"}
+              >
+                {present_speakers_data.map((speaker: any, index) => (
+                  <SpeakerCard
+                    name={speaker.name}
+                    des={speaker.des}
+                    instaURL={speaker.instaURL}
+                    linkedinURL={speaker.linkedinURL}
+                    // twitterURL={speaker.twitterURL}
+                    imgURL={speaker.imgURL}
+                    key={index}
+                  />
+                ))}
+              </div>
+   
             </TabsContent>
             <TabsContent value="pastSpeaker">
               <div
