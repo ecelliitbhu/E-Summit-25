@@ -10,18 +10,18 @@ Her journey is a blend of rich family heritage, personal achievements, and globa
 Archana's life is filled with vibrant experiences—from volunteering for differently-abled children to supporting her son through his challenges. Her story reflects resilience, gratitude, and a relentless drive to make a meaningful impact.`,
     reviews: [
       {
-        reviewer: "John Doe",
+        reviewer: "Rahul Singh",
         comment: "A classic tale of love and loss.",
         rating: 5,
       },
       {
-        reviewer: "John Doe",
-        comment: "A classic tale of love and loss.",
-        rating: 4,
+        reviewer: "Raj Shekhar",
+        comment: "An unforgettable journey through heartbreak and redemption.",
+        rating: 4.5,
       },
       {
-        reviewer: "John Doe",
-        comment: "A classic tale of love and loss.",
+        reviewer: "Muskan Verma",
+        comment: "Beautifully written, with characters that stay with you long after the final page.",
         rating: 5,
       },
     ],
