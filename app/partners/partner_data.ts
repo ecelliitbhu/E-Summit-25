@@ -62,6 +62,13 @@ export const titleSponsor = [
     siteURL: "https://www.iitbhufoundation.org/",
   },
 ];
+export const cotitleSponsor = [
+  {
+      name: "SBI",
+      imgURL: "/partners/SBI.png",
+      siteURL: "https://sbi.co.in/web/personal-banking/home",
+    }
+];
 export const coSponsor = [
   {
     name: "Saviant Consulting",
@@ -76,22 +83,31 @@ export const associateSponsor = [
     siteURL: "https://ichelonconsulting.com/",
   },
 ];
+// export const ecosystemPartner = [
+//   {
+//     name: "Meity Startup Hub",
+//     imgURL: "/partners/meity_startup_hub_logo.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "Startup India",
+//     imgURL: "/partners/4_startup_india_logo.jpg",
+//     siteURL: "https://sarasai.org/",
+//   },
+//   {
+//     name: "markkoknow",
+//     imgURL: "/partners/markoknow.png",
+//     siteURL: "https://sarasai.org/",
+//   },
+// ];
+
+
 export const ecosystemPartner = [
   {
-    name: "Meity Startup Hub",
-    imgURL: "/partners/meity_startup_hub_logo.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "Startup India",
-    imgURL: "/partners/4_startup_india_logo.jpg",
-    siteURL: "https://sarasai.org/",
-  },
-  {
-    name: "markkoknow",
-    imgURL: "/partners/markoknow.png",
-    siteURL: "https://sarasai.org/",
-  },
+    name: "Indian Accelerator",
+    imgURL: "/partners/indian_accelerator.png",
+    siteURL: "https://www.indiaaccelerator.co/",
+  }
 ];
 
 export const startupShowcasePartner = [
@@ -106,6 +122,11 @@ export const LearningPartner = [
     name: "IMS",
     imgURL: "/partners/ims.png",
     siteURL: "https://www.imsindia.com/",
+  },
+  {
+    name: "VSKILLS",
+    imgURL: "/partners/v_skills.png",
+    siteURL: "https://www.vskills.in/certification/",
   },
 ];
 
@@ -277,14 +298,15 @@ export const travelPartner = [
   {
     name: "AbhiBus",
     imgURL: "/partners/abhi_bus.jpg",
-    siteURL: "https://sarasai.org/",
+    siteURL: "https://www.abhibus.com/",
   },
   {
     name: "ixigo",
     imgURL: "/partners/ixigo.jpg",
-    siteURL: "https://sarasai.org/",
+    siteURL: "https://www.ixigo.com/",
   },
 ];
+
 export const logisticsPartner = [
   {
     name: "Safexpress",
@@ -364,10 +386,28 @@ export const gamingPartner = [
     siteURL: "https://sarasai.org/",
   },
 ]
-  export const instituePartner = [
+export const instituePartner = [
     {
       name: "Ashoka University",
       imgURL: "/partners/ashoka_vns_ps.png",
       siteURL: "https://ashokainstitute.com/",
     }, 
+];
+
+
+
+export const techPartner = [
+  {
+    name: "BitsandBytes",
+    imgURL: "/partners/b&b.png",
+    siteURL: "https://www.bitsandbyte.net/",
+  },
+];
+
+export const platinumPartner = [
+  {
+    name: "ICICI",
+    imgURL: "/partners/icici.png",
+    siteURL: "https://www.icicibank.com/",
+  },
 ];

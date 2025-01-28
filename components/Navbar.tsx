@@ -56,7 +56,7 @@ const nav = [
   },
   {
     name: "RECOMMENDATIONS",
-    link: "/recommendations",
+    link: "/recommendations/0",
   },
   // {
   //   name: "STARTUP EXPO",

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Metadata } from "next";
 import PartnerCard from "@/components/PartnerCard";
-import { titleSponsor, associateSponsor,  ecosystemPartner, startupShowcasePartner, LearningPartner, startupServicesPartner, investmentPartners, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner, instituePartner } from "./partner_data";
+import { titleSponsor, associateSponsor,  ecosystemPartner, startupShowcasePartner, LearningPartner, startupServicesPartner, investmentPartners, travelPartner, poweredBy, eventPartner, martechPartner, incubationPartner, saasPartner, educationPartner, munchingPartner, logisticsPartner, gamingPartner, instituePartner, techPartner, cotitleSponsor, platinumPartner } from "./partner_data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { color } from "framer-motion";
 
@@ -47,6 +47,27 @@ const page: FunctionComponent<Props> = (props) => {
         <div className={"flex justify-center"}>
           <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
             {titleSponsor.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6 "
+            }
+          >
+            Co-Title Partner
+          </h1>       
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {cotitleSponsor.map((speaker: any, index) => (
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
@@ -153,12 +174,85 @@ const page: FunctionComponent<Props> = (props) => {
               "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
             }
           >
-            Learning Partner
+            Learning Partners
           </h1>
         </div>
         <div className={"flex justify-center"}>
           <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
             {LearningPartner.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+
+      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+            }
+          >
+            Tech Partner
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {techPartner.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+            }
+          >
+            Platinum Partner
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {platinumPartner.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+            }
+          >
+            Ecosystem Partner
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {ecosystemPartner.map((speaker: any, index) => (
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
@@ -209,6 +303,31 @@ const page: FunctionComponent<Props> = (props) => {
         <div className={"flex justify-center"}>
           <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
             {investmentPartners.map((speaker: any, index) => (
+              <PartnerCard
+                name={speaker.name}
+                imgURL={speaker.imgURL}
+                siteURL={speaker.siteURL}
+                key={index}
+                
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="pt-24 justify-center w-full min-h-1 sm:text-center sm:text-base">
+        <div>
+          <h1
+            className={
+              "text-white text-6xl m-4 flex justify-center font-semibold sm:py-6"
+            }
+          >
+            Travel Partners
+          </h1>
+        </div>
+        <div className={"flex justify-center"}>
+          <div className={"md:flex flex-wrap  justify-center items-start p-10"}>
+            {travelPartner.map((speaker: any, index) => (
               <PartnerCard
                 name={speaker.name}
                 imgURL={speaker.imgURL}
