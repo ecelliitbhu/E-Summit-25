@@ -16,7 +16,7 @@ const page: FunctionComponent<Props> = (props) => {
         <Image
           src={table}
           alt="schedule"
-          width={1500} 
+          width={1200} 
           height={800} 
           className="mx-auto" 
         />
